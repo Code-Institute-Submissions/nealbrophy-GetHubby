@@ -1,0 +1,65 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'BioRhyme', serif;
+}
+
+/* GLOBAL */
+h2 {
+    font-family: 'BioRhyme', serif;
+}
+
+/* NAVBAR */
+.navbar {
+    font-family: 'BioRhyme', serif;
+}
+
+/* CAROUSEL */
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-caption {
+    top: 40%;
+    bottom: auto;
+}
+
+.overlay {
+    background-color: blueviolet;
+    opacity: .6;
+    position: absolute;
+    top: 5;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+
+/* ABOUT */
+
+.about span {
+    text-transform: capitalize;
+}
+
+.about i {
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.about h3 {
+    text-decoration: underline;
+}
+
+
+/* SIGNUP */
+
+.signup span {
+    text-transform: capitalize;
+}

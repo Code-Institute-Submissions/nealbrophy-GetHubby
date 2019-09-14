@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme:400,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>GetHubby</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+        <a href="#" class="navbar-brand">GetHubby</a>
+        <!-- toggler -->
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto">
+                <li class="active nav-item mr-2">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="active nav-item mr-2">
+                    <a href="#" class="nav-link">Testimonials</a>
+                </li>
+                <li class="active nav-item mr-2">
+                    <a href="#" class="nav-link">Sign-Up</a>
+                </li>
+                <li class="active nav-item mr-2 d-block d-sm-none">
+                    <a href="#" class="nav-link">Member Login</a>
+                </li>
+            </ul>
+        </div>
+        <a href="#" class="btn btn-info d-none d-md-block">Member Login</a>
+    </nav>
+    <div class="container-fluid">
+
+        <!-- jumbotron/cta -->
+        <section class="cta jumbotron text-center">
+            <!-- carousel -->
+            <div class="carousel-wrapper">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="overlay"></div>
+                            <img src="images/black-and-white-2590810_1920-crop.jpg" class="d-block" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>Ready to make your next <code>commit</code>?</h1>
+                                <p class="lead">Join now to meet other eager developers!</p>
+                                <a href="#"><button class="btn btn-success btn-lg">Sign-Up</button></a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="overlay"></div>
+                            <img src="images/couple-1210023_1920-crop.jpg" class="d-block" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>Looking to join an <code>agile</code> dating community?</h1>
+                                <p class="lead">Join now to meet other eager developers!</p>
+                                <a href="#"><button class="btn btn-success btn-lg">Sign-Up</button></a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="overlay"></div>
+                            <img src="images/diego-rezende-CFIv79QxPjA-unsplash_greyscale-crop.jpg"
+                                class="d-block" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>Ready to make your next <code>commit</code>?</h1>
+                                <p class="lead">Join now to meet other eager developers!</p>
+                                <a href="#"><button class="btn btn-success btn-lg">Sign-Up</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <!-- /carousel -->
+
+
+        </section>
+        <hr>
+
+        <!-- about -->
+        <section class="about">
+            <div class="row">
+                <div class="col-12 my-5">
+                    <h2 class="text-uppercase text-center">Why use <span>getHubby</span>?</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="feature col-12 text-center mb-5">
+                    <h3>Safety</h3>
+                    <p>At <span>GetHubby</span> our top priority is the safety of our users. All users are vetted to
+                        make
+                        sure they are who they claim (including a full background check by our <a
+                            href="#">SecurityTeam</a>).</p>
+                    <i class="fas fa-user-shield"></i>
+                    <i class="fas fa-id-card"></i>
+                    <i class="fas fa-eye"></i>
+                </div>
+
+                <div class="feature col-12 text-center mb-5">
+                    <h3>Privacy</h3>
+                    <p>We have a strict no-log policy when it comes to user messages and all user data is securely
+                        encrypted
+                        on military grade servers. Additionally, our platform is fully open source and viewable <a
+                            href="#">on GitHub.</a></p>
+                    <i class="fas fa-user-secret"></i>
+                    <i class="fas fa-lock"></i>
+                    <i class="fas fa-user-lock"></i>
+                </div>
+
+                <div class="feature col-12 text-center mb-5">
+                    <h3>Community</h3>
+                    <p>With over 250,000 members worldwide we're confident there's someone for everyone. If you're a
+                        little shy, why not let our <span class="btn-link">digital matchmaker</span> do the work?</p>
+                    <i class="fas fa-hand-spock"></i>
+                    <i class="fas fa-users"></i>
+                    <i class="fas fa-comments"></i>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- testimonials -->
+        <section class="testimonials">
+            <div class="row">
+                <div class="col-12 my-5">
+                    <h2 class="text-uppercase">Success Stories</h2>
+                </div>
+            </div>
+            <div class="row">
+                <blockquote class="blockquote couple-1 mt-2 col-md-6 col-lg-4">
+                    <div class="media">
+                        <div class="d-none d-sm-block">
+                            <img src="images/adults-bald-bouquet-1875420_sq.jpg" alt=""
+                                class="rounded-circle mr-3" height=100 width=100>
+                        </div>
+                        <div class="media-body">
+                            <h3>John and Ellen</h3>
+                            <p>It's like we've always known each other.</p>
+                            <a href="#" class="btn btn-sm btn-light">John &amp; Ellen's story</a>
+                        </div>
+                    </div>
+                </blockquote>
+
+                <blockquote class="blockquote couple-2 mt-2 col-md-6 col-lg-4">
+                    <div class="media">
+                        <div class="d-none d-sm-block">
+                            <img src="images/affection-beach-couple-2833389_sq.jpg" alt=""
+                                class="rounded-circle mr-3" height=100 width=100>
+                        </div>
+                        <div class="media-body">
+                            <h3>Susan and Gordon</h3>
+                            <p>We both found it so hard to meet other people with similar interests.</p>
+                            <a href="#" class="btn btn-sm btn-light">Susan &amp; Gordon's story</a>
+                        </div>
+                    </div>
+                </blockquote>
+
+                <blockquote class="blockquote couple-3 mt-2 d-md-none d-lg-block col-lg-4">
+                    <div class="media">
+                        <div class="d-none d-sm-block">
+                            <img src="images/couple-facial-hair-garden-2440069_sq.jpg" alt=""
+                                class="rounded-circle mr-3" height=100 width=100>
+                        </div>
+                        <div class="media-body">
+                            <h3>Doug and Monte</h3>
+                            <p>We're crazy about each other.</p>
+                            <a href="#" class="btn btn-sm btn-light">Doug &amp; Monte's story</a>
+                        </div>
+                    </div>
+                </blockquote>
+            </div>
+        </section>
+        <hr>
+
+        <!-- signup -->
+        <section class="signup">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-uppercase">Sign-Up with <span>GitHub</span></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
