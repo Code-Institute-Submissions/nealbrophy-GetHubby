@@ -1,8 +1,8 @@
-# Your Project's Name
+# GetHubby
 
-One or two paragraphs providing an overview of your project.
+This is an imagined dating site specifically for developers and geared towards users of GitHub leveraging the existing social & community aspects of GitHub.
 
-Essentially, this part is your sales pitch.
+++++++ADD MORE HERE++++++++
  
 ## UX
  
@@ -32,9 +32,8 @@ In addition, you may also use this section to discuss plans for additional featu
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
-
+- [Bootstrap](https://getbootstrap.com/)
+    - The project uses **Bootstrap** framework.
 
 ## Testing
 
@@ -74,7 +73,15 @@ In addition, if it is not obvious, you should also describe how to run your code
 - The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
 
 ### Media
-- The photos used in this site were obtained from ...
+- [Pexels](https://www.pexels.com/)
+    - adults-bald-bouquet Photo by Vasyl Potochnyi from Pexels
+    - affection-beach-couple Photo by Gustavo Peres from Pexels
+    - couple-facial-hair-garden-2440069 Photo by Gustavo Peres from Pexels
+- [Pixabay](https://pixabay.com/)
+    - black-and-white-2590810_1920 Image by StockSnap from Pixabay
+    - couple-1210023_1920 Image by Free-Photos from Pixabay
+- [Unsplash](https://unsplash.com/)
+    - diego-rezende-CFIv79QxPjA-unsplash Photo by Diego Rezende on Unsplash
 
 ### Acknowledgements
 
