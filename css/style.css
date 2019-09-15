@@ -4,6 +4,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 /* GLOBAL */
 
 h2 {
@@ -13,6 +14,7 @@ h2 {
 /* NAVBAR */
 .navbar {
     font-family: 'BioRhyme', serif;
+
 }
 
 /* CAROUSEL */
@@ -26,10 +28,16 @@ h2 {
     padding: 0;
 }
 
+.carousel img {
+    width: 100%;
+    height: 100%;
+}
+
 .carousel-caption {
     top: 40%;
     bottom: auto;
-    z-index: 100;
+    z-index: 500;
+    
 }
 
 .overlay {
@@ -38,9 +46,9 @@ h2 {
     position: absolute;
     top: 5;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 }
 
 .hvr-icon-down {
@@ -54,31 +62,36 @@ h2 {
 }
 
 @-webkit-keyframes hvr-icon-down {
+
     0%,
-      50%,
-      100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+    50%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
+
     25%,
-      75% {
-      -webkit-transform: translateY(6px);
-      transform: translateY(6px);
+    75% {
+        -webkit-transform: translateY(6px);
+        transform: translateY(6px);
     }
-  }
-  @keyframes hvr-icon-down {
+}
+
+@keyframes hvr-icon-down {
+
     0%,
-      50%,
-      100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+    50%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
+
     25%,
-      75% {
-      -webkit-transform: translateY(6px);
-      transform: translateY(6px);
+    75% {
+        -webkit-transform: translateY(6px);
+        transform: translateY(6px);
     }
-  }
+}
 
 .hvr-icon-down {
     display: inline-block;
@@ -86,8 +99,9 @@ h2 {
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  }
-  .hvr-icon-down .hvr-icon {
+}
+
+.hvr-icon-down .hvr-icon {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     -webkit-animation-name: hvr-icon-down;
@@ -97,16 +111,85 @@ h2 {
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
-  }
-  .hvr-icon-down:hover .hvr-icon {
+}
+
+.hvr-icon-down:hover .hvr-icon {
     color: yellow;
-  }
-
-
+}
 
 .carousel-indicators {
     top: 5%;
 }
+
+/*===========
+ TYPE ANIM
+ ============ */
+
+.type-anim {
+    display: flex;
+    font-size: 2.5rem;
+    justify-content: center;
+    padding-bottom: 1.5rem;;
+    margin: 0;
+}
+
+.anim-word {
+    background-color: black;
+    animation: 
+        type 1.2s steps(6),
+        blink-caret .5s step-end infinite;;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: .5rem;
+    border-right: .3rem solid white;
+}
+
+.anim-word-short {
+    background-color: black;
+    animation: 
+        type-s 1.2s steps(5),
+        blink-caret .5s step-end infinite;;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: .5rem;
+    /* margin-right: .4rem; */
+    border-right: .3rem solid white;
+}
+
+
+@keyframes type {
+    from {
+        width: 0ch;
+    }
+
+    to {
+        width: 6.2ch;
+    }
+}
+
+@keyframes type-s {
+    from {
+        width: 0ch;
+    }
+
+    to {
+        width: 5ch;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: white;
+    }
+}
+
 
 /* ABOUT */
 

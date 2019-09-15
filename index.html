@@ -9,13 +9,14 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <link href="css/hover.css" rel="stylesheet" media="all">
-    <link href="https://fonts.googleapis.com/css?family=BioRhyme:400,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>GetHubby</title>
 </head>
 
 <body>
     <!-- navbar -->
+
     <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
         <a href="#" class="navbar-brand">GetHubby</a>
         <!-- toggler -->
@@ -41,67 +42,85 @@
         <a href="#" class="btn btn-info d-none d-md-block">Member Login</a>
     </nav>
     <div class="container-fluid">
+        
+            <!-- jumbotron/cta -->
+            <section class="cta jumbotron text-center">
+                <!-- carousel -->
+                <div class="carousel-wrapper">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="overlay"></div>
+                                <img src="images/black-and-white-2590810_1920-crop.jpg" class="d-block" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <div class="type-anim">
+                                        <div class="anim-line-start">Ready to make a</div>
+                                        <div class="anim-word"><code>commit</code></div>
+                                        <div class="anim-line-end">?</div>
+                                    </div>
+                                    <p class="lead">Join now to meet other eager developers!</p>
+                                    <a href="#"><button class="btn btn-success btn-lg">Sign-Up</button></a>
+                                </div>
+                                <a href="#about-section" class="hvr-icon-down d-none d-med-block"><i
+                                        class="fas fa-arrow-down hvr-icon"></i></a>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="overlay"></div>
+                                <img src="images/couple-1210023_1920-crop.jpg" class="d-block" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <div class="type-anim">
+                                        <div class="anim-line-start">Want to get a new relationship</div>
+                                        <div class="anim-word"><code>status</code></div>
+                                        <div class="anim-line-end">?</div>
+                                    </div>
+                                    <p class="lead">Join now to meet other eager developers!</p>
+                                    <a href="#"><button class="btn btn-success btn-lg">Sign-Up</button></a>
 
-        <!-- jumbotron/cta -->
-        <section class="cta jumbotron text-center">
-            <!-- carousel -->
-            <div class="carousel-wrapper">
-                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="overlay"></div>
-                            <img src="images/black-and-white-2590810_1920-crop.jpg" class="d-block" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h1>Ready to make your next <code>commit</code>?</h1>
-                                <p class="lead">Join now to meet other eager developers!</p>
-                                <a href="#"><button class="btn btn-success btn-lg">Sign-Up</button></a>
-                                
+                                </div>
+                                <a href="#about-section" class="hvr-icon-down d-none d-md-block"><i
+                                        class="fas fa-arrow-down hvr-icon"></i></a>
                             </div>
-                            <a href="#about-section" class="hvr-icon-down"><i class="fas fa-arrow-down hvr-icon"></i></a>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="overlay"></div>
-                            <img src="images/couple-1210023_1920-crop.jpg" class="d-block" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h1>Want to get a new relationship <code>status</code>?</h1>
-                                <p class="lead">Join now to meet other eager developers!</p>
-                                <a href="#"><button class="btn btn-success btn-lg">Sign-Up</button></a>
-                                
+                            <div class="carousel-item">
+                                <div class="overlay"></div>
+                                <img src="images/diego-rezende-CFIv79QxPjA-unsplash_greyscale-crop.jpg" class="d-block"
+                                    alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <div class="type-anim">
+                                        <div class="anim-line-start">Looking to</div>
+                                        <div class="anim-word-short"><code>fetch</code></div>
+                                        <div class="anim-line-end">that special someone?</div>
+                                    </div>
+                                    <p class="lead">Join now to meet other eager developers!</p>
+                                    <a href="#"><button class="btn btn-success btn-lg">Sign-Up</button></a>
+
+                                </div>
+                                <a href="#about-section" class="hvr-icon-down d-none d-med-block"><i
+                                        class="fas fa-arrow-down hvr-icon"></i></a>
                             </div>
-                            <a href="#about-section" class="hvr-icon-down"><i class="fas fa-arrow-down hvr-icon"></i></a>
                         </div>
-                        <div class="carousel-item">
-                            <div class="overlay"></div>
-                            <img src="images/diego-rezende-CFIv79QxPjA-unsplash_greyscale-crop.jpg"
-                                class="d-block" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h1>Looking to <code>add</code> that special someone to your life?</h1>
-                                <p class="lead">Join now to meet other eager developers!</p>
-                                <a href="#"><button class="btn btn-success btn-lg">Sign-Up</button></a>
-                                
-                            </div>
-                            <a href="#about-section" class="hvr-icon-down"><i class="fas fa-arrow-down hvr-icon"></i></a>
-                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
-            </div>
-            <!-- /carousel -->
+                <!-- /carousel -->
 
 
-        </section>
+
+            </section>
+        
         <hr>
 
         <!-- about -->
@@ -157,8 +176,8 @@
                 <blockquote class="blockquote couple-1 mt-2 col-md-6 col-lg-4">
                     <div class="media">
                         <div class="d-none d-sm-block">
-                            <img src="images/adults-bald-bouquet-1875420_sq.jpg" alt=""
-                                class="rounded-circle mr-3" height=100 width=100>
+                            <img src="images/adults-bald-bouquet-1875420_sq.jpg" alt="" class="rounded-circle mr-3"
+                                height=100 width=100>
                         </div>
                         <div class="media-body">
                             <h3>John and Ellen</h3>
@@ -171,8 +190,8 @@
                 <blockquote class="blockquote couple-2 mt-2 col-md-6 col-lg-4">
                     <div class="media">
                         <div class="d-none d-sm-block">
-                            <img src="images/affection-beach-couple-2833389_sq.jpg" alt=""
-                                class="rounded-circle mr-3" height=100 width=100>
+                            <img src="images/affection-beach-couple-2833389_sq.jpg" alt="" class="rounded-circle mr-3"
+                                height=100 width=100>
                         </div>
                         <div class="media-body">
                             <h3>Susan and Gordon</h3>
@@ -231,6 +250,7 @@
             </div>
         </section>
     </div>
+
 
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
