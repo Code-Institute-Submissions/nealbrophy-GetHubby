@@ -197,6 +197,32 @@ h2 {
 
 /* ABOUT */
 
+.about {
+    background-image: url(../excl/backgrounds/code-1839406_1920_transparent.jpg);
+    max-height: 100vh;
+    min-height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-around;
+    
+}
+
+.about-title {
+    
+}
+
+.card {
+    text-align: center;
+    margin: 0 auto;
+    transform: rotate(2deg);
+}
+
+.card:nth-child(even) {
+    transform: rotate(-2deg);
+}
+
 .about span {
     text-transform: capitalize;
 }
