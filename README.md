@@ -76,7 +76,7 @@ User Stories:
 ## Credits
 
 ### Content
-+++- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+
 
 ### Media
 - [Pexels](https://www.pexels.com/)
@@ -86,9 +86,10 @@ User Stories:
 - [Pixabay](https://pixabay.com/)
     - black-and-white-2590810_1920 Image by StockSnap from Pixabay
     - couple-1210023_1920 Image by Free-Photos from Pixabay
+    - code-1839406_1920 Image by Pexels from Pixabay
 - [Unsplash](https://unsplash.com/)
     - diego-rezende-CFIv79QxPjA-unsplash Photo by Diego Rezende on Unsplash
 
 ### Acknowledgements
-
+Typewriter effect inspired by [this CSS-Tricks article](https://css-tricks.com/snippets/css/typewriter-effect/) with simplified implementation taken from [this instructional video by Codingflag](https://www.youtube.com/watch?v=6vOJoAmbza0).
 +++- I received inspiration for this project from X
