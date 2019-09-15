@@ -7,6 +7,7 @@ html {
 
 /* GLOBAL */
 
+
 h2 {
     font-family: 'BioRhyme', serif;
 }
@@ -51,10 +52,11 @@ h2 {
     z-index: 0;
 }
 
+
 .hvr-icon-down {
-    color: white;
+    color: rgba(255,255,255, 0.5);
     position: absolute;
-    bottom: 5%;
+    bottom: 1%;
     left: 48.5%;
     margin-top: 2rem;
     font-size: 4rem;
@@ -114,7 +116,9 @@ h2 {
 }
 
 .hvr-icon-down:hover .hvr-icon {
-    color: yellow;
+    color: rgba(255,255,255, 1);
+    transition: .3s;
+    
 }
 
 .carousel-indicators {
@@ -137,7 +141,7 @@ h2 {
     background-color: black;
     animation: 
         type 1.2s steps(6),
-        blink-caret .5s step-end infinite;;
+        blink-caret .5s step-end infinite;
     overflow: hidden;
     white-space: nowrap;
     margin-left: .5rem;
@@ -148,11 +152,11 @@ h2 {
     background-color: black;
     animation: 
         type-s 1.2s steps(5),
-        blink-caret .5s step-end infinite;;
+        blink-caret .5s step-end infinite;    
     overflow: hidden;
     white-space: nowrap;
     margin-left: .5rem;
-    /* margin-right: .4rem; */
+    margin-right: .4rem;
     border-right: .3rem solid white;
 }
 
