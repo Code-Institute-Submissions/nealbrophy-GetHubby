@@ -1,0 +1,319 @@
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+/*===========
+ GLOBAL
+ ============ */
+
+
+h2 {
+    font-family: 'BioRhyme', serif;
+}
+
+/*===========
+ NAVBAR
+ ============ */
+.navbar {
+    font-family: 'BioRhyme', serif;
+
+}
+
+/*===========
+ CAROUSEL
+ ============ */
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-caption {
+    top: 40%;
+    bottom: auto;
+    z-index: 500;
+
+}
+
+.overlay {
+    background-color: blueviolet;
+    opacity: .6;
+    position: absolute;
+    top: 5;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+
+.hvr-icon-down {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 1%;
+    left: 48.5%;
+    margin-top: 2rem;
+    font-size: 4rem;
+    z-index: 150;
+}
+
+@-webkit-keyframes hvr-icon-down {
+
+    0%,
+    50%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    25%,
+    75% {
+        -webkit-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+}
+
+@keyframes hvr-icon-down {
+
+    0%,
+    50%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    25%,
+    75% {
+        -webkit-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+}
+
+.hvr-icon-down {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-icon-down .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation-name: hvr-icon-down;
+    animation-name: hvr-icon-down;
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+.hvr-icon-down:hover .hvr-icon {
+    color: rgba(255, 255, 255, 1);
+    transition: .3s;
+
+}
+
+.carousel-indicators {
+    top: 5%;
+}
+
+/*===========
+ TYPE ANIM
+ ============ */
+
+.type-anim {
+    display: flex;
+    font-size: 2.5rem;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+    ;
+    margin: 0;
+}
+
+.anim-word {
+    background-color: black;
+    animation:
+        type 1.2s steps(6),
+        blink-caret .5s step-end infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: .5rem;
+    border-right: .3rem solid white;
+}
+
+.anim-word-short {
+    background-color: black;
+    animation:
+        type-s 1.2s steps(5),
+        blink-caret .5s step-end infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: .5rem;
+    margin-right: .4rem;
+    border-right: .3rem solid white;
+}
+
+
+@keyframes type {
+    from {
+        width: 0ch;
+    }
+
+    to {
+        width: 6.2ch;
+    }
+}
+
+@keyframes type-s {
+    from {
+        width: 0ch;
+    }
+
+    to {
+        width: 5ch;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: white;
+    }
+}
+
+
+/*===========
+ ABOUT
+ ============ */
+
+.about {
+    background-image: url(../excl/backgrounds/code-1839406_1920_transparent.jpg);
+    
+    min-height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-around;
+    justify-items: end;
+    padding-bottom: 100px;
+
+}
+
+.about-title {}
+
+.about .row {
+    text-align: center;
+    margin: 0 auto;
+    
+    
+}
+
+.about span {
+    text-transform: capitalize;
+}
+
+.about i {
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.about h3 {
+    text-decoration: underline;
+}
+
+/*===========
+ POST-ITS
+ ============ */
+
+.post-it {
+    line-height: 1;
+    text-align: center;
+    width: 275px;
+    margin: 25px;
+    min-height: 250px;
+    justify-self: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    position: relative;
+    color: black;
+    border: 1px solid #E8E8E8;
+    border-top: 60px solid #fdfd86;
+    border-bottom-right-radius: 60px 5px;
+    display: inline-block;
+    background: #ffff88;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(81%, #ffff88), color-stop(82%, #ffff88), color-stop(82%, #ffff88), color-stop(100%, #ffffc6));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%);
+    /* IE10+ */
+    background: linear-gradient(135deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff88', endColorstr='#ffffc6', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+.post-it:after
+    {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: -0px;
+    bottom: 20px;
+    width: 200px;
+    height: 25px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 15px 5px rgba(0, 0, 0, 0.40);
+    -moz-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+    -webkit-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+    -o-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+    -ms-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+    transform: matrix(-1, -0.1, 0, 1, 0, 0);
+
+}
+
+.rotate {
+    /* Safari */
+    -webkit-transform: rotate(-10deg);
+    /* Firefox */
+    -moz-transform: rotate(-10deg);
+    /* IE */
+    -ms-transform: rotate(-10deg);
+    /* Opera */
+    -o-transform: rotate(-10deg);
+    /* Internet Explorer */
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+
+
+/* SIGNUP */
+
+.signup span {
+    text-transform: capitalize;
+}
