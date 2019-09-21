@@ -92,4 +92,5 @@ User Stories:
 
 ### Acknowledgements
 Typewriter effect inspired by [this CSS-Tricks article](https://css-tricks.com/snippets/css/typewriter-effect/) with simplified implementation taken from [this instructional video by Codingflag](https://www.youtube.com/watch?v=6vOJoAmbza0).
+Post-its from [this tutsplus tutorial](https://code.tutsplus.com/tutorials/create-a-sticky-note-effect-in-5-easy-steps-with-css3-and-html5--net-13934)
 +++- I received inspiration for this project from X
