@@ -22,6 +22,7 @@ User Stories:
 ### Existing Features
 - Carousel with smooth animation and appealing appearance
 - Links to relavant sections with smooth scroll
+- Animated post-its
 
 +++For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
 
@@ -91,6 +92,6 @@ User Stories:
     - diego-rezende-CFIv79QxPjA-unsplash Photo by Diego Rezende on Unsplash
 
 ### Acknowledgements
-Typewriter effect inspired by [this CSS-Tricks article](https://css-tricks.com/snippets/css/typewriter-effect/) with simplified implementation taken from [this instructional video by Codingflag](https://www.youtube.com/watch?v=6vOJoAmbza0).
-Post-its from [this tutsplus tutorial](https://code.tutsplus.com/tutorials/create-a-sticky-note-effect-in-5-easy-steps-with-css3-and-html5--net-13934)
+- Typewriter effect inspired by [this CSS-Tricks article](https://css-tricks.com/snippets/css/typewriter-effect/) with simplified implementation taken from [this instructional video by Codingflag](https://www.youtube.com/watch?v=6vOJoAmbza0).
+- Post-its from [this tutsplus tutorial](https://code.tutsplus.com/tutorials/create-a-sticky-note-effect-in-5-easy-steps-with-css3-and-html5--net-13934) with corner curl/gradients from [this jsfiddle](https://jsfiddle.net/dkaufmanjs/nq63nr6L/) by Dan Kaufman
 +++- I received inspiration for this project from X

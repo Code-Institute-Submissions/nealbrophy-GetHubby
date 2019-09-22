@@ -27,7 +27,10 @@ li {
  ============ */
 .navbar {
     font-family: 'BioRhyme', serif;
+}
 
+.navbar {
+    background-color: peachpuff;
 }
 
 /*===========
@@ -45,15 +48,15 @@ li {
 
 .carousel img {
     width: 100%;
-    height: 100%;
+    min-height: 30vh;
 }
 
 .carousel-caption {
     top: 40%;
     bottom: auto;
     z-index: 500;
-
 }
+
 
 .overlay {
     background-color: blueviolet;
@@ -66,11 +69,12 @@ li {
     z-index: 0;
 }
 
+/* down arrow */
 
-.hvr-icon-down {
+.jumbotron .hvr-icon-down {
     color: rgba(255, 255, 255, 0.5);
     position: absolute;
-    bottom: 1%;
+    bottom: 8%;
     left: 48.5%;
     margin-top: 2rem;
     font-size: 4rem;
@@ -132,23 +136,20 @@ li {
 .hvr-icon-down:hover .hvr-icon {
     color: rgba(255, 255, 255, 1);
     transition: .3s;
-
 }
 
 .carousel-indicators {
     top: 5%;
 }
 
-/*===========
- TYPE ANIM
- ============ */
+/* typing anim */
 
 .type-anim {
     display: flex;
-    font-size: 2.5rem;
+    font-size: 1.2rem;
     justify-content: center;
     padding-bottom: 1.5rem;
-    ;
+    flex-wrap: wrap;
     margin: 0;
 }
 
@@ -196,7 +197,6 @@ li {
     }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
 
     from,
@@ -217,24 +217,25 @@ li {
 .about {
     background-image: url(../images/code-1839406_1920_transparent.jpg);
     z-index: -1;
-    min-height: 800px;
+    min-height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    justify-content: space-around;
-    justify-items: end;
-    padding-bottom: 100px;
-
 }
 
-.about-title {}
+.about-title {
+    padding-top: 5rem;
+}
+
+.about a {
+    color: black;
+}
 
 .about .row {
     text-align: center;
     margin: 0 auto;
-
-
+    
 }
 
 .about span {
@@ -243,54 +244,171 @@ li {
 
 .about i {
     font-size: 2rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 .about h3 {
     text-decoration: underline;
+    padding-top: 50px;
+}
+
+#about-d-arrow {
+    color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 190%;
+    left: 48.5%;
+    margin-top: 2rem;
+    z-index: 150;
+}
+
+#about-d-arrow i {
+    font-size: 4rem;
+}
+
+#about-d-arrow:hover .hvr-icon {
+    color: rgb(0, 0, 0);
+    transition: .3s;
+}
+
+
+/*===========
+ TESTIMONIALS
+ ============ */
+
+ .testimonials {
+    background-image: url(../images/octor-love-transparency.png);
+    height: 100vh;
+    z-index: -1;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
 
+.testimonials-title {
+    padding-top: 5rem;
+}
+
+.media {
+    padding-top: 10rem;
+    
+}
+
+.blockquote {
+    
+}
+
+.couple-1 img {
+    border: 10px solid palegreen;
+}
+
+.story-button-1:hover {
+    background: palegreen;
+}
+
+.couple-2 img {
+    border: 10px solid thistle;
+}
+
+.story-button-2:hover {
+    background: thistle;
+}
+
+.couple-3 img {
+    border: 10px solid lightsteelblue;
+}
+
+.story-button-3:hover {
+    background: lightsteelblue;
+}
+
+#testimonials-d-arrow {
+    color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 280%;
+    left: 48.5%;
+    margin-top: 4rem;
+    z-index: 150;
+}
+
+#testimonials-d-arrow i{
+    font-size: 4rem;
+}
+
+#testimonials-d-arrow:hover .hvr-icon {
+    color: rgb(0, 0, 0);
+    transition: .3s;
+}
 
 
-
-/* SIGNUP */
+/*===========
+ SIGN UP
+ ============ */
 
 .signup span {
     text-transform: capitalize;
 }
 
+
 /*===========
  MEDIA QUERIES
  ============ */
 
-@media (min-width: 800px) {
+@media (min-width: 1024px) {
+
+    .carousel img {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .type-anim {
+        font-size: 2.5rem;
+    }
 
 
-/* post-its */
+    /* post-its */
     .post-it-list {
         overflow: hidden;
         padding: 5em;
         font-family: 'Mansalva';
-        margin: 2rem;
+        margin: auto;
     }
 
 
     .post-it-list li a {
         text-decoration: none;
         color: #000;
-        background: #ffc;
+
         display: block;
         min-height: 20rem;
         max-width: 25rem;
         padding: 1em;
+        border-bottom-right-radius: 60px 5px;
         -moz-box-shadow: 5px 5px 7px rgba(33, 33, 33, 1);
         -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
         box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
         -moz-transition: -moz-transform .15s linear;
         -o-transition: -o-transform .15s linear;
         -webkit-transition: -webkit-transform .15s linear;
+        background: #ffff88;
+        /* Old browsers */
+        background: -moz-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(81%, #ffff88), color-stop(82%, #ffff88), color-stop(82%, #ffff88), color-stop(100%, #ffffc6));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%);
+        /* IE10+ */
+        background: linear-gradient(135deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%);
+        /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff88', endColorstr='#ffffc6', GradientType=1);
+        /* IE6-9 fallback on horizontal gradient */
     }
 
 
@@ -311,7 +429,21 @@ li {
         -moz-transform: rotate(4deg);
         position: relative;
         top: 5px;
-        background-color: #cfc;
+        background: #ccff88;
+        background: -moz-linear-gradient(-45deg, #ccff88 81%, #ccff88 82%, #ccff88 82%, #ccffc6 100%);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(81%, #ccff88), color-stop(82%, #ccff88), color-stop(82%, #ccff88), color-stop(100%, #ccffc6));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(-45deg, #ccff88 81%, #ccff88 82%, #ccff88 82%, #ccffc6 100%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(-45deg, #ccff88 81%, #ccff88 82%, #ccff88 82%, #ccffc6 100%);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient(-45deg, #ccff88 81%, #ccff88 82%, #ccff88 82%, #ccffc6 100%);
+        /* IE10+ */
+        background: linear-gradient(135deg, #ccff88 81%, #ccff88 82%, #ccff88 82%, #ccffc6 100%);
+        /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccff88', endColorstr='#ccffc6', GradientType=1);
+        /* IE6-9 fallback on horizontal gradient */
     }
 
     .post-it-list li:nth-child(3n) a {
@@ -320,7 +452,21 @@ li {
         -moz-transform: rotate(-3deg);
         position: relative;
         top: -5px;
-        background-color: #ccf;
+        background-color: #ccccf8;
+        background: -moz-linear-gradient(-45deg, #ccccf8 81%, #ccccf8 82%, #ccccf8 82%, #efeffc 100%);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(81%, #ccccf8), color-stop(82%, #ccccf8), color-stop(82%, #ccccf8), color-stop(100%, #efeffc));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(-45deg, #ccccf8 81%, #ccccf8 82%, #ccccf8 82%, #efeffc 100%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(-45deg, #ccccf8 81%, #ccccf8 82%, #ccccf8 82%, #efeffc 100%);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient(-45deg, #ccccf8 81%, #ccccf8 82%, #ccccf8 82%, #efeffc 100%);
+        /* IE10+ */
+        background: linear-gradient(135deg, #ccccf8 81%, #ccccf8 82%, #ccccf8 82%, #efeffc 100%);
+        /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccccf8', endColorstr='#efeffc', GradientType=1);
+        /* IE6-9 fallback on horizontal gradient */
     }
 
     .post-it-list li:nth-child(5n) a {
