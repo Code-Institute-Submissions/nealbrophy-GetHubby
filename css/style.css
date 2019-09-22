@@ -277,7 +277,7 @@ li {
 
  .testimonials {
     background-image: url(../images/octor-love-transparency.png);
-    height: 100vh;
+    
     z-index: -1;
     min-height: 100vh;
     background-attachment: fixed;
@@ -285,8 +285,6 @@ li {
     background-repeat: no-repeat;
     background-size: contain;
 }
-
-
 
 .testimonials-title {
     padding-top: 5rem;
@@ -328,7 +326,7 @@ li {
 #testimonials-d-arrow {
     color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    top: 280%;
+    bottom: 20;
     left: 48.5%;
     margin-top: 4rem;
     z-index: 150;
@@ -343,6 +341,25 @@ li {
     transition: .3s;
 }
 
+#johnAndEllen .cardbody {
+    border: 10px solid palegreen;
+}
+#susanAndGordon .cardbody {
+    border: 10px solid thistle;
+}
+#dougAndMonte .cardbody {
+    border: 10px solid lightsteelblue;
+}
+
+.question {
+    font-weight: bold;
+    color: black;
+    background-color: lightgray;   
+}
+
+.answer .name {
+
+}
 
 /*===========
  SIGN UP
