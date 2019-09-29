@@ -368,6 +368,37 @@ li {
 .signup span {
     text-transform: capitalize;
 }
+.signup {
+    padding-top: 9.5rem;
+    color: lightslategray;
+    min-height: 100vh;
+    background-image: url(../images/code-window.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.signup form {
+    padding-left: 5rem;
+}
+
+.form-group {
+    padding-top: 2.9rem;
+}
+.form-group label {
+    color: lightsalmon;
+}
+
+.form-group input {
+    width: 26rem;
+    background-color: rgba(119, 136, 153,.1);
+    color: lightblue;
+    border: none;
+}
+
+.form-group span {
+    color: lightsalmon;
+    text-transform: lowercase;
+}
 
 
 /*===========
