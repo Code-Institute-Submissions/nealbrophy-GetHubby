@@ -295,10 +295,6 @@ li {
     
 }
 
-.blockquote {
-    
-}
-
 .couple-1 img {
     border: 10px solid palegreen;
 }
@@ -325,10 +321,10 @@ li {
 
 #testimonials-d-arrow {
     color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    bottom: 20;
+    position: relative;
+    bottom: 1%;
     left: 48.5%;
-    margin-top: 4rem;
+    margin-top: 18rem;
     z-index: 150;
 }
 
@@ -365,45 +361,100 @@ li {
  SIGN UP
  ============ */
 
+.signup {
+    height: 100vh;
+    color: white;
+    background-color: lightgoldenrodyellow;
+} 
+
+.windowOuter {
+    padding-bottom: 1rem;
+    background-color: rgb(28, 28, 28);
+    
+
+}
+
+.windowOuter .fas {
+    color: red;
+    padding-left: 95%;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+}
+
+.windowInner {
+    
+    background-color: rgba(43, 43, 43, .7);
+}
+
+.windowNumbers {
+    
+}
+
+.windowInner-2 {
+    
+    
+}
+
 .signup span {
     text-transform: capitalize;
 }
-.signup {
-    padding-top: 9.5rem;
-    color: lightslategray;
-    min-height: 100vh;
-    background-image: url(../images/code-window.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    
-}
-.signup form {
-    padding-left: 5rem;
+
+.signup h2 {
+    color: black;
+    padding-top: 3rem;
+
 }
 
-.form-group {
-    padding-top: 2.9rem;
+
+.signup form {
+    padding-left: 1.5rem;
+    padding-top: 2.5rem;
+    
 }
-.form-group label {
+
+
+.form-group .classText {
     color: lightsalmon;
 }
 
+.form-group:nth-child(2) {
+    padding-top: 2rem;
+}
+
 .form-group input {
-    width: 26rem;
+    width: 80%;
+    height: 2rem;
     background-color: rgba(119, 136, 153,.1);
     color: lightblue;
     border: none;
 }
 
+.form-group input:focus {
+    background-color: rgba(119, 136, 153,.4);
+    color: white;
+}
+
+.form-group input::placeholder {
+    color: lightblue;
+}
+
 .form-group span {
-    color: lightsalmon;
     text-transform: lowercase;
+}
+
+#emailHelp {
+    color: darkolivegreen;
+}
+
+.signup button {
+    margin-bottom: 10rem;
 }
 
 
 /*===========
  MEDIA QUERIES
  ============ */
+
 
 @media (min-width: 1024px) {
 
@@ -536,4 +587,7 @@ li {
         position: relative;
         z-index: 5;
     }
+
+   
+
 }
