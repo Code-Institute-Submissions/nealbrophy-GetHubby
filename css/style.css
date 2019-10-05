@@ -455,6 +455,12 @@ li {
  MEDIA QUERIES
  ============ */
 
+@media (min-width: 800px) {
+    .post-it-list {
+        padding-left: 20%;
+    }
+}
+
 
 @media (min-width: 1024px) {
 
