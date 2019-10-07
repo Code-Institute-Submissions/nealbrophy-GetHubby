@@ -414,7 +414,7 @@ li {
  ============ */
 
 .signup {
-    height: 100vh;
+    min-height: 100vh;
     color: white;
     background-color: slategray;
 } 
@@ -438,13 +438,12 @@ li {
     background-color: rgba(43, 43, 43, .7);
 }
 
-.windowNumbers {
-    
+.windowNumbersLeft {
+    display: none;
 }
 
-.windowInner-2 {
-    
-    
+#codeWindow {
+    width: 100%;
 }
 
 .signup span {
@@ -523,6 +522,13 @@ li {
 
     .type-anim {
         font-size: 2.5rem;
+    }
+
+}
+@media (min-width: 1260px) {
+
+    .windowNumbersLeft {
+        display: block;
     }
 
 }

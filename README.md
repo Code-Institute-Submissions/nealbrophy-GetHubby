@@ -3,7 +3,7 @@ Code Institute User Centric Frontend Develtopment Milestone Project One
 
 This is an imagined dating site for developers and specificially geared towards users of GitHub leveraging the existing social & community aspects of same. The goal is to have a site which appeals to developers by using industry lingo and to allow users to sign-up via existing, commonly used, industry tools (e.g. GitHub, StackOverflow etc)
 
-[GetHubby](https://nealbrophy.github.io/GetHubby/)
+[Go to GetHubby](https://nealbrophy.github.io/GetHubby/)
 
  
 ## UX
@@ -11,9 +11,9 @@ This is an imagined dating site for developers and specificially geared towards 
 The site is intended to be simple and minimalistic while also colourful and fun. The information should be short and to the point but with a light-hearted tone where appropriate. Text should use industry terminology to present an industry-specific focus.
 
 User Stories:
-- As a single person, I want to a dating site which is....
-- As a developer, I want to a site which is....
-- As a single developer, I want to....
+- As a single person, I want a simple and easy to navigate site.
+- As a developer, I want it to be clear that the site/service is for aimed at people like me.
+- As an active GitHub user....
 
 ++++This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.+++
 
@@ -22,9 +22,9 @@ User Stories:
 +++///In this section, you should go over the different parts of your project, and describe each in a sentence or so.+++
  
 ### Existing Features
-- Carousel with smooth animation and appealing appearance
+- Carousel with typing animation overlaid
 - Links to relavant sections with smooth scroll
-- Animated post-its
+- Flip-cards
 
 +++For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
 
@@ -95,5 +95,5 @@ User Stories:
 
 ### Acknowledgements
 - Typewriter effect inspired by [this CSS-Tricks article](https://css-tricks.com/snippets/css/typewriter-effect/) with simplified implementation taken from [this instructional video by Codingflag](https://www.youtube.com/watch?v=6vOJoAmbza0).
-- Post-its from [this tutsplus tutorial](https://code.tutsplus.com/tutorials/create-a-sticky-note-effect-in-5-easy-steps-with-css3-and-html5--net-13934) with corner curl/gradients from [this jsfiddle](https://jsfiddle.net/dkaufmanjs/nq63nr6L/) by Dan Kaufman
+- Flip cards from [this W3C tutorial](https://www.w3schools.com/howto/howto_css_flip_card.asp)
 +++- I received inspiration for this project from X
