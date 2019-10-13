@@ -250,16 +250,22 @@
                         <div class="media-body">
                             <h3>John and Ellen</h3>
                             <p>"It's like we've always known each other."</p>
-                            <a class="btn btn-sm btn-light story-button-1" data-toggle="collapse" href="#johnAndEllen"
-                                role="button" aria-expanded="false" aria-controls="johnAndEllen">John &amp; Ellen's
+                            <a class="btn btn-sm btn-light story-button-1 d-md-none" data-toggle="collapse"
+                                href="#johnAndEllen" role="button" aria-expanded="false"
+                                aria-controls="johnAndEllen">John &amp; Ellen's
                                 Q&amp;A</a>
+                            <a class="btn btn-sm btn-light story-button-1 d-none d-md-inline-block" data-toggle="modal"
+                                data-target="#johnAndEllenModal" href="#johnAndEllen" role="button"
+                                aria-expanded="false" aria-controls="johnAndEllen">John &amp; Ellen's
+                                Q&amp;A</a>
+                            <!-- Collapse John & Ellen -->
                             <div class="collapse" id="johnAndEllen">
                                 <div class="card cardbody bg-gradient-dark">
                                     <span class="question">What brought you to GetHubby?</span>
                                     <p class="answer"><span class="name">John:</span> A co-worker met her husband on
                                         GetHubby and was telling everyone about it. I figured it was worth a shot!
                                     </p>
-                                    <p class="answer"><span class="name">Gordon:</span> I actually overheard John
+                                    <p class="answer"><span class="name">Ellen:</span> I actually overheard John
                                         talking about it in the canteen.</p>
                                     <span class="question">You already knew each other?</span>
                                     <p class="answer"><span class="name">Ellen:</span> Kind of. Not really. We
@@ -267,20 +273,66 @@
                                         the same building but separate teams and I actually had been trying to catch
                                         his
                                         eye at lunch for like months.</p>
-                                    <p class="answer"><span class="name">Gordon:</span> She claims.</p>
-                                    <p class="answer"><span class="name">Susan:</span> It's true! So one day I heard
+                                    <p class="answer"><span class="name">John:</span> She claims.</p>
+                                    <p class="answer"><span class="name">Ellen:</span> It's true! So one day I heard
                                         him
                                         chatting to one of his team over lunch about using GetHubby so I joined that
                                         night!</p>
                                     <span class="question">So you didn't even really need to use GetHubby?</span>
-                                    <p class="answer"><span class="name">Susan:</span> Oh we did. He's hopeless so I
+                                    <p class="answer"><span class="name">Ellen:</span> Oh we did. He's hopeless so I
                                         don't think he ever would've noticed me.</p>
                                 </div>
                             </div>
+                            <!-- Modal John & Ellen -->
+                            <div class="modal fade" id="johnAndEllenModal" tabindex="-1" role="dialog"
+                                aria-labelledby="johnAndEllenModalTitle" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="johnAndEllenModalTitle">John &amp; Ellen</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <span class="question">What brought you to GetHubby?</span>
+                                            <p class="answer"><span class="name">John:</span> A co-worker met her
+                                                husband on
+                                                GetHubby and was telling everyone about it. I figured it was worth a
+                                                shot!
+                                            </p>
+                                            <p class="answer"><span class="name">Ellen:</span> I actually overheard
+                                                John
+                                                talking about it in the canteen.</p>
+                                            <span class="question">You already knew each other?</span>
+                                            <p class="answer"><span class="name">Ellen:</span> Kind of. Not really. We
+                                                worked in
+                                                the same building but separate teams and I actually had been trying to
+                                                catch
+                                                his
+                                                eye at lunch for like months.</p>
+                                            <p class="answer"><span class="name">John:</span> She claims.</p>
+                                            <p class="answer"><span class="name">Ellen:</span> It's true! So one day I
+                                                heard
+                                                him
+                                                chatting to one of his team over lunch about using GetHubby so I joined
+                                                that
+                                                night!</p>
+                                            <span class="question">So you didn't even really need to use
+                                                GetHubby?</span>
+                                            <p class="answer"><span class="name">Ellen:</span> Oh we did. He's hopeless
+                                                so I
+                                                don't think he ever would've noticed me.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
                 </blockquote>
-
                 <blockquote class="blockquote couple-2 mt-2 col-md-6 col-lg-4">
                     <div class="media">
                         <div class="d-none d-sm-block">
@@ -290,38 +342,105 @@
                         <div class="media-body">
                             <h3>Susan and Gordon</h3>
                             <p>"We both found it so hard to meet other people with similar interests."</p>
-                            <a class="btn btn-sm btn-light story-button-2" data-toggle="collapse" href="#susanAndGordon"
-                                role="button" aria-expanded="false" aria-controls="susanAndGordon">Susan &amp; Gordon's
+                            <a class="btn btn-sm btn-light story-button-2 d-md-none" data-toggle="collapse"
+                                href="#susanAndGordon" role="button" aria-expanded="false"
+                                aria-controls="susanAndGordon">Susan &amp; Gordon's
                                 Q&amp;A</a>
+                            <a class="btn btn-sm btn-light story-button-2 d-none d-md-inline-block" data-toggle="modal"
+                                data-target="#susanAndGordonModal" href="#susanAndGordon" role="button"
+                                aria-expanded="false" aria-controls="susanAndGordon">Susan &amp; Gordon's
+                                Q&amp;A</a>
+                            <!-- Collapse Susan & Gordon -->
                             <div class="collapse" id="susanAndGordon">
                                 <div class="card cardbody">
                                     <span class="question">What did you do for your first date?</span>
-                                    <p class="answer"><span class="name">Susan:</span> We went to a concert. It was
+                                    <p class="answer"><span class="name">Susan:</span> We went to a concert. It
+                                        was
                                         my
-                                        idea. We'd talked about how we both love <em>Toad the Wet Sprocket</em> so
+                                        idea. We'd talked about how we both love <em>Toad the Wet Sprocket</em>
+                                        so
                                         when
-                                        I heard they were playing I took it as a sign and made the first move.</p>
+                                        I heard they were playing I took it as a sign and made the first move.
+                                    </p>
                                     <span class="question">Why GetHubby?</span>
-                                    <p class="answer"><span class="name">Gordon:</span> For me, I'd tried a bunch of
-                                        other apps and just never felt comfortable. It was all a bit too...I dunno,
+                                    <p class="answer"><span class="name">Gordon:</span> For me, I'd tried a
+                                        bunch of
+                                        other apps and just never felt comfortable. It was all a bit too...I
+                                        dunno,
                                         superficial?</p>
-                                    <p class="answer"><span class="name">Susan:</span> Same for me pretty much. I'd
+                                    <p class="answer"><span class="name">Susan:</span> Same for me pretty much.
+                                        I'd
                                         gone
-                                        on a few dates using other apps but it was too much like just rolling a dice
+                                        on a few dates using other apps but it was too much like just rolling a
+                                        dice
                                         and
                                         hoping you had something to talk about.</p>
                                     <span class="question">Are you both developers?</span>
                                     <p class="answer"><span class="name">Susan:</span> I am!</p>
-                                    <p class="answer"><span class="name">Gordon:</span> I was but I was always more
+                                    <p class="answer"><span class="name">Gordon:</span> I was but I was always
+                                        more
                                         into
-                                        the design side of things and an opportunity came up for me to move to the
+                                        the design side of things and an opportunity came up for me to move to
+                                        the
                                         marketing design team.</p>
-                                    <p class="answer"><span class="name">Susan:</span> Traitor.</p>
-                                    <p class="answer"><span class="name">Gordon:</span> I know!</p>
+                                    <p class="answer"><span class="name">Susan:</span> Traitor!</p>
+                                    <p class="answer"><span class="name">Gordon:</span> I know.</p>
+                                </div>
+                            </div>
+                            <!-- Modal Susan & Gordon -->
+                            <div class="modal fade" id="susanAndGordonModal" tabindex="-1" role="dialog"
+                                aria-labelledby="susanAndGordonModalTitle" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="susanAndGordonModalTitle">Susan &amp; Gordon
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <span class="question">What did you do for your first date?</span>
+                                            <p class="answer"><span class="name">Susan:</span> We went to a concert. It
+                                                was
+                                                my
+                                                idea. We'd talked about how we both love <em>Toad the Wet Sprocket</em>
+                                                so
+                                                when
+                                                I heard they were playing I took it as a sign and made the first move.
+                                            </p>
+                                            <span class="question">Why GetHubby?</span>
+                                            <p class="answer"><span class="name">Gordon:</span> For me, I'd tried a
+                                                bunch of
+                                                other apps and just never felt comfortable. It was all a bit too...I
+                                                dunno,
+                                                superficial?</p>
+                                            <p class="answer"><span class="name">Susan:</span> Same for me pretty much.
+                                                I'd
+                                                gone
+                                                on a few dates using other apps but it was too much like just rolling a
+                                                dice
+                                                and
+                                                hoping you had something to talk about.</p>
+                                            <span class="question">Are you both developers?</span>
+                                            <p class="answer"><span class="name">Susan:</span> I am!</p>
+                                            <p class="answer"><span class="name">Gordon:</span> I was but I was always
+                                                more
+                                                into
+                                                the design side of things and an opportunity came up for me to move to
+                                                the
+                                                marketing design team.</p>
+                                            <p class="answer"><span class="name">Susan:</span> Traitor!</p>
+                                            <p class="answer"><span class="name">Gordon:</span> I know.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </blockquote>
 
                 <blockquote class="blockquote couple-3 mt-2 d-md-none d-lg-block col-lg-4">
@@ -334,9 +453,14 @@
                             <h3>Doug and Monte</h3>
                             <p>"We'd be lost without each other. GetHubby really knocked it out of the park for us."
                             </p>
-                            <a class="btn btn-sm btn-light story-button-3" data-toggle="collapse" href="#dougAndMonte"
+                            <a class="btn btn-sm btn-light story-button-3 d-md-none" data-toggle="collapse" href="#dougAndMonte"
                                 role="button" aria-expanded="false" aria-controls="dougAndMonte">Doug &amp; Monte's
                                 Q&amp;A</a>
+                            <a class="btn btn-sm btn-light story-button-3 d-none d-md-inline-block" data-toggle="modal"
+                                data-target="#dougAndMonteModal" href="#dougAndMonte" role="button"
+                                aria-expanded="false" aria-controls="dougAndMonte">Doug &amp; Monte's
+                                Q&amp;A</a>
+                            <!-- Collapse Doug & Monte -->
                             <div class="collapse" id="dougAndMonte">
                                 <div class="card cardbody">
                                     <span class="question">What did you do for your first date?</span>
@@ -355,6 +479,46 @@
                                         won.</p>
                                     <p class="answer"><span class="name">Doug:</span> Hey!</p>
                                     <p class="answer"><span class="name">Monte:</span> Kidding!</p>
+                                </div>
+                            </div>
+                            <!-- Modal Doug & Monte -->
+                            <div class="modal fade" id="dougAndMonteModal" tabindex="-1" role="dialog"
+                                aria-labelledby="dougAndMonteModalTitle" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="dougAndMonteModalTitle">Doug &amp; Monte
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <span class="question">What did you do for your first date?</span>
+                                            <p class="answer"><span class="name">Doug:</span> We went to one of the
+                                                GetHubby
+                                                Hackathons. It was a blast and we hit it off straight away.</p>
+                                            <span class="question">Who started talking first?</span>
+                                            <p class="answer"><span class="name">Both in unison:</span> Me.</p>
+                                            <p class="answer"><span class="name">Doug:</span> It was me!</p>
+                                            <p class="answer"><span class="name">Monte:</span> I don't think so.</p>
+                                            <p class="answer"><span class="name">Doug:</span> It definitely was.</p>
+                                            <span class="question">How did you fare in the hackathon?</span>
+                                            <p class="answer"><span class="name">Monte:</span> We got first place! We
+                                                were
+                                                both
+                                                very happy about that. I dunno if there would've been a second date if
+                                                we
+                                                hadn't
+                                                won.</p>
+                                            <p class="answer"><span class="name">Doug:</span> Hey!</p>
+                                            <p class="answer"><span class="name">Monte:</span> Kidding!</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

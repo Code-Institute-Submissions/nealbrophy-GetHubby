@@ -32,9 +32,6 @@ li {
     font-family: 'BioRhyme', serif;
 }
 
-.navbar {
-    background-color: peachpuff;
-}
 
 /*===========
  CAROUSEL
@@ -399,14 +396,34 @@ li {
     border: 10px solid lightsteelblue;
 }
 
-.question {
-    font-weight: bold;
+
+
+#johnAndEllenModal .question {
+    font-weight: normal;
     color: black;
-    background-color: lightgray;   
+    background-color: palegreen;
+}
+
+#susanAndGordonModal .question {
+    font-weight: normal;
+    color: black;
+    background-color: thistle;
+}
+
+#dougAndMonteModal .question {
+    font-weight: normal;
+    color: black;
+    background-color: lightsteelblue;
 }
 
 .answer .name {
+    font-weight: bold;
+    font-style: normal;
+     
+}
 
+.answer {
+    font-style: italic;
 }
 
 /*===========
