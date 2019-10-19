@@ -1,4 +1,3 @@
-
 html {
     margin: 0;
     padding: 0;
@@ -242,7 +241,7 @@ li {
 .about .row {
     text-align: center;
     margin: 0 auto;
-    
+
 }
 
 .about span {
@@ -297,11 +296,12 @@ li {
     transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
     position: absolute;
-    -webkit-box-shadow: 7px 6px 12px 1px rgba(0,0,0,0.52);
-    -moz-box-shadow: 7px 6px 12px 1px rgba(0,0,0,0.52);
-    box-shadow: 7px 6px 12px 1px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 7px 6px 12px 1px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: 7px 6px 12px 1px rgba(0, 0, 0, 0.52);
+    box-shadow: 7px 6px 12px 1px rgba(0, 0, 0, 0.52);
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
@@ -377,7 +377,7 @@ li {
 }
 
 
-.flip-card-back {    
+.flip-card-back {
     transform: rotateY(180deg);
 }
 
@@ -396,7 +396,7 @@ li {
  TESTIMONIALS
  ============ */
 
- .testimonials {
+.testimonials {
     background-image: url(../images/octor-love-transparency.png);
     z-index: -1;
     min-height: 100vh;
@@ -419,7 +419,7 @@ li {
 
 .media {
     padding-top: 10rem;
-    
+
 }
 
 .couple-1 img {
@@ -428,15 +428,16 @@ li {
 
 .couple-1-name,
 .couple-1-quote {
-    background: rgba(152, 251, 152,0.5);
+    background: rgba(152, 251, 152, 0.5);
 }
 
 .story-button-1 {
-    background: rgba(152, 251, 152,1);
+    background: rgba(152, 251, 152, 1);
     border: 1px solid black;
 }
+
 .story-button-1:hover {
-    background:rgba(152, 251, 152,0.5);
+    background: rgba(152, 251, 152, 0.5);
     transition: 0.5s;
 }
 
@@ -450,12 +451,12 @@ li {
 }
 
 .story-button-2 {
-    background: rgba(251, 152, 251,1);
+    background: rgba(251, 152, 251, 1);
     border: 1px solid black;
 }
 
 .story-button-2:hover {
-    background: rgba(251, 152, 251,0.5);
+    background: rgba(251, 152, 251, 0.5);
     transition: 0.5s;
 }
 
@@ -469,12 +470,12 @@ li {
 }
 
 .story-button-3 {
-    background: rgba(251, 201, 152,1);
+    background: rgba(251, 201, 152, 1);
     border: 1px solid black;
 }
 
 .story-button-3:hover {
-    background: rgba(251, 201, 152,0.5);
+    background: rgba(251, 201, 152, 0.5);
     transition: 0.5s;
 }
 
@@ -487,7 +488,7 @@ li {
     z-index: 150;
 }
 
-#testimonials-d-arrow i{
+#testimonials-d-arrow i {
     font-size: 4rem;
 }
 
@@ -499,9 +500,11 @@ li {
 #johnAndEllen .cardbody {
     border: 10px solid rgb(152, 251, 152);
 }
+
 #susanAndGordon .cardbody {
     border: 10px solid thistle;
 }
+
 #dougAndMonte .cardbody {
     border: 10px solid lightsteelblue;
 }
@@ -513,7 +516,7 @@ li {
 }
 
 .modal-header-1 {
-    background-color: rgba(152, 251, 152,0.5);
+    background-color: rgba(152, 251, 152, 0.5);
 }
 
 #susanAndGordonModal .question {
@@ -539,7 +542,7 @@ li {
 .answer .name {
     font-weight: bold;
     font-style: normal;
-     
+
 }
 
 .answer {
@@ -547,19 +550,23 @@ li {
 }
 
 /*===========
- SIGN UP
+ CONTRIBUTE and SIGN UP
  ============ */
+
+.contribute h3 {
+    margin-top: 8rem;
+}
 
 .signup {
     min-height: 100vh;
     color: white;
     background-color: slategray;
-} 
+}
 
 .windowOuter {
     padding-bottom: 1rem;
     background-color: rgb(28, 28, 28);
-    
+
 
 }
 
@@ -571,7 +578,7 @@ li {
 }
 
 .windowInner {
-    
+
     background-color: rgba(43, 43, 43, .7);
 }
 
@@ -597,11 +604,22 @@ li {
 .signup form {
     padding-left: 1.5rem;
     padding-top: 2.5rem;
-    
+
 }
 
+.form-group .tagBracket {
+    color:slategray;
+}
 
-.form-group .classText {
+.form-group .tagText {
+    color:slateblue;
+}
+
+.form-group .classTextOuter {
+    color: cornflowerblue;
+}
+
+.form-group .classTextInner {
     color: lightsalmon;
 }
 
@@ -612,13 +630,15 @@ li {
 .form-group input {
     width: 80%;
     height: 2rem;
-    background-color: rgba(119, 136, 153,.1);
+    background-color: rgba(119, 136, 153, .1);
     color: lightblue;
     border: none;
+    margin-bottom: .8rem;
+    margin-top: .5rem;
 }
 
 .form-group input:focus {
-    background-color: rgba(119, 136, 153,.4);
+    background-color: rgba(119, 136, 153, .4);
     color: white;
 }
 
@@ -631,7 +651,7 @@ li {
 }
 
 #emailHelp {
-    color: darkolivegreen;
+    color: rgb(103, 133, 53);
 }
 
 .signup button {
@@ -662,6 +682,7 @@ li {
     }
 
 }
+
 @media (min-width: 1260px) {
 
     .windowNumbersLeft {
