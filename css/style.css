@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
 
 html {
     margin: 0;
@@ -23,6 +22,7 @@ ul,
 li {
     list-style: none;
 }
+
 
 
 /*===========
@@ -225,7 +225,14 @@ li {
 }
 
 .about-title {
-    padding-top: 5rem;
+    padding: 5rem 0;
+}
+
+.about-intro {
+    color: white;
+    background-color: #343a40;
+    padding-left: 2px;
+    font-family: "Ubuntu Mono", 'Courier New', Courier, monospace;
 }
 
 .about a {
@@ -248,7 +255,7 @@ li {
 }
 
 .about h3 {
-    text-decoration: underline;
+    font-family: 'BioRhyme', serif;
     padding-top: 50px;
 }
 
@@ -269,7 +276,6 @@ li {
     color: rgb(0, 0, 0);
     transition: .3s;
 }
-
 
 .flip-card {
     background-color: transparent;
@@ -293,6 +299,9 @@ li {
 
 .flip-card-front, .flip-card-back {
     position: absolute;
+    -webkit-box-shadow: 7px 6px 12px 1px rgba(0,0,0,0.52);
+    -moz-box-shadow: 7px 6px 12px 1px rgba(0,0,0,0.52);
+    box-shadow: 7px 6px 12px 1px rgba(0,0,0,0.52);
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
@@ -303,22 +312,84 @@ li {
     color: black;
 }
 
+.card-front-1 i {
+    width: 60px;
+    height: 60px;
+    padding: 15px 0;
+    border-radius: 50%;
+    background-color: #e6de6b;
+    margin-top: 3rem;
+}
+
+.card-back-1 {
+    background-color: #ccc788;
+}
+
 .card-front-2 {
-    background-color: #ACECD5;
+    background-color: #f4aaff;
+}
+
+.card-front-2 i {
+    width: 60px;
+    height: 60px;
+    padding: 15px 0;
+    border-radius: 50%;
+    background-color: #d66be6;
+    margin-top: 3rem;
+}
+
+.card-back-2 {
+    background-color: #d66be6;
 }
 
 .card-front-3 {
-    background-color: #FFD5B8;
+    background-color: #ffaab5;
+}
+
+.card-front-3 i {
+    width: 60px;
+    height: 60px;
+    padding: 15px 0;
+    border-radius: 50%;
+    background-color: #e66b7c;
+    margin-top: 3rem;
+}
+
+.card-back-3 {
+    background-color: #e66b7c;
 }
 
 .card-front-4 {
-    background-color: #C7CEEA;
+    background-color: #b5ffaa;
 }
 
-.flip-card-back {
-    background-color: dodgerblue;
-    color: white;
+.card-front-4 i {
+    width: 60px;
+    height: 60px;
+    padding: 15px 0;
+    border-radius: 50%;
+    background-color: #7ce66b;
+    margin-top: 3rem;
+}
+
+.card-back-4 {
+    background-color: #7ce66b;
+}
+
+
+.flip-card-back {    
     transform: rotateY(180deg);
+}
+
+.card-text {
+    padding: 75px 8px;
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 1.2rem;
+}
+
+.card-back-2 .card-text,
+.card-back-3 .card-text {
+    color: white;
 }
 
 /*===========
@@ -339,33 +410,72 @@ li {
     padding-top: 5rem;
 }
 
+.testimonials-intro {
+    color: white;
+    background-color: #343a40;
+    padding-left: 2px;
+    font-family: "Ubuntu Mono", 'Courier New', Courier, monospace;
+}
+
 .media {
     padding-top: 10rem;
     
 }
 
 .couple-1 img {
-    border: 10px solid palegreen;
+    border: 10px solid #98fb98;
 }
 
+.couple-1-name,
+.couple-1-quote {
+    background: rgba(152, 251, 152,0.5);
+}
+
+.story-button-1 {
+    background: rgba(152, 251, 152,1);
+    border: 1px solid black;
+}
 .story-button-1:hover {
-    background: palegreen;
+    background:rgba(152, 251, 152,0.5);
+    transition: 0.5s;
 }
 
 .couple-2 img {
-    border: 10px solid thistle;
+    border: 10px solid #fb98fb;
+}
+
+.couple-2-name,
+.couple-2-quote {
+    background: rgba(251, 152, 251, 0.5);
+}
+
+.story-button-2 {
+    background: rgba(251, 152, 251,1);
+    border: 1px solid black;
 }
 
 .story-button-2:hover {
-    background: thistle;
+    background: rgba(251, 152, 251,0.5);
+    transition: 0.5s;
 }
 
 .couple-3 img {
-    border: 10px solid lightsteelblue;
+    border: 10px solid #fbc998;
+}
+
+.couple-3-name,
+.couple-3-quote {
+    background: rgba(251, 201, 152, 0.5);
+}
+
+.story-button-3 {
+    background: rgba(251, 201, 152,1);
+    border: 1px solid black;
 }
 
 .story-button-3:hover {
-    background: lightsteelblue;
+    background: rgba(251, 201, 152,0.5);
+    transition: 0.5s;
 }
 
 #testimonials-d-arrow {
@@ -387,7 +497,7 @@ li {
 }
 
 #johnAndEllen .cardbody {
-    border: 10px solid palegreen;
+    border: 10px solid rgb(152, 251, 152);
 }
 #susanAndGordon .cardbody {
     border: 10px solid thistle;
@@ -396,24 +506,34 @@ li {
     border: 10px solid lightsteelblue;
 }
 
-
-
 #johnAndEllenModal .question {
     font-weight: normal;
     color: black;
-    background-color: palegreen;
+    background-color: #98fb98;
+}
+
+.modal-header-1 {
+    background-color: rgba(152, 251, 152,0.5);
 }
 
 #susanAndGordonModal .question {
     font-weight: normal;
     color: black;
-    background-color: thistle;
+    background-color: #d8bfd8;
+}
+
+.modal-header-2 {
+    background-color: rgba(251, 152, 251, 0.5);
 }
 
 #dougAndMonteModal .question {
     font-weight: normal;
     color: black;
-    background-color: lightsteelblue;
+    background-color: #fbc998;
+}
+
+.modal-header-3 {
+    background-color: rgba(251, 201, 152, 0.5);
 }
 
 .answer .name {
