@@ -12,26 +12,35 @@ The site is intended to be simple and minimalistic while also colourful and fun.
 
 User Stories:
 - As a single person, I want a simple and easy to navigate site.
-- As a developer, I want it to be clear that the site/service is for aimed at people like me.
-- As an active GitHub user....
+- As a developer, I want it to be clear that the site/service is aimed at people like me.
+
 
 ++++This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.+++
 
 ## Features
 
-+++///In this section, you should go over the different parts of your project, and describe each in a sentence or so.+++
+The navbar is responsive and will switch to a hamburger menu on small screens. 
+
+The hero section contains an eye-catching jumbotron slideshow with images of a variety of possible users of site. A mock-typing animation was added to the text overlayed on the slideshow to suggest a relation to coding (and more specifically GitHub commands).
+
+The about section contains simple, colourful flip-cards with a short title (and icons representing the theme of the title) on the front and a short summary of the feature in question on the back.
+
+The testimonials section contains shows a circular image of imagined couples beside a short quote from each couple. The button beneath each quote opens a mock Q&A with the couple (bootstrap-modal on larger screens, bootstrap-collapse on smaller screens).
+
+The sign-up section is made to look like a code-editor window with mock-HTML text.
  
 ### Existing Features
 - Carousel with typing animation overlaid
 - Links to relavant sections with smooth scroll
 - Flip-cards
+- Modal/Collapse for couple Q&As depending on screen size
 
 +++For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
 
 +++In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 ### Features Left to Implement
-- Have jumbotron overlay colors change randomly instead of repeating
+
 
 ## Technologies Used
 
