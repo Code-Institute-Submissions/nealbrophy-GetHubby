@@ -132,11 +132,109 @@
 
                 <div class="col-12 about-title">
                     <h2 class="text-uppercase text-center">Why use <span>getHubby</span>?</h2>
-                    <p><span class="about-intro">Whether you're a coding newbie or a seasoned dev veteran GetHubby is
+                    <p><span class="about-intro">Whether you're a code newbie or a seasoned veteran GetHubby is
                             the best place to meet like-minded singles.</span></p>
                 </div>
             </div>
-            <div class="row">
+            <!-- Collapse (small screen) -->
+            <div class="row d-md-none col-12">
+                <div class="accordion" id="aboutAccordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Safety
+                                    <i class="fas fa-user-shield"></i>
+                                    <i class="fas fa-id-card"></i>
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#aboutAccordion">
+                            <div class="card-body">
+                                <p class="card-text">At <span>GetHubby</span> our top priority is the safety of our
+                                    users.
+                                    All
+                                    users are
+                                    vetted to make sure they are who they claim.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Privacy
+                                    <i class="fas fa-user-secret post-it-icon"></i>
+                                    <i class="fas fa-lock post-it-icon"></i>
+                                    <i class="fas fa-user-lock post-it-icon"></i>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#aboutAccordion">
+                            <div class="card-body">
+                                <p class="card-text">We have a strict no-log policy when it comes to user messages and
+                                    all
+                                    user
+                                    data is
+                                    securely encrypted on military grade servers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Repos
+                                    <i class="fab fa-github"></i>
+                                    <i class="fab fa-git-alt"></i>
+                                    <i class="fas fa-id-badge"></i>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#aboutAccordion">
+                            <div class="card-body">
+                                <p class="card-text">Our
+                                    GitHub
+                                    integration allows
+                                    you to pick which projects you're most proud of to be displayed on your
+                                    profile.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Hackathon Date
+                                    <i class="fas fa-laptop-code"></i>
+                                    <i class="fas fa-trophy"></i>
+                                    <i class="fas fa-utensils"></i>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                            data-parent="#aboutAccordion">
+                            <div class="card-body">
+                                <p class="card-text">Come to one of our
+                                    Speed-Dating-Meets-Hackathon events
+                                    and you can get to know other singles while you code together!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Flip-cards (medium and large screen) -->
+            <div class="row d-none d-md-block">
                 <div class="flip-card mx-auto" style="width: 20rem;">
                     <div class="flip-card-inner">
                         <div class="flip-card-front card-front-1">
@@ -225,9 +323,9 @@
             <div class="row">
                 <div class="col-12 testimonials-title">
                     <h2 class="text-uppercase text-center">Success Stories</h2>
-                    <p class="text-center"><span class="testimonials-intro">With an estimated match success rate 20%
+                    <p class="text-center"><span class="testimonials-intro">With a match success rate 20%
                             higher than any similar service we're confident we can find someone for you. Don't take it
-                            from us though...</span></p>
+                            from us though:</span></p>
                 </div>
             </div>
             <div class="row">
@@ -244,10 +342,12 @@
                                 href="#johnAndEllen" role="button" aria-expanded="false"
                                 aria-controls="johnAndEllen">John &amp; Ellen's
                                 Q&amp;A</a>
+                            <i class="fas fa-chevron-circle-left d-md-none hvr-pulse-1"></i>
                             <a class="btn btn-sm btn-light story-button-1 d-none d-md-inline-block" data-toggle="modal"
                                 data-target="#johnAndEllenModal" href="#johnAndEllen" role="button"
                                 aria-expanded="false" aria-controls="johnAndEllen">John &amp; Ellen's
                                 Q&amp;A</a>
+                            <i class="fas fa-chevron-circle-left d-none d-md-inline-block hvr-pulse-1"></i>
                             <!-- Collapse John & Ellen -->
                             <div class="collapse" id="johnAndEllen">
                                 <div class="card cardbody bg-gradient-dark">
@@ -337,10 +437,12 @@
                                 href="#susanAndGordon" role="button" aria-expanded="false"
                                 aria-controls="susanAndGordon">Susan &amp; Gordon's
                                 Q&amp;A</a>
+                            <i class="fas fa-chevron-circle-left d-md-none hvr-pulse-2"></i>
                             <a class="btn btn-sm btn-light story-button-2 d-none d-md-inline-block" data-toggle="modal"
                                 data-target="#susanAndGordonModal" href="#susanAndGordon" role="button"
                                 aria-expanded="false" aria-controls="susanAndGordon">Susan &amp; Gordon's
                                 Q&amp;A</a>
+                            <i class="fas fa-chevron-circle-left d-none d-md-inline-block hvr-pulse-2"></i>
                             <!-- Collapse Susan & Gordon -->
                             <div class="collapse" id="susanAndGordon">
                                 <div class="card cardbody">
@@ -449,10 +551,12 @@
                                 href="#dougAndMonte" role="button" aria-expanded="false"
                                 aria-controls="dougAndMonte">Doug &amp; Monte's
                                 Q&amp;A</a>
+                            <i class="fas fa-chevron-circle-left d-md-none hvr-pulse-3"></i>
                             <a class="btn btn-sm btn-light story-button-3 d-none d-md-inline-block" data-toggle="modal"
                                 data-target="#dougAndMonteModal" href="#dougAndMonte" role="button"
                                 aria-expanded="false" aria-controls="dougAndMonte">Doug &amp; Monte's
                                 Q&amp;A</a>
+                            <i class="fas fa-chevron-circle-left d-none d-md-inline-block hvr-pulse-3"></i>
                             <!-- Collapse Doug & Monte -->
                             <div class="collapse" id="dougAndMonte">
                                 <div class="card cardbody">
@@ -524,15 +628,15 @@
 
 
         <!-- signup -->
-        <section class="container-fluid signup" id="signup-section">
+        <section class="container-fluid signup">
             <div class="row">
-                <div class="contribute col-md-6 col-lg-4 mx-auto my-5">
+                <div class="contribute col-md-6 col-lg-4 mx-auto">
                     <h2 class="text-uppercase text-center">Contribute</h2>
                     <h3>Open Source</h3>
                     <p>GetHubby is completely open source.</p>
                     <button class="btn btn-warning">Fork on GitHub</button>
                 </div>
-                <div class="col-md-6 col-lg-4 mx-auto my-5">
+                <div class="col-md-6 col-lg-4 mx-auto" id="signup-section">
                     <h2 class="text-uppercase text-center">Sign-Up</h2>
                     <div class="windowOuter">
 
@@ -567,23 +671,31 @@
                                     <form>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1"><span class="tagBracket">&lt;</span><span
-                                                    class="tagText">email</span> <span class="classTextOuter">class</span>&#61;<span class="classTextInner">&#8220;github-email&#8220;</span><span class="tagBracket">&gt;</span></span>
-                                                </label>
+                                                    class="tagText">email</span> <span
+                                                    class="classTextOuter">class</span>&#61;<span
+                                                    class="classTextInner">&#8220;github-email&#8220;</span><span
+                                                    class="tagBracket">&gt;</span></span>
+                                            </label>
                                             <input type="email" class="form-control" id="exampleInputEmail1"
                                                 aria-describedby="emailHelp" placeholder="userABC@coolweb.net">
-                                                <span class="tagBracket">&lt;&#47;</span><span
-                                                class="tagText">email</span> <span class="tagBracket">&gt;</span></span>
-                                            <span id="emailHelp" class="form-text">&lt;&#33;&#45;&#45; We'll never share your
+                                            <span class="tagBracket">&lt;&#47;</span><span class="tagText">email</span>
+                                            <span class="tagBracket">&gt;</span></span>
+                                            <span id="emailHelp" class="form-text">&lt;&#33;&#45;&#45; We'll never share
+                                                your
                                                 email.&#45;&#45;&gt;</span>
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputPassword1"><span class="tagBracket">&lt;</span><span
-                                                class="tagText">password</span> <span class="classTextOuter">class</span>&#61;<span class="classTextInner">&#8220;github-pass&#8220;</span><span class="tagBracket">&gt;</span></span>
+                                                    class="tagText">password</span> <span
+                                                    class="classTextOuter">class</span>&#61;<span
+                                                    class="classTextInner">&#8220;github-pass&#8220;</span><span
+                                                    class="tagBracket">&gt;</span></span>
                                             </label>
                                             <input type="password" class="form-control" id="exampleInputPassword1"
                                                 placeholder="password123">
-                                                <span class="tagBracket">&lt;&#47;</span><span
-                                                class="tagText">password</span> <span class="tagBracket">&gt;</span></span>
+                                            <span class="tagBracket">&lt;&#47;</span><span
+                                                class="tagText">password</span> <span
+                                                class="tagBracket">&gt;</span></span>
                                         </div>
                                         <button type="submit" class="btn btn-primary">Sign-Up Wtih GitHub</button>
                                     </form>
