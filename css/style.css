@@ -670,7 +670,7 @@ li {
  MEDIA QUERIES
  ============ */
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
     .post-it-list {
         padding-left: 20%;
     }
@@ -681,6 +681,11 @@ li {
 
     .about-title {
         padding: 5rem 0;
+    }
+
+    .carousel img {
+        width: 100%;
+        min-height: 65vh;
     }
 
     .flip-card {
