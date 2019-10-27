@@ -223,6 +223,10 @@ li {
     background-size: cover;
 }
 
+.flip {
+    display: none;
+}
+
 #aboutAccordian {
     margin-left: 5%;
 }
@@ -683,8 +687,12 @@ li {
         padding: 5rem 0;
     }
 
+    .flip {
+        display: initial;
+    }
+
     .flip-card {
-        background-color: transparent;
+        
         margin: 5px;
         min-height: 300px;
         perspective: 1000px;
