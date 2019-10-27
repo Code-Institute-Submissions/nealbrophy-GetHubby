@@ -47,7 +47,7 @@ li {
 
 .carousel img {
     width: 100%;
-    min-height: 43vh;
+    min-height: 30vh;
 }
 
 .carousel-caption {
@@ -216,25 +216,21 @@ li {
 .about {
     background-image: url(../images/code-1839406_1920_transparent.jpg);
     z-index: -1;
-    min-height: 93vh;
+    min-height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#aboutAccordian {
-    margin-left: 5%;
-}
-
 .about-title {
-    padding: 2rem 0;
+    padding: 5rem 0;
 }
 
 .about-intro {
     color: white;
     background-color: #343a40;
-    padding: 7px;
+    padding-left: 2px;
     font-family: "Ubuntu Mono", 'Courier New', Courier, monospace;
 }
 
@@ -280,7 +276,121 @@ li {
     transition: .3s;
 }
 
+.flip-card {
+    background-color: transparent;
+    margin: 5px;
+    min-height: 300px;
+    perspective: 1000px;
+}
 
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    -webkit-box-shadow: 7px 6px 12px 1px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: 7px 6px 12px 1px rgba(0, 0, 0, 0.52);
+    box-shadow: 7px 6px 12px 1px rgba(0, 0, 0, 0.52);
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-front-1 {
+    background-color: #FFF9AA;
+    color: black;
+}
+
+.card-front-1 i {
+    width: 60px;
+    height: 60px;
+    padding: 15px 0;
+    border-radius: 50%;
+    background-color: #e6de6b;
+    margin-top: 3rem;
+}
+
+.card-back-1 {
+    background-color: #ccc788;
+}
+
+.card-front-2 {
+    background-color: #f4aaff;
+}
+
+.card-front-2 i {
+    width: 60px;
+    height: 60px;
+    padding: 15px 0;
+    border-radius: 50%;
+    background-color: #d66be6;
+    margin-top: 3rem;
+}
+
+.card-back-2 {
+    background-color: #d66be6;
+}
+
+.card-front-3 {
+    background-color: #ffaab5;
+}
+
+.card-front-3 i {
+    width: 60px;
+    height: 60px;
+    padding: 15px 0;
+    border-radius: 50%;
+    background-color: #e66b7c;
+    margin-top: 3rem;
+}
+
+.card-back-3 {
+    background-color: #e66b7c;
+}
+
+.card-front-4 {
+    background-color: #b5ffaa;
+}
+
+.card-front-4 i {
+    width: 60px;
+    height: 60px;
+    padding: 15px 0;
+    border-radius: 50%;
+    background-color: #7ce66b;
+    margin-top: 3rem;
+}
+
+.card-back-4 {
+    background-color: #7ce66b;
+}
+
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.card-text {
+    padding: 75px 8px;
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 1.2rem;
+}
+
+.card-back-2 .card-text,
+.card-back-3 .card-text {
+    color: white;
+}
 
 /*===========
  TESTIMONIALS
@@ -294,7 +404,6 @@ li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    text-align: center;
 }
 
 .testimonials-title {
@@ -304,12 +413,12 @@ li {
 .testimonials-intro {
     color: white;
     background-color: #343a40;
-    padding: 7px;
+    padding-left: 2px;
     font-family: "Ubuntu Mono", 'Courier New', Courier, monospace;
 }
 
 .media {
-    padding-top: 3rem;
+    padding-top: 10rem;
 
 }
 
@@ -323,12 +432,12 @@ li {
 }
 
 .story-button-1 {
-    background: rgba(152, 251, 152, 0.5);
-    border: none;
+    background: rgba(152, 251, 152, 1);
+    border: 1px solid black;
 }
 
 .story-button-1:hover {
-    background: rgba(152, 251, 152, 1);
+    background: rgba(152, 251, 152, 0.5);
     transition: 0.5s;
 }
 
@@ -342,12 +451,12 @@ li {
 }
 
 .story-button-2 {
-    background: rgba(251, 152, 251, 0.5);
-    border: none;
+    background: rgba(251, 152, 251, 1);
+    border: 1px solid black;
 }
 
 .story-button-2:hover {
-    background: rgba(251, 152, 251, 1);
+    background: rgba(251, 152, 251, 0.5);
     transition: 0.5s;
 }
 
@@ -361,126 +470,14 @@ li {
 }
 
 .story-button-3 {
-    background: rgba(251, 201, 152, 0.5);
-    border: none;
+    background: rgba(251, 201, 152, 1);
+    border: 1px solid black;
 }
 
 .story-button-3:hover {
-    background: rgba(251, 201, 152, 1);
+    background: rgba(251, 201, 152, 0.5);
     transition: 0.5s;
 }
-
-/* STORY BUTTON */
-
-/* Pulse */
-@-webkit-keyframes hvr-pulse-1 {
-    0% {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
-    }
-    100% {
-      -webkit-transform: scale(0.9);
-      transform: scale(0.9);
-    }
-  }
-  @keyframes hvr-pulse-1 {
-    0% {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
-    }
-    100% {
-      -webkit-transform: scale(0.9);
-      transform: scale(0.9);
-    }
-  }
-  .hvr-pulse-1 {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-animation-name: hvr-pulse-1;
-    animation-name: hvr-pulse-1;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-  }
-
-@-webkit-keyframes hvr-pulse-2 {
-    0% {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
-    }
-    100% {
-      -webkit-transform: scale(0.9);
-      transform: scale(0.9);
-    }
-  }
-  @keyframes hvr-pulse-2 {
-    0% {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
-    }
-    100% {
-      -webkit-transform: scale(0.9);
-      transform: scale(0.9);
-    }
-  }
-  .hvr-pulse-2 {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-animation-name: hvr-pulse-2;
-    animation-name: hvr-pulse-2;
-    -webkit-animation-duration: 1.3s;
-    animation-duration: 1.3s;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-  }
-
-@-webkit-keyframes hvr-pulse-3 {
-    0% {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
-    }
-    100% {
-      -webkit-transform: scale(0.9);
-      transform: scale(0.9);
-    }
-  }
-  @keyframes hvr-pulse-3 {
-    0% {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
-    }
-    100% {
-      -webkit-transform: scale(0.9);
-      transform: scale(0.9);
-    }
-  }
-  .hvr-pulse-3 {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-animation-name: hvr-pulse-3;
-    animation-name: hvr-pulse-3;
-    -webkit-animation-duration: .8s;
-    animation-duration: .8s;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-  }
-  
 
 #testimonials-d-arrow {
     color: rgba(0, 0, 0, 0.5);
@@ -556,12 +553,8 @@ li {
  CONTRIBUTE and SIGN UP
  ============ */
 
-.contribute {
-    text-align: center;
-} 
-
 .contribute h3 {
-    margin-top: 4rem;
+    margin-top: 8rem;
 }
 
 .signup {
@@ -662,7 +655,7 @@ li {
 }
 
 .signup button {
-    margin-bottom: 2rem;
+    margin-bottom: 10rem;
 }
 
 
@@ -673,134 +666,6 @@ li {
 @media (min-width: 800px) {
     .post-it-list {
         padding-left: 20%;
-    }
-
-    .media {
-        padding-top: 10rem;
-    }
-
-    .about-title {
-        padding: 5rem 0;
-    }
-
-    .flip-card {
-        background-color: transparent;
-        margin: 5px;
-        min-height: 300px;
-        perspective: 1000px;
-    }
-    
-    .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.8s;
-        transform-style: preserve-3d;
-    }
-    
-    .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-    }
-    
-    .flip-card-front,
-    .flip-card-back {
-        position: absolute;
-        -webkit-box-shadow: 7px 6px 12px 1px rgba(0, 0, 0, 0.52);
-        -moz-box-shadow: 7px 6px 12px 1px rgba(0, 0, 0, 0.52);
-        box-shadow: 7px 6px 12px 1px rgba(0, 0, 0, 0.52);
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-    }
-    
-    .card-front-1 {
-        background-color: #FFF9AA;
-        color: black;
-    }
-    
-    .card-front-1 i {
-        width: 60px;
-        height: 60px;
-        padding: 15px 0;
-        border-radius: 50%;
-        background-color: #e6de6b;
-        margin-top: 3rem;
-    }
-    
-    .card-back-1 {
-        background-color: #ccc788;
-    }
-    
-    .card-front-2 {
-        background-color: #f4aaff;
-    }
-    
-    .card-front-2 i {
-        width: 60px;
-        height: 60px;
-        padding: 15px 0;
-        border-radius: 50%;
-        background-color: #d66be6;
-        margin-top: 3rem;
-    }
-    
-    .card-back-2 {
-        background-color: #d66be6;
-    }
-    
-    .card-front-3 {
-        background-color: #ffaab5;
-    }
-    
-    .card-front-3 i {
-        width: 60px;
-        height: 60px;
-        padding: 15px 0;
-        border-radius: 50%;
-        background-color: #e66b7c;
-        margin-top: 3rem;
-    }
-    
-    .card-back-3 {
-        background-color: #e66b7c;
-    }
-    
-    .card-front-4 {
-        background-color: #b5ffaa;
-    }
-    
-    .card-front-4 i {
-        width: 60px;
-        height: 60px;
-        padding: 15px 0;
-        border-radius: 50%;
-        background-color: #7ce66b;
-        margin-top: 3rem;
-    }
-    
-    .card-back-4 {
-        background-color: #7ce66b;
-    }
-    
-    
-    .flip-card-back {
-        transform: rotateY(180deg);
-    }
-    
-    .card-text {
-        padding: 75px 8px;
-        font-family: "Ubuntu Mono", monospace;
-        font-size: 1.2rem;
-    }
-    
-    .card-back-2 .card-text,
-    .card-back-3 .card-text {
-        color: white;
-    }
-
-    .signup {
-        padding-top: 2rem;
     }
 }
 
