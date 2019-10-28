@@ -1,3 +1,7 @@
+/*===========
+ RESET
+ ============ */
+
 html {
     margin: 0;
     padding: 0;
@@ -47,7 +51,7 @@ li {
 
 .carousel img {
     width: 100%;
-    min-height: 43vh;
+    min-height: 65vh;
 }
 
 .carousel-caption {
@@ -223,12 +227,9 @@ li {
     background-size: cover;
 }
 
-#aboutAccordian {
-    margin-left: 5%;
-}
 
 .about-title {
-    padding: 2rem 0;
+    padding-top: 2rem;
 }
 
 .about-intro {
@@ -245,6 +246,7 @@ li {
 .about .row {
     text-align: center;
     margin: 0 auto;
+    padding-bottom: 3rem;
 
 }
 
@@ -262,6 +264,68 @@ li {
     padding-top: 50px;
 }
 
+/* accordian (small screen) */
+#aboutAccordian {
+    margin-left: 5%;
+}
+
+.accordian .btn-link {
+    text-decoration: none;
+}
+
+#headingOne {
+    background-color: #FFF9AA;
+}
+
+#headingOne i {
+    width: 50px;
+    height: 50px;
+    padding-left: 4px;
+    padding-top: 6px;
+    border-radius: 50%;
+    background-color: #e6de6b;
+}
+
+#headingTwo {
+    background-color: #f4aaff;
+}
+
+#headingTwo i {
+    width: 50px;
+    height: 50px;
+    padding-left: 1.8px;
+    padding-top: 6px;
+    border-radius: 50%;
+    background-color: #d66be6;
+}
+
+#headingThree {
+    background-color: #ffaab5;
+}
+
+#headingThree i {
+    width: 50px;
+    height: 50px;
+    padding-left: 1.8px;
+    padding-top: 8px;
+    border-radius: 50%;
+    background-color: #e66b7c;
+}
+
+#headingFour {
+    background-color: #b5ffaa;
+}
+
+#headingFour i {
+    width: 50px;
+    height: 50px;
+    padding-left: .5px;
+    padding-top: 7px;
+    border-radius: 50%;
+    background-color: #7ce66b;
+}
+
+/* about section down arrow */
 #about-d-arrow {
     color: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -370,9 +434,7 @@ li {
     transition: 0.5s;
 }
 
-/* STORY BUTTON */
-
-/* Pulse */
+/* button icon */
 @-webkit-keyframes hvr-pulse-1 {
     0% {
       -webkit-transform: scale(1.1);
@@ -481,6 +543,7 @@ li {
     animation-iteration-count: infinite;
   }
   
+/* testimonial section down arrow */
 
 #testimonials-d-arrow {
     color: rgba(0, 0, 0, 0.5);
@@ -500,6 +563,7 @@ li {
     transition: .3s;
 }
 
+/* testimonial collapse (small screen) */
 #johnAndEllen .cardbody {
     border: 10px solid rgb(152, 251, 152);
 }
@@ -511,6 +575,8 @@ li {
 #dougAndMonte .cardbody {
     border: 10px solid lightsteelblue;
 }
+
+/* testimonial modal (medium screen) */
 
 #johnAndEllenModal .question {
     font-weight: normal;
@@ -552,10 +618,11 @@ li {
     font-style: italic;
 }
 
-/*===========
+/*======================
  CONTRIBUTE and SIGN UP
- ============ */
+ ======================= */
 
+ /* contribute section */
 .contribute {
     text-align: center;
 } 
@@ -564,6 +631,7 @@ li {
     margin-top: 4rem;
 }
 
+/* sign-up code-window */
 .signup {
     min-height: 100vh;
     color: white;
@@ -579,7 +647,7 @@ li {
 
 .windowOuter .fas {
     color: red;
-    padding-left: 95%;
+    padding-left: 92%;
     padding-top: .3rem;
     padding-bottom: .3rem;
 }
@@ -610,7 +678,7 @@ li {
 
 .signup form {
     padding-left: 1.5rem;
-    padding-top: 2.5rem;
+    /* padding-top: 2.5rem; */
 
 }
 
@@ -631,7 +699,7 @@ li {
 }
 
 .form-group:nth-child(2) {
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
 }
 
 .form-group input {
@@ -670,22 +738,24 @@ li {
  MEDIA QUERIES
  ============ */
 
+
+ /*medium screens  */
 @media (min-width: 768px) {
-    .post-it-list {
-        padding-left: 20%;
+    .carousel img {
+        width: 100%;
+        min-height: 65vh;
     }
 
     .media {
         padding-top: 10rem;
     }
 
-    .about-title {
-        padding: 5rem 0;
+    .about {
+        min-height: 100vh;
     }
 
-    .carousel img {
-        width: 100%;
-        min-height: 65vh;
+    .about-title {
+        padding: 5rem 0;
     }
 
     .flip-card {
@@ -807,9 +877,23 @@ li {
     .signup {
         padding-top: 2rem;
     }
+
+    .windowOuter .fas {
+        padding-left: 95%;
+    }
+
+    .signup form {
+        padding-left: 1.5rem;
+        padding-top: 2.5rem;
+    
+    }
+
+    .form-group:nth-child(2) {
+        padding-top: 2rem;
+    }
 }
 
-
+/* large screens */
 @media (min-width: 1024px) {
 
     .carousel img {
@@ -823,6 +907,7 @@ li {
 
 }
 
+/* x-large screens */
 @media (min-width: 1260px) {
 
     .windowNumbersLeft {
