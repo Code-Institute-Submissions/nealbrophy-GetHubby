@@ -51,7 +51,7 @@ li {
 
 .carousel img {
     width: 100%;
-    min-height: 65vh;
+    min-height: 65%;
 }
 
 .carousel-caption {
@@ -60,6 +60,15 @@ li {
     z-index: 500;
 }
 
+.carousel-indicators {
+    top: 5%;
+}
+
+.btn-success {
+    background-color: #ffaab5;
+    color: black;
+    border: none;
+}
 
 .overlay {
     background-color: blueviolet;
@@ -141,9 +150,7 @@ li {
     transition: .3s;
 }
 
-.carousel-indicators {
-    top: 5%;
-}
+
 
 /* typing anim */
 
@@ -247,6 +254,8 @@ li {
     text-align: center;
     margin: 0 auto;
     padding-bottom: 3rem;
+    display: block;
+    
 
 }
 
@@ -265,8 +274,11 @@ li {
 }
 
 /* accordian (small screen) */
+
 #aboutAccordian {
-    margin-left: 5%;
+    margin-left: 0;
+    padding: 0;
+    border: none;
 }
 
 .accordian .btn-link {
@@ -329,7 +341,7 @@ li {
 #about-d-arrow {
     color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    top: 190%;
+    top: 93%;
     left: 48.5%;
     margin-top: 2rem;
     z-index: 150;
@@ -554,9 +566,9 @@ li {
 #testimonials-d-arrow {
     color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    bottom: -205%;
+    bottom: -207%;
     left: 48.5%;
-    margin-top: 18rem;
+    
     z-index: 150;
 }
 
@@ -572,14 +584,17 @@ li {
 /* testimonial collapse (small screen) */
 #johnAndEllen .cardbody {
     border: 10px solid #98fb98;
+    padding: 5px;
 }
 
 #susanAndGordon .cardbody {
     border: 10px solid #d8bfd8;
+    padding: 5px;
 }
 
 #dougAndMonte .cardbody {
     border: 10px solid #fbc998;
+    padding: 5px;
 }
 
 /* testimonial modal (medium screen) */
@@ -641,14 +656,14 @@ li {
     margin: 0 auto;
 }
 
-/* sign-up code-window */
+/* sign-up section */
 .signup {
     min-height: 100vh;
     color: white;
     background-color: slategray;
 }
 
-/* sign-up fading pointer */
+/* sign-up pointer */
 
 @-webkit-keyframes hvr-icon-drop {
   0% {
@@ -678,7 +693,7 @@ li {
     opacity: 1;
   }
 }
-/* Icon Drop */
+
 .hvr-icon-drop {
   display: inline-block;
   vertical-align: middle;
@@ -730,6 +745,7 @@ li {
   
 }
 
+/* sign-up faux text editor */
 
 .windowOuter {
     padding-bottom: 1rem;
@@ -793,9 +809,6 @@ li {
     color: lightsalmon;
 }
 
-/* .form-group:nth-child(2) {
-    padding-top: 2rem;
-} */
 
 .form-group input {
     width: 80%;
@@ -836,6 +849,8 @@ li {
  ============ */
 
 
+
+
  /*medium screens  */
 @media (min-width: 768px) {
     .carousel img {
@@ -849,6 +864,11 @@ li {
 
     .about {
         min-height: 100vh;
+    }
+
+    .about .row {
+        display: flex;
+        
     }
 
     .about-title {

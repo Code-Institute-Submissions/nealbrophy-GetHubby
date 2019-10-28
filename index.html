@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <!-- navbar -->
+    <!-- NAVBAR -->
 
     <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
         <a href="#" class="navbar-brand">GetHubby</a>
@@ -43,9 +43,9 @@
     </nav>
     <div class="container-fluid">
 
-        <!-- jumbotron/cta -->
+        <!-- JUMBOTRON / CTA -->
         <section class="cta jumbotron text-center">
-            <!-- carousel -->
+            <!-- bootstrap carousel -->
             <div class="carousel-wrapper">
                 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -65,7 +65,7 @@
                                 </div>
                                 <p class="lead d-none d-md-block">Join a thriving community of
                                     single-and-ready-to-mingle coders!</p>
-                                <a href="#about-section"><button class="btn btn-success btn-lg">Learn More</button></a>
+                                <a href="#about-section"><button class="btn btn-success btn-lg d-none d-sm-inline-block">Learn More</button></a>
                             </div>
                             <a href="#about-section" class="hvr-icon-down d-none d-lg-block"><i
                                     class="fas fa-arrow-down hvr-icon"></i></a>
@@ -81,7 +81,7 @@
                                 </div>
                                 <p class="lead d-none d-md-block">We're the new kid on the block but we've got a great
                                     track record!</p>
-                                <a href="#testimonials-section"><button class="btn btn-success btn-lg">Success
+                                <a href="#testimonials-section"><button class="btn btn-success btn-lg d-none d-sm-inline-block">Success
                                         Stories</button></a>
 
                             </div>
@@ -99,7 +99,7 @@
                                     <div class="anim-line-end">that special someone?</div>
                                 </div>
                                 <p class="lead d-none d-md-block">Sign-Up using your existing GitHub account!</p>
-                                <a href="#signup-section"><button class="btn btn-success btn-lg hvr-sweep-to-right">Join
+                                <a href="#signup-section"><button class="btn btn-success btn-lg  d-none d-sm-inline-block">Join
                                         Now</button></a>
 
                             </div>
@@ -125,18 +125,18 @@
 
 
 
-        <!-- about -->
+        <!-- ABOUT -->
         <section class="container-fluid about">
             <div class="row">
                 <div class="about-overlay"></div>
 
                 <div class="col-12 about-title" id="about-section">
                     <h2 class="text-uppercase text-center">Why use <span>getHubby</span>?</h2>
-                    <p><span class="about-intro">Whether you're a code newbie or a seasoned veteran GetHubby is
+                    <p><span class="about-intro d-none d-md-inline-block">Whether you're a code newbie or a seasoned veteran GetHubby is
                             the best place to meet like-minded singles.</span></p>
                 </div>
             </div>
-            <!-- Collapse (small screen) -->
+            <!-- bootstrap collapse (small screen) -->
             <div class="row col-12">
                 <div class="accordion d-md-none" id="aboutAccordion">
                     <div class="card">
@@ -225,12 +225,14 @@
                     </div>
                 </div>
             
-            <!-- Flip-cards (medium and large screen) -->
+            <!-- flip-cards (medium and large screen) -->
                 <div class="flip-card mx-auto d-none d-md-block" style="width: 20rem;">
                     <div class="flip-card-inner">
                         <div class="flip-card-front card-front-1">
                             <h3 class="card-title">Safety</h3>
                             <i class="fas fa-user-shield"></i>
+                            <i class="fas fa-id-card"></i>
+                            <i class="fas fa-eye"></i>
                         </div>
                         <div class="flip-card-back card-back-1">
                             <p class="card-text">At <span>GetHubby</span> our top priority is the safety of our
@@ -307,12 +309,12 @@
 
         </section>
 
-        <!-- testimonials -->
+        <!-- TESTIMONIALS -->
         <section class="container-fluid testimonials" id="testimonials-section">
             <div class="row">
                 <div class="col-12 testimonials-title">
                     <h2 class="text-uppercase text-center">Success Stories</h2>
-                    <p class="text-center"><span class="testimonials-intro">With a match success rate 20%
+                    <p class="text-center d-none d-md-inline-block"><span class="testimonials-intro">With a match success rate 20%
                             higher than any similar service we're confident we can find someone for you. Don't take it
                             from us though:</span></p>
                 </div>
@@ -337,8 +339,8 @@
                                 aria-expanded="false" aria-controls="johnAndEllen">John &amp; Ellen's
                                 Q&amp;A</a>
                             <i class="fas fa-chevron-circle-left d-none d-md-inline-block hvr-pulse-1"></i>
-                            <!-- Collapse John & Ellen -->
-                            <div class="collapse" id="johnAndEllen">
+                            <!-- bootstrap collapse John & Ellen -->
+                            <div class="collapse d-md-none" id="johnAndEllen">
                                 <div class="card cardbody bg-gradient-dark">
                                     <span class="question">What brought you to GetHubby?</span>
                                     <p class="answer"><span class="name">John:</span> A co-worker met her husband on
@@ -362,7 +364,7 @@
                                         don't think he ever would've noticed me.</p>
                                 </div>
                             </div>
-                            <!-- Modal John & Ellen -->
+                            <!-- bootstrap modal John & Ellen -->
                             <div class="modal fade" id="johnAndEllenModal" tabindex="-1" role="dialog"
                                 aria-labelledby="johnAndEllenModalTitle" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
@@ -432,8 +434,8 @@
                                 aria-expanded="false" aria-controls="susanAndGordon">Susan &amp; Gordon's
                                 Q&amp;A</a>
                             <i class="fas fa-chevron-circle-left d-none d-md-inline-block hvr-pulse-2"></i>
-                            <!-- Collapse Susan & Gordon -->
-                            <div class="collapse" id="susanAndGordon">
+                            <!-- bootstrap collapse Susan & Gordon -->
+                            <div class="collapse d-md-none" id="susanAndGordon">
                                 <div class="card cardbody">
                                     <span class="question">What did you do for your first date?</span>
                                     <p class="answer"><span class="name">Susan:</span> We went to a concert. It
@@ -469,7 +471,7 @@
                                     <p class="answer"><span class="name">Gordon:</span> I know.</p>
                                 </div>
                             </div>
-                            <!-- Modal Susan & Gordon -->
+                            <!-- bootstrap modal Susan & Gordon -->
                             <div class="modal fade" id="susanAndGordonModal" tabindex="-1" role="dialog"
                                 aria-labelledby="susanAndGordonModalTitle" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
@@ -546,8 +548,8 @@
                                 aria-expanded="false" aria-controls="dougAndMonte">Doug &amp; Monte's
                                 Q&amp;A</a>
                             <i class="fas fa-chevron-circle-left d-none d-md-inline-block hvr-pulse-3"></i>
-                            <!-- Collapse Doug & Monte -->
-                            <div class="collapse" id="dougAndMonte">
+                            <!-- bootstrap collapse Doug & Monte -->
+                            <div class="collapse d-md-none" id="dougAndMonte">
                                 <div class="card cardbody">
                                     <span class="question">What did you do for your first date?</span>
                                     <p class="answer"><span class="name">Doug:</span> We went to one of the GetHubby
@@ -567,7 +569,7 @@
                                     <p class="answer"><span class="name">Monte:</span> Kidding!</p>
                                 </div>
                             </div>
-                            <!-- Modal Doug & Monte -->
+                            <!-- bootstrap modal Doug & Monte -->
                             <div class="modal fade" id="dougAndMonteModal" tabindex="-1" role="dialog"
                                 aria-labelledby="dougAndMonteModalTitle" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
@@ -616,7 +618,7 @@
         </section>
 
 
-        <!-- signup -->
+        <!-- CONTRIBUTE / SIGN-UP -->
         <section class="container-fluid signup">
             <div class="row">
                 <div class="contribute col-md-6 col-lg-4 mx-auto">
