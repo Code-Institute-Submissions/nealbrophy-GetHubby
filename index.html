@@ -65,7 +65,8 @@
                                 </div>
                                 <p class="lead d-none d-md-block">Join a thriving community of
                                     single-and-ready-to-mingle coders!</p>
-                                <a href="#about-section"><button class="btn btn-success btn-lg d-none d-sm-inline-block">Learn More</button></a>
+                                <a href="#about-section"><button
+                                        class="btn btn-success btn-lg d-none d-sm-inline-block">Learn More</button></a>
                             </div>
                             <a href="#about-section" class="hvr-icon-down d-none d-lg-block"><i
                                     class="fas fa-arrow-down hvr-icon"></i></a>
@@ -81,7 +82,8 @@
                                 </div>
                                 <p class="lead d-none d-md-block">We're the new kid on the block but we've got a great
                                     track record!</p>
-                                <a href="#testimonials-section"><button class="btn btn-success btn-lg d-none d-sm-inline-block">Success
+                                <a href="#testimonials-section"><button
+                                        class="btn btn-success btn-lg d-none d-sm-inline-block">Success
                                         Stories</button></a>
 
                             </div>
@@ -99,7 +101,8 @@
                                     <div class="anim-line-end">that special someone?</div>
                                 </div>
                                 <p class="lead d-none d-md-block">Sign-Up using your existing GitHub account!</p>
-                                <a href="#signup-section"><button class="btn btn-success btn-lg  d-none d-sm-inline-block">Join
+                                <a href="#signup-section"><button
+                                        class="btn btn-success btn-lg  d-none d-sm-inline-block">Join
                                         Now</button></a>
 
                             </div>
@@ -132,7 +135,8 @@
 
                 <div class="col-12 about-title" id="about-section">
                     <h2 class="text-uppercase text-center">Why use <span>getHubby</span>?</h2>
-                    <p><span class="about-intro d-none d-md-inline-block">Whether you're a code newbie or a seasoned veteran GetHubby is
+                    <p><span class="about-intro d-none d-md-inline-block">Whether you're a code newbie or a seasoned
+                            veteran GetHubby is
                             the best place to meet like-minded singles.</span></p>
                 </div>
             </div>
@@ -224,8 +228,8 @@
                         </div>
                     </div>
                 </div>
-            
-            <!-- flip-cards (medium and large screen) -->
+
+                <!-- flip-cards (medium and large screen) -->
                 <div class="flip-card mx-auto d-none d-md-block" style="width: 20rem;">
                     <div class="flip-card-inner">
                         <div class="flip-card-front card-front-1">
@@ -314,7 +318,8 @@
             <div class="row">
                 <div class="col-12 testimonials-title">
                     <h2 class="text-uppercase text-center">Success Stories</h2>
-                    <p class="text-center d-none d-md-inline-block"><span class="testimonials-intro">With a match success rate 20%
+                    <p class="text-center d-none d-md-inline-block"><span class="testimonials-intro">With a match
+                            success rate 20%
                             higher than any similar service we're confident we can find someone for you. Don't take it
                             from us though:</span></p>
                 </div>
@@ -626,11 +631,20 @@
                     <h3>Open Source</h3>
                     <p>GetHubby is completely open source.</p>
                     <img src="images/bitmap.png" class="gitHeart d-block" alt="...">
+                    <div id="forkButton" class="buttonWrapper">
+                        <button class="buttonOuter" type="submit">
+                            <p class="buttonTextMain">Fork On GitHub</p>
+                            <div class="buttonInner">
+                                <p class="buttonTextHidden"><i class="fas fa-code-branch"></i></p>
+                            </div>
+                        </button>
+                    </div>
                     <button class="btn btn-warning">Fork on GitHub</button>
                 </div>
                 <div class="col-md-6 col-lg-4 mx-auto" id="signup-section">
-                    <h2 class="text-uppercase text-center">Sign-Up <i class="far fa-hand-point-down hvr-icon-drop"></i></h2>
-                    
+                    <h2 class="text-uppercase text-center">Sign-Up <i class="far fa-hand-point-down hvr-icon-drop"></i>
+                    </h2>
+
                     <div class="windowOuter">
 
                         <i class="fas fa-times-circle"></i>
@@ -663,19 +677,28 @@
                                 <div class="windowContentRight col-11">
                                     <form>
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1"><span id="emailHelp" class="form-text">&lt;&#33;&#45;&#45;
-                                                Email Address &#45;&#45;&gt;</span>
-                                            </label> 
+                                            <label for="exampleInputEmail1"><span id="emailHelp"
+                                                    class="form-text">&lt;&#33;&#45;&#45;
+                                                    Email Address &#45;&#45;&gt;</span>
+                                            </label>
                                             <input type="email" class="form-control" id="exampleInputEmail1"
                                                 aria-describedby="emailHelp" placeholder="your email">
-                                        <div class="form-group">
-                                            <label for="exampleInputPassword1"><span id="emailHelp" class="form-text">&lt;&#33;&#45;&#45;
-                                                Password &#45;&#45;&gt;</span>
-                                            </label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                                placeholder="your password">
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">GitHub OAuth</button>
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword1"><span id="emailHelp"
+                                                        class="form-text">&lt;&#33;&#45;&#45;
+                                                        Password &#45;&#45;&gt;</span>
+                                                </label>
+                                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                                    placeholder="your password">
+                                            </div>
+                                            <div class="buttonWrapper">
+                                                <button class="buttonOuter" type="submit">
+                                                    <p class="buttonTextMain">GitHub OAuth</p>
+                                                    <div class="buttonInner">
+                                                        <p class="buttonTextHidden"><i class="fas fa-sign-in-alt"></i></p>
+                                                    </div>
+                                                </button>
+                                            </div>
                                     </form>
                                 </div>
                             </div>

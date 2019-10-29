@@ -65,13 +65,14 @@ li {
 }
 
 .btn-success {
-    background-color: #ffaab5;
+    background-color: transparent;
+    border: 5px solid white;
     color: black;
     border: none;
 }
 
 .overlay {
-    background-color: blueviolet;
+    background-color: #8a2be2;
     opacity: .6;
     position: absolute;
     top: 5;
@@ -341,7 +342,7 @@ li {
 #about-d-arrow {
     color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    top: 93%;
+    top: 105%;
     left: 48.5%;
     margin-top: 2rem;
     z-index: 150;
@@ -566,7 +567,7 @@ li {
 #testimonials-d-arrow {
     color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    bottom: -207%;
+    bottom: -206%;
     left: 48.5%;
     
     z-index: 150;
@@ -654,6 +655,10 @@ li {
 
 .gitHeart {
     margin: 0 auto;
+}
+
+#forkButton {
+    margin-left: 85px;
 }
 
 /* sign-up section */
@@ -756,7 +761,7 @@ li {
 
 }
 
-.windowOuter .fas {
+.windowOuter .fa-times-circle {
     color: red;
     padding-left: 92%;
     padding-top: .3rem;
@@ -842,6 +847,62 @@ li {
     margin-top: 1.5rem;
     margin-bottom: 2rem;
 }
+
+.buttonWrapper {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    
+    padding: 10px;
+    width: 250px;
+    margin: 0 auto;
+    position: absolute;
+    top: 70%;
+    transform: translateY(-65%);
+    
+  }
+  .buttonOuter {
+    background: #3D4C53;
+    margin : 20px auto;
+    width : 200px;
+    height : 50px;
+    overflow: hidden;
+    text-align : center;
+    transition : .2s;
+    cursor : pointer;
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+    border: none;
+  }
+  .buttonInner {
+    position : relative;
+    width : 200px;
+    height : 100px;
+    margin-top: -59px;
+    padding-top: 2px;
+    background : #26A69A;
+    left : -250px;
+    transition : .3s;
+  }
+  .buttonTextMain {
+    color : white;
+    transition : .3s;
+    padding-top: 10px;
+  }
+  .buttonTextHidden {
+    margin-top : 20px;
+    margin-right : -130px;
+    color : #FFF;
+  }
+  .buttonOuter:hover .buttonInner { /*When hovering over .button change .btnTwo*/
+    left: -130px;
+  }
+  .buttonOuter:hover .buttonTextMain { /*When hovering over .button change .btnText*/
+    margin-left : 65px;
+  }
+  .buttonOuter:active { /*Clicked and held*/
+    box-shadow: 0px 5px 6px rgba(0,0,0,0.3);
+  }
 
 
 /*===========
@@ -995,7 +1056,7 @@ li {
         padding-top: 2rem;
     }
 
-    .windowOuter .fas {
+    .windowOuter .fa-times-circle {
         padding-left: 95%;
     }
 
