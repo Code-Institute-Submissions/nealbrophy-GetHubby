@@ -16,8 +16,17 @@
 
 <body>
     <!-- NAVBAR -->
-
-    <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
+    <div class="navbarWrapper d-none d-md-block">
+		<button class="navbarButton1 navbar-brand">GetHubby</button>
+		<span class="navbarButtonHidden1"><i class="fas fa-home"></i></span>
+		<button class="navbarButton2">About</button>
+		<span class="navbarButtonHidden2"><i class="fas fa-question-circle"></i></span>
+		<button class="navbarButton3">Testimonials</button>
+		<span class="navbarButtonHidden3"><i class="fas fa-user-check"></i></span>
+		<button class="navbarButton4">Sign-Up</button>
+		<span class="navbarButtonHidden4"><i class="fas fa-sign-in-alt"></i></span>
+	</div>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top d-md-none">
         <a href="#" class="navbar-brand">GetHubby</a>
         <!-- toggler -->
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"

@@ -31,6 +31,9 @@ li {
 /*===========
  NAVBAR
  ============ */
+
+
+
 .navbar {
     font-family: 'BioRhyme', serif;
 }
@@ -256,7 +259,7 @@ li {
     margin: 0 auto;
     padding-bottom: 3rem;
     display: block;
-    
+
 
 }
 
@@ -455,25 +458,29 @@ li {
 /* button icon */
 @-webkit-keyframes hvr-pulse-1 {
     0% {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
     }
+
     100% {
-      -webkit-transform: scale(0.9);
-      transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
     }
-  }
-  @keyframes hvr-pulse-1 {
+}
+
+@keyframes hvr-pulse-1 {
     0% {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
     }
+
     100% {
-      -webkit-transform: scale(0.9);
-      transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
     }
-  }
-  .hvr-pulse-1 {
+}
+
+.hvr-pulse-1 {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -487,29 +494,33 @@ li {
     animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-  }
+}
 
 @-webkit-keyframes hvr-pulse-2 {
     0% {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
     }
+
     100% {
-      -webkit-transform: scale(0.9);
-      transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
     }
-  }
-  @keyframes hvr-pulse-2 {
+}
+
+@keyframes hvr-pulse-2 {
     0% {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
     }
+
     100% {
-      -webkit-transform: scale(0.9);
-      transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
     }
-  }
-  .hvr-pulse-2 {
+}
+
+.hvr-pulse-2 {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -523,29 +534,33 @@ li {
     animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-  }
+}
 
 @-webkit-keyframes hvr-pulse-3 {
     0% {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
     }
+
     100% {
-      -webkit-transform: scale(0.9);
-      transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
     }
-  }
-  @keyframes hvr-pulse-3 {
+}
+
+@keyframes hvr-pulse-3 {
     0% {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
     }
+
     100% {
-      -webkit-transform: scale(0.9);
-      transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
     }
-  }
-  .hvr-pulse-3 {
+}
+
+.hvr-pulse-3 {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -559,9 +574,9 @@ li {
     animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-  }
+}
 
-  
+
 /* testimonial section down arrow */
 
 #testimonials-d-arrow {
@@ -569,7 +584,7 @@ li {
     position: absolute;
     bottom: -206%;
     left: 48.5%;
-    
+
     z-index: 150;
 }
 
@@ -644,10 +659,10 @@ li {
  CONTRIBUTE and SIGN UP
  ======================= */
 
- /* contribute section */
+/* contribute section */
 .contribute {
     text-align: center;
-} 
+}
 
 .contribute h3 {
     margin-top: 4rem;
@@ -671,83 +686,90 @@ li {
 /* sign-up pointer */
 
 @-webkit-keyframes hvr-icon-drop {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-  }
-  51%,
-	100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+
+    51%,
+    100% {
+        opacity: 1;
+    }
 }
+
 @keyframes hvr-icon-drop {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-  }
-  51%,
-	100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+
+    51%,
+    100% {
+        opacity: 1;
+    }
 }
 
 .hvr-icon-drop {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  opacity: 0;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-animation-name: hvr-icon-drop;
-  animation-name: hvr-icon-drop;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-  -webkit-animation-fill-mode: forwards;;
-  animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  
-  
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 0;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-animation-name: hvr-icon-drop;
+    animation-name: hvr-icon-drop;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+    ;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+
+
 }
+
 .hvr-icon-drop .hvr-icon {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  opacity: 0;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-animation-name: hvr-icon-drop;
-  animation-name: hvr-icon-drop;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-  -webkit-animation-fill-mode: forwards;;
-  animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite
-  
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 0;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-animation-name: hvr-icon-drop;
+    animation-name: hvr-icon-drop;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-fill-mode: forwards;
+    ;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite
 }
 
 /* sign-up faux text editor */
@@ -799,11 +821,11 @@ li {
 }
 
 .form-group .tagBracket {
-    color:slategray;
+    color: slategray;
 }
 
 .form-group .tagText {
-    color:slateblue;
+    color: slateblue;
 }
 
 .form-group .classTextOuter {
@@ -852,57 +874,67 @@ li {
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
     -webkit-user-select: none;
-    
+
     padding: 10px;
     width: 250px;
     margin: 0 auto;
     position: absolute;
     top: 70%;
     transform: translateY(-65%);
-    
-  }
-  .buttonOuter {
+
+}
+
+.buttonOuter {
     background: #3D4C53;
-    margin : 20px auto;
-    width : 200px;
-    height : 50px;
+    margin: 20px auto;
+    width: 200px;
+    height: 50px;
     overflow: hidden;
-    text-align : center;
-    transition : .2s;
-    cursor : pointer;
+    text-align: center;
+    transition: .2s;
+    cursor: pointer;
     border-radius: 3px;
-    box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
     border: none;
-  }
-  .buttonInner {
-    position : relative;
-    width : 200px;
-    height : 100px;
+}
+
+.buttonInner {
+    position: relative;
+    width: 200px;
+    height: 100px;
     margin-top: -59px;
     padding-top: 2px;
-    background : #26A69A;
-    left : -250px;
-    transition : .3s;
-  }
-  .buttonTextMain {
-    color : white;
-    transition : .3s;
+    background: #26A69A;
+    left: -250px;
+    transition: .3s;
+}
+
+.buttonTextMain {
+    color: white;
+    transition: .3s;
     padding-top: 10px;
-  }
-  .buttonTextHidden {
-    margin-top : 20px;
-    margin-right : -130px;
-    color : #FFF;
-  }
-  .buttonOuter:hover .buttonInner { /*When hovering over .button change .btnTwo*/
+}
+
+.buttonTextHidden {
+    margin-top: 20px;
+    margin-right: -130px;
+    color: #FFF;
+}
+
+.buttonOuter:hover .buttonInner {
+    /*When hovering over .button change .btnTwo*/
     left: -130px;
-  }
-  .buttonOuter:hover .buttonTextMain { /*When hovering over .button change .btnText*/
-    margin-left : 65px;
-  }
-  .buttonOuter:active { /*Clicked and held*/
-    box-shadow: 0px 5px 6px rgba(0,0,0,0.3);
-  }
+}
+
+.buttonOuter:hover .buttonTextMain {
+    /*When hovering over .button change .btnText*/
+    margin-left: 65px;
+}
+
+.buttonOuter:active {
+    /*Clicked and held*/
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+}
 
 
 /*===========
@@ -912,8 +944,104 @@ li {
 
 
 
- /*medium screens  */
+/*medium screens  */
 @media (min-width: 768px) {
+    .navbarWrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 7%;
+        background-color: grey;
+        z-index: 80;
+    }
+    
+    .navbarButton1 {
+        position: relative;
+        left: 0;
+        top: 0;
+        z-index: 81;
+        width: auto;
+        height: 100%;
+    }
+    
+    .navbarButtonHidden1 {
+        position: absolute;
+        left: 40px;
+        top: 0;
+        z-index: 79;
+        width: 50px;
+        transition: top .3s ease;
+    }
+    
+    .navbarButton1:hover+.navbarButtonHidden1 {
+        top: 52px;
+    }
+    
+    .navbarButton2 {
+        position: relative;
+        left: 0;
+        top: 0;
+        z-index: 81;
+        width: auto;
+        height: 100%;
+    }
+    
+    .navbarButtonHidden2 {
+        position: absolute;
+        top: 0;
+        left: 145px;
+        z-index: 79;
+        width: 50px;
+        transition: top .3s ease;
+    }
+    
+    .navbarButton2:hover+.navbarButtonHidden2 {
+        top: 52px;
+    }
+    .navbarButton3 {
+        position: relative;
+        left: 0px;
+        top: 0;
+        z-index: 81;
+        width: auto;
+        height: 100%;
+    }
+    
+    .navbarButtonHidden3 {
+        position: absolute;
+        top: 0;
+        left: 230px;
+        z-index: 79;
+        width: 50px;
+        transition: top .3s ease;
+    }
+    
+    .navbarButton3:hover+.navbarButtonHidden3 {
+        top: 52px;
+    }
+    .navbarButton4 {
+        position: relative;
+        left: 0px;
+        top: 0;
+        z-index: 81;
+        width: auto;
+        height: 100%;
+    }
+    
+    .navbarButtonHidden4 {
+        position: absolute;
+        top: 0;
+        left: 320px;
+        z-index: 79;
+        width: 50px;
+        transition: top .3s ease;
+    }
+    
+    .navbarButton4:hover+.navbarButtonHidden4 {
+        top: 52px;
+    }
+    
     .carousel img {
         width: 100%;
         min-height: 65vh;
@@ -929,7 +1057,7 @@ li {
 
     .about .row {
         display: flex;
-        
+
     }
 
     .about-title {
@@ -942,7 +1070,7 @@ li {
         min-height: 300px;
         perspective: 1000px;
     }
-    
+
     .flip-card-inner {
         position: relative;
         width: 100%;
@@ -951,11 +1079,11 @@ li {
         transition: transform 0.8s;
         transform-style: preserve-3d;
     }
-    
+
     .flip-card:hover .flip-card-inner {
         transform: rotateY(180deg);
     }
-    
+
     .flip-card-front,
     .flip-card-back {
         position: absolute;
@@ -966,12 +1094,12 @@ li {
         height: 100%;
         backface-visibility: hidden;
     }
-    
+
     .card-front-1 {
         background-color: #FFF9AA;
         color: black;
     }
-    
+
     .card-front-1 i {
         width: 60px;
         height: 60px;
@@ -980,15 +1108,15 @@ li {
         background-color: #e6de6b;
         margin-top: 3rem;
     }
-    
+
     .card-back-1 {
         background-color: #ccc788;
     }
-    
+
     .card-front-2 {
         background-color: #f4aaff;
     }
-    
+
     .card-front-2 i {
         width: 60px;
         height: 60px;
@@ -997,15 +1125,15 @@ li {
         background-color: #d66be6;
         margin-top: 3rem;
     }
-    
+
     .card-back-2 {
         background-color: #d66be6;
     }
-    
+
     .card-front-3 {
         background-color: #ffaab5;
     }
-    
+
     .card-front-3 i {
         width: 60px;
         height: 60px;
@@ -1014,15 +1142,15 @@ li {
         background-color: #e66b7c;
         margin-top: 3rem;
     }
-    
+
     .card-back-3 {
         background-color: #e66b7c;
     }
-    
+
     .card-front-4 {
         background-color: #b5ffaa;
     }
-    
+
     .card-front-4 i {
         width: 60px;
         height: 60px;
@@ -1031,22 +1159,22 @@ li {
         background-color: #7ce66b;
         margin-top: 3rem;
     }
-    
+
     .card-back-4 {
         background-color: #7ce66b;
     }
-    
-    
+
+
     .flip-card-back {
         transform: rotateY(180deg);
     }
-    
+
     .card-text {
         padding: 75px 8px;
         font-family: "Ubuntu Mono", monospace;
         font-size: 1.2rem;
     }
-    
+
     .card-back-2 .card-text,
     .card-back-3 .card-text {
         color: white;
@@ -1063,7 +1191,7 @@ li {
     .signup form {
         padding-left: 1.5rem;
         padding-top: 4.5rem;
-    
+
     }
 
     label[for="exampleInputPassword1"] {
