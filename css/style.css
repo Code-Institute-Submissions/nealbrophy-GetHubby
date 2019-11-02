@@ -33,11 +33,40 @@ li {
  ============ */
 
 
-
 .navbar {
     font-family: 'BioRhyme', serif;
 }
 
+.navbar-collapse a:hover {
+
+    text-decoration: overline;
+}
+
+.navButton {
+    background-color: #e66b7c;
+    color: white;
+    border: 2px solid transparent;
+    transition: all .5s ease-in-out;
+}
+
+.navButton:hover {
+    border: 2px solid white;
+    background-color: #e66b7c;
+
+}
+
+.navButton > i {
+    position: absolute;
+    z-index: -1;
+    top: 32%;
+    right: 5%;
+    transform: translateX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.navButton:hover > i {
+    transform: translateX(-480%);
+}
 
 /*===========
  CAROUSEL
@@ -67,12 +96,7 @@ li {
     top: 5%;
 }
 
-.btn-success {
-    background-color: transparent;
-    border: 5px solid white;
-    color: black;
-    border: none;
-}
+
 
 .overlay {
     background-color: #8a2be2;
@@ -85,12 +109,15 @@ li {
     z-index: 0;
 }
 
+
+
+
 /* jumbotron down arrow */
 
 .jumbotron .hvr-icon-down {
     color: rgba(255, 255, 255, 0.5);
     position: absolute;
-    bottom: 8%;
+    bottom: 6%;
     left: 48.5%;
     margin-top: 2rem;
     font-size: 4rem;
@@ -303,7 +330,7 @@ li {
 }
 
 #headingTwo {
-    background-color: #f4aaff;
+background-color: #f4aaff;
 }
 
 #headingTwo i {
@@ -407,14 +434,24 @@ li {
     background: rgba(152, 251, 152, 0.5);
 }
 
+
 .story-button-1 {
     background: rgba(152, 251, 152, 0.5);
     border: none;
+    
 }
 
 .story-button-1:hover {
     background: rgba(152, 251, 152, 1);
     transition: 0.5s;
+}
+
+.story-button-1 + .fa-chevron-circle-left {
+    transition: transform .5s ease-in-out;
+}
+
+.story-button-1:hover + .fa-chevron-circle-left {
+    transform: rotate(45deg);
 }
 
 .couple-2 img {
@@ -425,6 +462,7 @@ li {
 .couple-2-quote {
     background: rgba(251, 152, 251, 0.5);
 }
+
 
 .story-button-2 {
     background: rgba(251, 152, 251, 0.5);
@@ -604,7 +642,7 @@ li {
 }
 
 #susanAndGordon .cardbody {
-    border: 10px solid #d8bfd8;
+    border: 10px solid #fb98fb;
     padding: 5px;
 }
 
@@ -670,10 +708,36 @@ li {
 
 .gitHeart {
     margin: 0 auto;
+    opacity: .7;
 }
 
-#forkButton {
-    margin-left: 85px;
+.forkButton {
+    position: absolute;
+    top: 96%;
+    left: 32%;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.forkButton:hover {
+    border: 2px solid white;
+}
+
+.forkButton + i {
+    font-size: 1.6rem;
+    position: absolute;
+    z-index: 0;
+    top: 104%;
+    left: 50.5%;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out;
+}
+
+.forkButton:hover + i {
+    transform: translateX(295%);
 }
 
 /* sign-up section */
@@ -681,6 +745,10 @@ li {
     min-height: 100vh;
     color: white;
     background-color: slategray;
+}
+
+#signup-section {
+    margin-top: 2rem;
 }
 
 /* sign-up pointer */
@@ -805,6 +873,7 @@ li {
 
 .signup span {
     text-transform: capitalize;
+
 }
 
 .signup h2 {
@@ -818,6 +887,10 @@ li {
     padding-left: 1.5rem;
     padding-top: 2.5rem;
 
+}
+
+.form-group {
+    margin-bottom: 5rem;
 }
 
 .form-group .tagBracket {
@@ -870,71 +943,32 @@ li {
     margin-bottom: 2rem;
 }
 
-.buttonWrapper {
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-
-    padding: 10px;
-    width: 250px;
-    margin: 0 auto;
+.signButton {
+    border: 2px solid transparent;
     position: absolute;
-    top: 70%;
-    transform: translateY(-65%);
-
+    z-index: 1;
+    top: 73%;
+    left: 32%;
 }
 
-.buttonOuter {
-    background: #3D4C53;
-    margin: 20px auto;
-    width: 200px;
-    height: 50px;
-    overflow: hidden;
-    text-align: center;
-    transition: .2s;
-    cursor: pointer;
-    border-radius: 3px;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
-    border: none;
+.signButton:hover {
+    border: 2px solid white;
 }
 
-.buttonInner {
-    position: relative;
-    width: 200px;
-    height: 100px;
-    margin-top: -59px;
-    padding-top: 2px;
-    background: #26A69A;
-    left: -250px;
-    transition: .3s;
+.signButton + i {
+    position: absolute;
+    z-index: 0;
+    top: 84.5%;
+    left: 42%;
+    border: 2px solid transparent;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
 }
 
-.buttonTextMain {
-    color: white;
-    transition: .3s;
-    padding-top: 10px;
+.signButton:hover + i {
+    transform: translateX(460%);
 }
 
-.buttonTextHidden {
-    margin-top: 20px;
-    margin-right: -130px;
-    color: #FFF;
-}
-
-.buttonOuter:hover .buttonInner {
-    /*When hovering over .button change .btnTwo*/
-    left: -130px;
-}
-
-.buttonOuter:hover .buttonTextMain {
-    /*When hovering over .button change .btnText*/
-    margin-left: 65px;
-}
-
-.buttonOuter:active {
-    /*Clicked and held*/
-    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
-}
 
 
 /*===========
@@ -942,117 +976,128 @@ li {
  ============ */
 
 
+@media (min-width: 576px) {
+    .learnButton {
+        transition: all 0.3s ease-in-out;
+        border: 2px solid transparent;
+    }
+
+    .learnButton:hover {
+        border: 2px solid white;
+    }
+    
+    .learnButton + i {
+        color: white;
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        top: 75%;
+        transform: translateX(0);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .learnButton:hover + i {
+        transform: translateX(560%);
+    }
+
+    .successButton {
+        transition: all 0.3s ease-in-out;
+        border: 2px solid transparent;
+    }
+
+    .successButton:hover {
+        border: 2px solid white;
+    }
+
+    .successButton + i {
+        color: white;
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        top: 75%;
+        transform: translateX(0);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .successButton:hover + i {
+        transform: translateX(440%);
+    }
+
+    .joinButton {
+        border: 2px solid transparent;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .joinButton:hover {
+        border: 2px solid white;
+    }
+
+    .joinButton + i {
+        color: white;
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        top: 75%;
+        transform: translateX(0);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .joinButton:hover + i {
+        transform: translateX(290%);
+    }
+
+    .contribute {
+        padding-top: 2.5rem;
+    }
+
+    .contribute h3 {
+        margin-top: 5rem;
+    }
+
+    .forkButton {
+        top: 65%;
+        left: 36%;
+    }
+    
+    .forkButton + i {
+        top: 69.5%;
+        left: 50.5%;
+    }
+
+    .signButton {
+        top: 60%;
+        left: 30%;
+    }
+
+    .signButton + i {
+        top: 66.5%;
+        left: 32%;
+    }
+
+    .signButton:hover + i {
+        transform: translateX(580%);
+    }
+
+}
 
 
 /*medium screens  */
 @media (min-width: 768px) {
-    .navbarWrapper {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 7%;
-        background-color: grey;
-        z-index: 80;
-    }
     
-    .navbarButton1 {
-        position: relative;
-        left: 0;
-        top: 0;
-        z-index: 81;
-        width: auto;
-        height: 100%;
-    }
-    
-    .navbarButtonHidden1 {
-        position: absolute;
-        left: 40px;
-        top: 0;
-        z-index: 79;
-        width: 50px;
-        transition: top .3s ease;
-    }
-    
-    .navbarButton1:hover+.navbarButtonHidden1 {
-        top: 52px;
-    }
-    
-    .navbarButton2 {
-        position: relative;
-        left: 0;
-        top: 0;
-        z-index: 81;
-        width: auto;
-        height: 100%;
-    }
-    
-    .navbarButtonHidden2 {
-        position: absolute;
-        top: 0;
-        left: 145px;
-        z-index: 79;
-        width: 50px;
-        transition: top .3s ease;
-    }
-    
-    .navbarButton2:hover+.navbarButtonHidden2 {
-        top: 52px;
-    }
-    .navbarButton3 {
-        position: relative;
-        left: 0px;
-        top: 0;
-        z-index: 81;
-        width: auto;
-        height: 100%;
-    }
-    
-    .navbarButtonHidden3 {
-        position: absolute;
-        top: 0;
-        left: 230px;
-        z-index: 79;
-        width: 50px;
-        transition: top .3s ease;
-    }
-    
-    .navbarButton3:hover+.navbarButtonHidden3 {
-        top: 52px;
-    }
-    .navbarButton4 {
-        position: relative;
-        left: 0px;
-        top: 0;
-        z-index: 81;
-        width: auto;
-        height: 100%;
-    }
-    
-    .navbarButtonHidden4 {
-        position: absolute;
-        top: 0;
-        left: 320px;
-        z-index: 79;
-        width: 50px;
-        transition: top .3s ease;
-    }
-    
-    .navbarButton4:hover+.navbarButtonHidden4 {
-        top: 52px;
-    }
     
     .carousel img {
         width: 100%;
         min-height: 65vh;
     }
 
+    
+
     .media {
-        padding-top: 10rem;
+        /* padding-top: 10rem; */
     }
 
     .about {
-        min-height: 100vh;
+        min-height: 80vh;
     }
 
     .about .row {
@@ -1061,7 +1106,7 @@ li {
     }
 
     .about-title {
-        padding: 5rem 0;
+        /* padding: 5rem 0; */
     }
 
     .flip-card {
@@ -1180,12 +1225,16 @@ li {
         color: white;
     }
 
+    .testimonials {
+        min-height: 80vh;
+    }
+
     .signup {
         padding-top: 2rem;
     }
 
     .windowOuter .fa-times-circle {
-        padding-left: 95%;
+        padding-left: 92%;
     }
 
     .signup form {
@@ -1212,10 +1261,51 @@ li {
         font-size: 2.5rem;
     }
 
+    .about {
+        min-height: 100vh;
+    }
+
+    .about .row {
+        padding-top: 2rem;
+    }
+
+    #about-d-arrow {
+        top: 100%;
+    }
+
+    .media {
+        padding-top: 8rem;
+    }
+
+    .testimonials {
+        min-height: 100vh;
+    }
+
+    .testimonials-title {
+        padding-top: 3.5rem;
+    }
+
 }
 
 /* x-large screens */
 @media (min-width: 1260px) {
+
+    .media {
+        padding-top: 10rem;
+    }
+
+    #about-d-arrow {
+        top: 125%;
+    }
+
+    .story-button-1,
+    .couple-1 i,
+    .story-button-2,
+    .couple-2 i,
+    .story-button-3,
+    .couple-3 i {
+        margin-top: 4rem;
+    }
 
     .windowNumbersLeft {
         display: block;

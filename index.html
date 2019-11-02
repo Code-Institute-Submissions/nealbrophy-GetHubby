@@ -16,17 +16,7 @@
 
 <body>
     <!-- NAVBAR -->
-    <div class="navbarWrapper d-none d-md-block">
-		<button class="navbarButton1 navbar-brand">GetHubby</button>
-		<span class="navbarButtonHidden1"><i class="fas fa-home"></i></span>
-		<button class="navbarButton2">About</button>
-		<span class="navbarButtonHidden2"><i class="fas fa-question-circle"></i></span>
-		<button class="navbarButton3">Testimonials</button>
-		<span class="navbarButtonHidden3"><i class="fas fa-user-check"></i></span>
-		<button class="navbarButton4">Sign-Up</button>
-		<span class="navbarButtonHidden4"><i class="fas fa-sign-in-alt"></i></span>
-	</div>
-    <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top d-md-none">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
         <a href="#" class="navbar-brand">GetHubby</a>
         <!-- toggler -->
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -48,7 +38,7 @@
                 </li>
             </ul>
         </div>
-        <a href="#" class="btn btn-info d-none d-md-block">Member Login</a>
+        <a href="#" class="btn btn-info navButton d-none d-md-block">Member Login <i class="fas fa-user-check"></i></a>
     </nav>
     <div class="container-fluid">
 
@@ -75,7 +65,8 @@
                                 <p class="lead d-none d-md-block">Join a thriving community of
                                     single-and-ready-to-mingle coders!</p>
                                 <a href="#about-section"><button
-                                        class="btn btn-success btn-lg d-none d-sm-inline-block">Learn More</button></a>
+                                        class="btn btn-success btn-lg learnButton d-none d-sm-inline-block">Learn More</button>
+                                        <i class="fas fa-question d-none d-md-inline-block"></i></a>
                             </div>
                             <a href="#about-section" class="hvr-icon-down d-none d-lg-block"><i
                                     class="fas fa-arrow-down hvr-icon"></i></a>
@@ -92,8 +83,9 @@
                                 <p class="lead d-none d-md-block">We're the new kid on the block but we've got a great
                                     track record!</p>
                                 <a href="#testimonials-section"><button
-                                        class="btn btn-success btn-lg d-none d-sm-inline-block">Success
-                                        Stories</button></a>
+                                        class="btn btn-success btn-lg successButton d-none d-sm-inline-block">Success
+                                        Stories</button>
+                                        <i class="fas fa-user-friends d-none d-md-inline-block"></i></a>
 
                             </div>
                             <a href="#about-section" class="hvr-icon-down d-none d-lg-block"><i
@@ -111,8 +103,10 @@
                                 </div>
                                 <p class="lead d-none d-md-block">Sign-Up using your existing GitHub account!</p>
                                 <a href="#signup-section"><button
-                                        class="btn btn-success btn-lg  d-none d-sm-inline-block">Join
-                                        Now</button></a>
+                                        class="btn btn-success btn-lg joinButton d-none d-sm-inline-block">Join
+                                        Now</button>
+                                        <i class="fas fa-user-plus d-none d-md-inline-block"></i>
+                                    </a>
 
                             </div>
                             <a href="#about-section" class="hvr-icon-down d-none d-lg-block"><i
@@ -139,10 +133,10 @@
 
         <!-- ABOUT -->
         <section class="container-fluid about">
-            <div class="row">
+            <div class="row" id="about-section">
                 <div class="about-overlay"></div>
 
-                <div class="col-12 about-title" id="about-section">
+                <div class="col-12 about-title">
                     <h2 class="text-uppercase text-center">Why use <span>getHubby</span>?</h2>
                     <p><span class="about-intro d-none d-md-inline-block">Whether you're a code newbie or a seasoned
                             veteran GetHubby is
@@ -257,7 +251,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flip-card mx-auto d-none d-md-block" style="width: 20rem;">
+                <div class="flip-card mx-auto d-none d-xl-block" style="width: 20rem;">
                     <div class="flip-card-inner">
                         <div class="flip-card-front card-front-2">
                             <h3 class="card-title">Privacy</h3>
@@ -316,7 +310,7 @@
                     </div>
                 </div>
                 </ul>
-                <a href="#testimonials-section" id="about-d-arrow" class="hvr-icon-down d-none d-xl-block"><i
+                <a href="#testimonials-section" id="about-d-arrow" class="hvr-icon-down d-none d-lg-block"><i
                         class="fas fa-arrow-down hvr-icon"></i></a>
             </div>
 
@@ -342,15 +336,15 @@
                         </div>
                         <div class="media-body couple-1-summary">
                             <h3><span class="couple-1-name">John and Ellen</span></h3>
-                            <p><span class="couple-1-quote">"It's like we've always known each other."</span></p>
+                            <p><span class="couple-1-quote">"GetHubby allowed us to look for matches based on more than just a couple of pics."</span></p>
                             <a class="btn btn-sm btn-light story-button-1 d-md-none" data-toggle="collapse"
                                 href="#johnAndEllen" role="button" aria-expanded="false"
-                                aria-controls="johnAndEllen">John &amp; Ellen's
+                                aria-controls="johnAndEllen">Read full
                                 Q&amp;A</a>
                             <i class="fas fa-chevron-circle-left d-md-none hvr-pulse-1"></i>
                             <a class="btn btn-sm btn-light story-button-1 d-none d-md-inline-block" data-toggle="modal"
                                 data-target="#johnAndEllenModal" href="#johnAndEllen" role="button"
-                                aria-expanded="false" aria-controls="johnAndEllen">John &amp; Ellen's
+                                aria-expanded="false" aria-controls="johnAndEllen">Read full
                                 Q&amp;A</a>
                             <i class="fas fa-chevron-circle-left d-none d-md-inline-block hvr-pulse-1"></i>
                             <!-- bootstrap collapse John & Ellen -->
@@ -393,24 +387,24 @@
                                             <span class="question">What brought you to GetHubby?</span>
                                             <p class="answer"><span class="name">John:</span> A co-worker met her
                                                 husband on
-                                                GetHubby and was telling everyone about it. I figured it was worth a
+                                                GetHubby and was always talking about it. Figured it was worth a
                                                 shot!
                                             </p>
                                             <p class="answer"><span class="name">Ellen:</span> I actually overheard
                                                 John
                                                 talking about it in the canteen.</p>
                                             <span class="question">You already knew each other?</span>
-                                            <p class="answer"><span class="name">Ellen:</span> Kind of. Not really. We
+                                            <p class="answer"><span class="name">Ellen:</span> Not really. We
                                                 worked in
-                                                the same building but separate teams and I actually had been trying to
+                                                the same building, separate teams. I'd actually had been trying to
                                                 catch
                                                 his
-                                                eye at lunch for like months.</p>
+                                                eye at lunch for months.</p>
                                             <p class="answer"><span class="name">John:</span> She claims.</p>
-                                            <p class="answer"><span class="name">Ellen:</span> It's true! So one day I
+                                            <p class="answer"><span class="name">Ellen:</span> It's true! One day I
                                                 heard
                                                 him
-                                                chatting to one of his team over lunch about using GetHubby so I joined
+                                                chatting to one of his team about using GetHubby so I joined
                                                 that
                                                 night!</p>
                                             <span class="question">So you didn't even really need to use
@@ -436,16 +430,15 @@
                         </div>
                         <div class="media-body">
                             <h3><span class="couple-2-name">Susan and Gordon</span></h3>
-                            <p><span class="couple-2-quote">"We both found it so hard to meet other people with similar
-                                    interests."</span></p>
+                            <p><span class="couple-2-quote">"Until GetHubby, we found it so hard to meet other people with similar interests."</span></p>
                             <a class="btn btn-sm btn-light story-button-2 d-md-none" data-toggle="collapse"
                                 href="#susanAndGordon" role="button" aria-expanded="false"
-                                aria-controls="susanAndGordon">Susan &amp; Gordon's
+                                aria-controls="susanAndGordon">Read full
                                 Q&amp;A</a>
                             <i class="fas fa-chevron-circle-left d-md-none hvr-pulse-2"></i>
                             <a class="btn btn-sm btn-light story-button-2 d-none d-md-inline-block" data-toggle="modal"
                                 data-target="#susanAndGordonModal" href="#susanAndGordon" role="button"
-                                aria-expanded="false" aria-controls="susanAndGordon">Susan &amp; Gordon's
+                                aria-expanded="false" aria-controls="susanAndGordon">Read full
                                 Q&amp;A</a>
                             <i class="fas fa-chevron-circle-left d-none d-md-inline-block hvr-pulse-2"></i>
                             <!-- bootstrap collapse Susan & Gordon -->
@@ -528,8 +521,6 @@
                                                 the design side of things and an opportunity came up for me to move to
                                                 the
                                                 marketing design team.</p>
-                                            <p class="answer"><span class="name">Susan:</span> Traitor!</p>
-                                            <p class="answer"><span class="name">Gordon:</span> I know.</p>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
@@ -554,12 +545,12 @@
                             </p>
                             <a class="btn btn-sm btn-light story-button-3 d-md-none" data-toggle="collapse"
                                 href="#dougAndMonte" role="button" aria-expanded="false"
-                                aria-controls="dougAndMonte">Doug &amp; Monte's
+                                aria-controls="dougAndMonte">Read full
                                 Q&amp;A</a>
                             <i class="fas fa-chevron-circle-left d-md-none hvr-pulse-3"></i>
                             <a class="btn btn-sm btn-light story-button-3 d-none d-md-inline-block" data-toggle="modal"
                                 data-target="#dougAndMonteModal" href="#dougAndMonte" role="button"
-                                aria-expanded="false" aria-controls="dougAndMonte">Doug &amp; Monte's
+                                aria-expanded="false" aria-controls="dougAndMonte">Read full
                                 Q&amp;A</a>
                             <i class="fas fa-chevron-circle-left d-none d-md-inline-block hvr-pulse-3"></i>
                             <!-- bootstrap collapse Doug & Monte -->
@@ -626,7 +617,7 @@
                         </div>
                     </div>
                 </blockquote>
-                <a href="#signup-section" id="testimonials-d-arrow" class="hvr-icon-down d-none d-xl-block"><i
+                <a href="#signup-section" id="testimonials-d-arrow" class="hvr-icon-down d-none d-lg-block"><i
                         class="fas fa-arrow-down hvr-icon"></i></a>
             </div>
         </section>
@@ -640,18 +631,11 @@
                     <h3>Open Source</h3>
                     <p>GetHubby is completely open source.</p>
                     <img src="images/bitmap.png" class="gitHeart d-block" alt="...">
-                    <div id="forkButton" class="buttonWrapper">
-                        <button class="buttonOuter" type="submit">
-                            <p class="buttonTextMain">Fork On GitHub</p>
-                            <div class="buttonInner">
-                                <p class="buttonTextHidden"><i class="fas fa-code-branch"></i></p>
-                            </div>
-                        </button>
-                    </div>
-                    <button class="btn btn-warning">Fork on GitHub</button>
+                    <button class="btn btn-warning forkButton">Fork on GitHub</button>
+                    <i class="fab fa-git-alt"></i>
                 </div>
                 <div class="col-md-6 col-lg-4 mx-auto" id="signup-section">
-                    <h2 class="text-uppercase text-center">Sign-Up <i class="far fa-hand-point-down hvr-icon-drop"></i>
+                    <h2 class="text-uppercase text-center">Sign-Up/Sign-In <!--<i class="far fa-hand-point-down hvr-icon-drop"></i>-->
                     </h2>
 
                     <div class="windowOuter">
@@ -700,13 +684,8 @@
                                                 <input type="password" class="form-control" id="exampleInputPassword1"
                                                     placeholder="your password">
                                             </div>
-                                            <div class="buttonWrapper">
-                                                <button class="buttonOuter" type="submit">
-                                                    <p class="buttonTextMain">GitHub OAuth</p>
-                                                    <div class="buttonInner">
-                                                        <p class="buttonTextHidden"><i class="fas fa-sign-in-alt"></i></p>
-                                                    </div>
-                                                </button>
+                                                <button class="btn btn-success signButton" type="submit">GitHub OAuth</button>
+                                                <i class="fas fa-sign-in-alt" id="sign-up-button"></i>
                                             </div>
                                     </form>
                                 </div>
