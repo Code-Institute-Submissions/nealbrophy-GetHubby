@@ -65,7 +65,7 @@ li {
 }
 
 .navButton:hover > i {
-    transform: translateX(-480%);
+    transform: translateX(-485%);
 }
 
 /*===========
@@ -1018,7 +1018,7 @@ background-color: #f4aaff;
     }
     
     .learnButton:hover + i {
-        transform: translateX(560%);
+        transform: translateX(564%);
     }
 
     .successButton {
@@ -1041,7 +1041,7 @@ background-color: #f4aaff;
     }
     
     .successButton:hover + i {
-        transform: translateX(440%);
+        transform: translateX(442%);
     }
 
     .joinButton {
@@ -1064,7 +1064,7 @@ background-color: #f4aaff;
     }
     
     .joinButton:hover + i {
-        transform: translateX(290%);
+        transform: translateX(292%);
     }
 
     .contribute {
