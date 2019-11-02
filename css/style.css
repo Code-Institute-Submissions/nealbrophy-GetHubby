@@ -711,9 +711,17 @@ background-color: #f4aaff;
     opacity: .7;
 }
 
+.forkButtonWrapper {
+    display: grid;
+    grid-template-columns: [forkLeft] 25% [forkCenter] 50% [forkRight]25%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "forkLeft forkCenter forkRight";
+    
+}
+
 .forkButton {
-    position: absolute;
-    top: 96%;
+    grid-area: forkCenter;
+    top: 53%;
     left: 32%;
     border: 2px solid transparent;
     transition: all 0.3s ease-in-out;
@@ -726,10 +734,11 @@ background-color: #f4aaff;
 
 .forkButton + i {
     font-size: 1.6rem;
-    position: absolute;
+    position: relative;
+    grid-area: forkCenter;
     z-index: 0;
-    top: 104%;
-    left: 50.5%;
+    top: 32%;
+    left: 40%;
     transform: translateX(0);
     transition: transform 0.3s ease-in-out;
     -moz-transition: transform 0.3s ease-in-out;
@@ -737,7 +746,7 @@ background-color: #f4aaff;
 }
 
 .forkButton:hover + i {
-    transform: translateX(295%);
+    transform: translateX(13%);
 }
 
 /* sign-up section */
@@ -938,17 +947,28 @@ background-color: #f4aaff;
     font-size: 1.2rem;
 }
 
+.signButtonWrapper {
+    display: grid;
+    grid-template-columns: [signLeft] 25% [signCenter] 50% [signRight]25%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "signLeft signCenter signRight";
+    grid-template-rows: 1fr 1fr 1fr;
+    top: 0;
+    width: 100%;
+}
+
 .signup button {
     margin-top: 1.5rem;
     margin-bottom: 2rem;
 }
 
 .signButton {
+    grid-area: signCenter;
     border: 2px solid transparent;
     position: absolute;
     z-index: 1;
-    top: 73%;
-    left: 32%;
+    left: 25%;
+    bottom: 15%;
 }
 
 .signButton:hover {
@@ -956,17 +976,18 @@ background-color: #f4aaff;
 }
 
 .signButton + i {
-    position: absolute;
+    grid-area: signCenter;
+    position: relative;
     z-index: 0;
-    top: 84.5%;
-    left: 42%;
+    top: 60%;
+    left: 22%;
     border: 2px solid transparent;
     transform: translateX(0);
     transition: transform 0.3s ease-in-out;
 }
 
 .signButton:hover + i {
-    transform: translateX(460%);
+    transform: translateX(40%);
 }
 
 
@@ -1054,29 +1075,6 @@ background-color: #f4aaff;
         margin-top: 5rem;
     }
 
-    .forkButton {
-        top: 65%;
-        left: 36%;
-    }
-    
-    .forkButton + i {
-        top: 69.5%;
-        left: 50.5%;
-    }
-
-    .signButton {
-        top: 60%;
-        left: 30%;
-    }
-
-    .signButton + i {
-        top: 66.5%;
-        left: 32%;
-    }
-
-    .signButton:hover + i {
-        transform: translateX(580%);
-    }
 
 }
 
@@ -1247,6 +1245,8 @@ background-color: #f4aaff;
         margin-top: 3rem;
 
     }
+
+    
 }
 
 /* large screens */

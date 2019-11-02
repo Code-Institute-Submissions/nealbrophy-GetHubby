@@ -1,7 +1,7 @@
 # GetHubby
 Code Institute User Centric Frontend Develtopment Milestone Project One
 
-This is an imagined dating site for developers and specificially geared towards users of GitHub leveraging the existing social & community aspects of same. The goal is to have a site which appeals to developers by using industry lingo and to allow users to sign-up via existing, commonly used, industry tools (e.g. GitHub, StackOverflow etc)
+This is an imagined dating site for developers and specificially geared towards users of GitHub leveraging the existing social & community aspects of same. The goal is to have a site which appeals to developers by using industry lingo and to allow users to sign-up via existing, commonly used, industry tools (e.g. GitHub).
 
 [Go to GetHubby](https://nealbrophy.github.io/GetHubby/)
 
@@ -10,12 +10,14 @@ This is an imagined dating site for developers and specificially geared towards 
  
 The site is intended to be simple and minimalistic while also colourful and fun. The information should be short and to the point but with a light-hearted tone where appropriate. Text should use industry terminology to present an industry-specific focus.
 
+![wireframe-1](https://github.com/nealbrophy/GetHubby/blob/master/wireframes/wireframe-1-bw.png "Wirefram One")
+![wireframe-2](https://github.com/nealbrophy/GetHubby/blob/master/wireframes/wireframe-2-colour.png "Wirefram Two")
+
 User Stories:
-- As a single person, I want a simple and easy to navigate site.
-- As a developer, I want it to be clear that the site/service is aimed at people like me.
+- As a single person, I want a modern and appealing site which is simple to navigate.
+- As a developer, I want a site that caters to my interests and is clearly aimed at people like me.
+- As a modern user, I want a mobile-friendly site that looks as good on small screens as large.
 
-
-++++This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.+++
 
 ## Features
 
@@ -23,17 +25,21 @@ The navbar is responsive and will switch to a hamburger menu on small screens.
 
 The hero section contains an eye-catching jumbotron slideshow with images of a variety of possible users of site. A mock-typing animation was added to the text overlayed on the slideshow to suggest a relation to coding (and more specifically GitHub commands).
 
-The about section contains simple, colourful flip-cards with a short title (and icons representing the theme of the title) on the front and a short summary of the feature in question on the back.
+On med & large screens the about section contains simple, colourful flip-cards with a short title (and icons representing the theme of the title) on the front and a short summary of the feature in question on the back. One small screens the flip cards are replaced by a collapsing list.
 
-The testimonials section contains shows a circular image of imagined couples beside a short quote from each couple. The button beneath each quote opens a mock Q&A with the couple (bootstrap-modal on larger screens, bootstrap-collapse on smaller screens).
+The testimonials section shows a circular image of imagined couples beside a short quote from each couple. The button beneath each quote opens a mock Q&A with the couple (bootstrap-modal on larger screens, bootstrap-collapse on smaller screens).
 
-The sign-up section is made to look like a code-editor window with mock-HTML text.
+The contribute section links to this GitHub rep. The sign-up section is made to look like a code-editor window with mock-HTML text.
+
+
  
 ### Existing Features
 - Carousel with typing animation overlaid
 - Links to relavant sections with smooth scroll
 - Flip-cards
 - Modal/Collapse for couple Q&As depending on screen size
+- Buttons display a popout icon relating to the content/target of said button.
+- On large screens there is an arrow icon with hover.css effect to highlight that additional content is below and links to the next section.
 
 +++For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
 
@@ -55,6 +61,7 @@ The sign-up section is made to look like a code-editor window with mock-HTML tex
 
 ## Testing
 
+The site has been developed using the mobile first approach with multiple media queries for larger screen sizes. All changes to the site were tested in Google Chrome, Firefox, and Opera browsers
 +++In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
 +++Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
@@ -102,7 +109,8 @@ The sign-up section is made to look like a code-editor window with mock-HTML tex
 - [Unsplash](https://unsplash.com/)
     - diego-rezende-CFIv79QxPjA-unsplash Photo by Diego Rezende on Unsplash
 
+
 ### Acknowledgements
 - Typewriter effect inspired by [this CSS-Tricks article](https://css-tricks.com/snippets/css/typewriter-effect/) with simplified implementation taken from [this instructional video by Codingflag](https://www.youtube.com/watch?v=6vOJoAmbza0).
 - Flip cards from [this W3C tutorial](https://www.w3schools.com/howto/howto_css_flip_card.asp)
-+++- I received inspiration for this project from X
+- GITHUB®, the GITHUB® logo design, OCTOCAT® and the OCTOCAT® logo design are exclusive trademarks registered in the United States by GitHub, Inc.
