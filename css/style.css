@@ -1338,7 +1338,7 @@ background-color: #f4aaff;
         display: block;
         position: absolute;
         z-index: 1;
-        top: 102%;
+        top: 112%;
         left: 48%;
     
     }
@@ -1426,8 +1426,8 @@ background-color: #f4aaff;
         padding-top: 10rem;
     }
 
-    #about-d-arrow {
-        top: 150%;
+    .aboutDownArrowWrapper {
+        top: 120%;
     }
 
     .story-button-1,

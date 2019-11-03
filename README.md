@@ -36,7 +36,7 @@ On med & large screens the about section contains simple, colourful flip-cards w
 
 The testimonials section shows a circular image of imagined couples beside a short quote from each couple. The button beneath each quote opens a mock Q&A with the couple (bootstrap-modal on larger screens, bootstrap-collapse on smaller screens).
 
-The contribute section links to this GitHub rep. The sign-up section is made to look like a code-editor window with mock-HTML text.
+The contribute section links to this GitHub repo. The sign-up section is made to look like a code-editor window with mock-HTML text.
 
 ---
  
@@ -51,7 +51,10 @@ The contribute section links to this GitHub rep. The sign-up section is made to 
 
 ### Features Left to Implement
 
-I would like to add some advanced features to the site using JavaScript such as a randomized colour palette for the flip cards/accordian
+Once I've progressed in the JavaScript module I would like to add some more advanced features such as:
+- A separate modal for the Member Login
+- Perhaps some randomised elements such as the color pallete for the flip-cards and the couple images/names/quotes
+- GitHub OAuth integration, or at least the appearance of such.
 
 ## Technologies Used
 
@@ -66,7 +69,9 @@ I would like to add some advanced features to the site using JavaScript such as 
 
 ## Testing
 
-The site has been developed using the mobile first approach with responsive elements where possible and media queries when necessary. All changes to the site were tested in Google Chrome, Firefox, and Opera browsers (leveraging the developer tools in each) and across Windows, Linux, and Android operating systems.
+The site has been developed using the mobile first approach with responsive elements where possible and media queries when necessary. All changes to the site were tested in Google Chrome, Firefox, Opera, and Vivaldi browsers (leveraging the developer tools in each) and across Windows, Linux, and Android operating systems.
+
+During testing I found that some absolutely positioned elements had moved up/down further depending on which browser was used. The most consistant explanation I found for this was that absolutely positioned elements needed to have a relatively positioned parent element.
 
 ## Deployment
 
