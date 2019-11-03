@@ -12,11 +12,11 @@ The site is intended to be simple and minimalistic while also colourful and fun.
 
 ### Wireframes
 
-The initial wireframe was took inspiration from several, at the time, current dating sites such as [EliteSingles](https://dating.elitesingles.com/), [Match.com](https://ie.match.com/), and [OKCupid](https://www.okcupid.com/):
-<img src="https://github.com/nealbrophy/GetHubby/blob/master/wireframes/wireframe-1-bw.png" alt="wireframe-1" width="250px" align="left">
+The initial wireframe was took inspiration from several, at the time, current dating sites such as [EliteSingles](https://dating.elitesingles.com/), [Match.com](https://ie.match.com/), and [OKCupid](https://www.okcupid.com/). My intention with the second wireframe was to take the basic structure of the first, simplify it a little, and add some colour.
 
-My intention with the second wireframe was to take the basic structure of the first, simplify it a little, and add some colour:
-<img src="https://github.com/nealbrophy/GetHubby/blob/master/wireframes/wireframe-2-colour.png" alt="wireframe-2" width="250px" align="right">
+<img src="https://github.com/nealbrophy/GetHubby/blob/master/wireframes/wireframe-1-bw.png" alt="wireframe-1" width="50%" align="center">
+
+<img src="https://github.com/nealbrophy/GetHubby/blob/master/wireframes/wireframe-2-colour.png" alt="wireframe-2" width="50%" align="center">
 
 ### User Stories:
 - As a single person, I want a modern and appealing site which is simple to navigate.
