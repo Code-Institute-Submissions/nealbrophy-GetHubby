@@ -10,6 +10,11 @@ This is an imagined dating site for developers and specificially geared towards 
  
 The site is intended to be simple and minimalistic while also colourful and fun. The information should be short and to the point but with a light-hearted tone where appropriate. Text should use industry terminology to present an industry-specific focus.
 
+### User Stories:
+- As a single person, I want a modern and appealing site which is simple to navigate.
+- As a developer, I want a site that caters to my interests and is clearly aimed at people like me.
+- As a modern user, I want a mobile-friendly site that looks as good on small screens as large.
+
 ### Wireframes
 
 The initial wireframe was took inspiration from several, at the time, current dating sites such as [EliteSingles](https://dating.elitesingles.com/), [Match.com](https://ie.match.com/), and [OKCupid](https://www.okcupid.com/). My intention with the second wireframe was to take the basic structure of the first, simplify it a little, and add some colour.
@@ -18,10 +23,7 @@ The initial wireframe was took inspiration from several, at the time, current da
 
 <img src="https://github.com/nealbrophy/GetHubby/blob/master/wireframes/wireframe-2-colour.png" alt="wireframe-2" width="400px" align="center">
 
-### User Stories:
-- As a single person, I want a modern and appealing site which is simple to navigate.
-- As a developer, I want a site that caters to my interests and is clearly aimed at people like me.
-- As a modern user, I want a mobile-friendly site that looks as good on small screens as large.
+
 
 
 ## Features
