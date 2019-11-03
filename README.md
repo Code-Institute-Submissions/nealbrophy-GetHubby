@@ -10,10 +10,11 @@ This is an imagined dating site for developers and specificially geared towards 
  
 The site is intended to be simple and minimalistic while also colourful and fun. The information should be short and to the point but with a light-hearted tone where appropriate. Text should use industry terminology to present an industry-specific focus.
 
-<img src="https://github.com/nealbrophy/GetHubby/blob/master/wireframes/wireframe-1-bw.png" alt="wireframe-1" width="250px" style="float: left;">
-<img src="https://github.com/nealbrophy/GetHubby/blob/master/wireframes/wireframe-2-colour.png" alt="wireframe-2" width="250px" style="float: left;">
+### Wireframes
+<img src="https://github.com/nealbrophy/GetHubby/blob/master/wireframes/wireframe-1-bw.png" alt="wireframe-1" width="250px" align="left">
+<img src="https://github.com/nealbrophy/GetHubby/blob/master/wireframes/wireframe-2-colour.png" alt="wireframe-2" width="250px" align="right">
 
-User Stories:
+### User Stories:
 - As a single person, I want a modern and appealing site which is simple to navigate.
 - As a developer, I want a site that caters to my interests and is clearly aimed at people like me.
 - As a modern user, I want a mobile-friendly site that looks as good on small screens as large.
@@ -82,14 +83,15 @@ The site has been developed using the mobile first approach with multiple media 
 
 ## Deployment
 
-+++This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+GetHubby is hosted on GitHub pages and is deployed from the master branch. Any changes committed to the master branch will automatically update on the GitHub deployment.
 
-+++In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
-
-+++In addition, if it is not obvious, you should also describe how to run your code locally.
+To run the site locally you can clone it using the following instructions:
+- Create a folder in the desired location on your computer.
+- Open a terminal ([Mac instructions](https://macpaw.com/how-to/use-terminal-on-mac)|[Windows instructions](https://www.quora.com/How-do-I-open-terminal-in-windows)|[Linux instructions](https://www.howtogeek.com/howto/22283/four-ways-to-get-instant-access-to-a-terminal-in-linux/))
+- Navigate to the folder you created using `cd` command
+- Type `git init`
+- Next type `git clone https://github.com/nealbrophy/GetHubby`
+- To break the link between your local copy and the repo at https://github.com/nealbrophy/GetHubby type `git remote rm origin`
 
 
 ## Credits
