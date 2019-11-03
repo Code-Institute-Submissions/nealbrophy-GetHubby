@@ -5,7 +5,7 @@ This is an imagined dating site for developers and specificially geared towards 
 
 [Go to GetHubby](https://nealbrophy.github.io/GetHubby/)
 
- 
+--- 
 ## UX
  
 The site is intended to be simple and minimalistic while also colourful and fun. The information should be short and to the point but with a light-hearted tone where appropriate. Text should use industry terminology to present an industry-specific focus.
@@ -19,12 +19,12 @@ The site is intended to be simple and minimalistic while also colourful and fun.
 
 The initial wireframe was took inspiration from several, at the time, current dating sites such as [EliteSingles](https://dating.elitesingles.com/), [Match.com](https://ie.match.com/), and [OKCupid](https://www.okcupid.com/). My intention with the second wireframe was to take the basic structure of the first, simplify it a little, and add some colour.
 
-<img src="https://github.com/nealbrophy/GetHubby/blob/master/wireframes/wireframe-1-bw.png" alt="wireframe-1" width="400px" align="left">
+<img src="https://github.com/nealbrophy/GetHubby/blob/master/wireframes/wireframe-1-bw.png" alt="wireframe-1" width="300px" align="left">
 
 <img src="https://github.com/nealbrophy/GetHubby/blob/master/wireframes/wireframe-2-colour.png" alt="wireframe-2" width="400px" align="center">
 
 
-
+---
 
 ## Features
 
