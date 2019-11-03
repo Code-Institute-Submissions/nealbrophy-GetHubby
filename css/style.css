@@ -26,6 +26,13 @@ li {
     list-style: none;
 }
 
+.btn {
+    color: white;
+}
+
+.btn:hover {
+    color: white;
+}
 
 
 /*===========
@@ -42,8 +49,19 @@ li {
     text-decoration: overline;
 }
 
+.navButtonWrapper {
+    display: grid;
+    position: absolute;
+    top: 15%;
+    right: 1%;
+    grid-template-columns: 180px;
+    grid-template-rows: 1fr;
+    grid-template-areas: "navButtonGrid";
+}
+
 .navButton {
     background-color: #e66b7c;
+    grid-area: "navButtonGrid";
     color: white;
     border: 2px solid transparent;
     transition: all .5s ease-in-out;
@@ -57,15 +75,16 @@ li {
 
 .navButton > i {
     position: absolute;
+    grid-area: "navButtonGrid";
     z-index: -1;
-    top: 32%;
-    right: 5%;
+    top: 30%;
+    right: 55%;
     transform: translateX(0);
     transition: transform .3s ease-in-out;
 }
 
 .navButton:hover > i {
-    transform: translateX(-485%);
+    transform: translateX(-405%);
 }
 
 /*===========
@@ -108,9 +127,6 @@ li {
     height: 100%;
     z-index: 0;
 }
-
-
-
 
 /* jumbotron down arrow */
 
@@ -180,8 +196,6 @@ li {
     color: rgba(255, 255, 255, 1);
     transition: .3s;
 }
-
-
 
 /* typing anim */
 
@@ -306,14 +320,52 @@ li {
 
 /* accordian (small screen) */
 
-#aboutAccordian {
+.card {
     margin-left: 0;
     padding: 0;
     border: none;
 }
 
+.card .btn {
+    color: black;
+    background-color: transparent;
+}
+
+.card-header [type=button] {
+    -webkit-appearance: initial;
+}
+
+.card-header h2 {
+    display: grid;
+    grid-template-columns: [accordianHeadLeft] 1fr [accordianHeadCenter] 1fr [accordianHeadRight] 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "accordianHeadLeft accordianHeadCenter accordianHeadRight";
+}
+
+.card-header h2 button {
+    grid-area: accordianHeadLeft;
+}
+
+.card-header h2 i {
+    grid-area: accordianHeadRight;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#headingFour h2 button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.accordian {
+    border: none;
+}
+
 .accordian .btn-link {
     text-decoration: none;
+    color: black;
 }
 
 #headingOne {
@@ -321,12 +373,9 @@ li {
 }
 
 #headingOne i {
-    width: 50px;
-    height: 50px;
     padding-left: 4px;
     padding-top: 6px;
-    border-radius: 50%;
-    background-color: #e6de6b;
+    background-color: #cac255;
 }
 
 #headingTwo {
@@ -334,12 +383,8 @@ background-color: #f4aaff;
 }
 
 #headingTwo i {
-    width: 50px;
-    height: 50px;
-    padding-left: 1.8px;
     padding-top: 6px;
-    border-radius: 50%;
-    background-color: #d66be6;
+    background-color: #b751c7;
 }
 
 #headingThree {
@@ -347,12 +392,9 @@ background-color: #f4aaff;
 }
 
 #headingThree i {
-    width: 50px;
-    height: 50px;
-    padding-left: 1.8px;
+    
     padding-top: 8px;
-    border-radius: 50%;
-    background-color: #e66b7c;
+    background-color: #c5505f;
 }
 
 #headingFour {
@@ -360,12 +402,9 @@ background-color: #f4aaff;
 }
 
 #headingFour i {
-    width: 50px;
-    height: 50px;
-    padding-left: .5px;
+    
     padding-top: 7px;
-    border-radius: 50%;
-    background-color: #7ce66b;
+    background-color: #5ec54e;
 }
 
 /* about section down arrow */
@@ -434,6 +473,14 @@ background-color: #f4aaff;
     background: rgba(152, 251, 152, 0.5);
 }
 
+.story-button-1,
+.story-button-1:hover,
+.story-button-2,
+.story-button-2:hover,
+.story-button-3,
+.story-button-3:hover {
+    color: black;
+}
 
 .story-button-1 {
     background: rgba(152, 251, 152, 0.5);
@@ -713,7 +760,12 @@ background-color: #f4aaff;
 
 .forkButtonWrapper {
     display: grid;
-    grid-template-columns: [forkLeft] 25% [forkCenter] 50% [forkRight]25%;
+    /* position: absolute;
+    bottom: -22%;
+    left: 18%; */
+    
+    width: 100%;
+    grid-template-columns: [forkLeft] 1fr [forkCenter] 150px [forkRight] 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "forkLeft forkCenter forkRight";
     
@@ -721,15 +773,15 @@ background-color: #f4aaff;
 
 .forkButton {
     grid-area: forkCenter;
-    top: 53%;
-    left: 32%;
     border: 2px solid transparent;
     transition: all 0.3s ease-in-out;
     z-index: 1;
+    color: black;
 }
 
 .forkButton:hover {
     border: 2px solid white;
+    color: black;
 }
 
 .forkButton + i {
@@ -737,7 +789,7 @@ background-color: #f4aaff;
     position: relative;
     grid-area: forkCenter;
     z-index: 0;
-    top: 32%;
+    top: 33%;
     left: 40%;
     transform: translateX(0);
     transition: transform 0.3s ease-in-out;
@@ -746,7 +798,7 @@ background-color: #f4aaff;
 }
 
 .forkButton:hover + i {
-    transform: translateX(13%);
+    transform: translateX(15%);
 }
 
 /* sign-up section */
@@ -885,10 +937,12 @@ background-color: #f4aaff;
 
 }
 
+.contribute h2 {
+    padding-top: 2rem;
+}
+
 .signup h2 {
     color: black;
-    padding-top: 3rem;
-
 }
 
 
@@ -899,7 +953,7 @@ background-color: #f4aaff;
 }
 
 .form-group {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .form-group .tagBracket {
@@ -947,28 +1001,29 @@ background-color: #f4aaff;
     font-size: 1.2rem;
 }
 
-.signButtonWrapper {
-    display: grid;
-    grid-template-columns: [signLeft] 25% [signCenter] 50% [signRight]25%;
-    grid-template-rows: 1fr;
-    grid-template-areas: "signLeft signCenter signRight";
-    grid-template-rows: 1fr 1fr 1fr;
-    top: 0;
-    width: 100%;
-}
-
 .signup button {
     margin-top: 1.5rem;
     margin-bottom: 2rem;
 }
 
+.signButtonWrapper {
+    display: grid;
+    grid-template-columns: [signLeft] 1fr [signCenter] 150px [signRight] 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "signLeft signCenter signRight";
+    /* position: absolute;
+    bottom: -5%;
+    left: 9%; */
+    width: 100%;
+}
+
 .signButton {
     grid-area: signCenter;
+    top: 53%;
+    left: 30%;
     border: 2px solid transparent;
-    position: absolute;
+    transition: all 0.3s ease-in-out;
     z-index: 1;
-    left: 25%;
-    bottom: 15%;
 }
 
 .signButton:hover {
@@ -976,18 +1031,20 @@ background-color: #f4aaff;
 }
 
 .signButton + i {
-    grid-area: signCenter;
+    font-size: 1.2rem;
     position: relative;
+    grid-area: signCenter;
     z-index: 0;
-    top: 60%;
-    left: 22%;
-    border: 2px solid transparent;
+    top: 34%;
+    left: 45%;
     transform: translateX(0);
     transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out;
 }
 
 .signButton:hover + i {
-    transform: translateX(40%);
+    transform: translateX(54%);
 }
 
 
@@ -998,9 +1055,13 @@ background-color: #f4aaff;
 
 
 @media (min-width: 576px) {
+
+
     .learnButton {
         transition: all 0.3s ease-in-out;
         border: 2px solid transparent;
+        z-index: 1;
+        margin: 0 auto;
     }
 
     .learnButton:hover {
@@ -1009,10 +1070,11 @@ background-color: #f4aaff;
     
     .learnButton + i {
         color: white;
-        position: absolute;
+        text-decoration: none;
         z-index: -1;
+        position: absolute;
         left: 50%;
-        top: 75%;
+        top: 62%;
         transform: translateX(0);
         transition: transform 0.3s ease-in-out;
     }
@@ -1035,7 +1097,7 @@ background-color: #f4aaff;
         position: absolute;
         z-index: -1;
         left: 50%;
-        top: 75%;
+        top: 62%;
         transform: translateX(0);
         transition: transform 0.3s ease-in-out;
     }
@@ -1058,7 +1120,7 @@ background-color: #f4aaff;
         position: absolute;
         z-index: -1;
         left: 50%;
-        top: 75%;
+        top: 62%;
         transform: translateX(0);
         transition: transform 0.3s ease-in-out;
     }
@@ -1074,6 +1136,7 @@ background-color: #f4aaff;
     .contribute h3 {
         margin-top: 5rem;
     }
+    
 
 
 }
@@ -1088,7 +1151,17 @@ background-color: #f4aaff;
         min-height: 65vh;
     }
 
-    
+    .learnButton + i {
+        top: 72%;
+    }
+
+    .successButton + i {
+        top: 72%;
+    }
+
+    .joinButton + i {
+        top: 72%;
+    }
 
     .media {
         /* padding-top: 10rem; */
@@ -1148,12 +1221,13 @@ background-color: #f4aaff;
         height: 60px;
         padding: 15px 0;
         border-radius: 50%;
-        background-color: #e6de6b;
+        background-color: #DDA448;
+        color: white;
         margin-top: 3rem;
     }
 
     .card-back-1 {
-        background-color: #ccc788;
+        background-color: #DDA448;
     }
 
     .card-front-2 {
@@ -1165,12 +1239,13 @@ background-color: #f4aaff;
         height: 60px;
         padding: 15px 0;
         border-radius: 50%;
-        background-color: #d66be6;
+        background-color: #b751c7;
+        color: white;
         margin-top: 3rem;
     }
 
     .card-back-2 {
-        background-color: #d66be6;
+        background-color: #b751c7;
     }
 
     .card-front-3 {
@@ -1182,12 +1257,13 @@ background-color: #f4aaff;
         height: 60px;
         padding: 15px 0;
         border-radius: 50%;
-        background-color: #e66b7c;
+        background-color: #c5505f;
+        color: white;
         margin-top: 3rem;
     }
 
     .card-back-3 {
-        background-color: #e66b7c;
+        background-color: #c5505f;
     }
 
     .card-front-4 {
@@ -1199,12 +1275,13 @@ background-color: #f4aaff;
         height: 60px;
         padding: 15px 0;
         border-radius: 50%;
-        background-color: #7ce66b;
+        background-color: #5ec54e;
+        color: white;
         margin-top: 3rem;
     }
 
     .card-back-4 {
-        background-color: #7ce66b;
+        background-color: #5ec54e;
     }
 
 
@@ -1245,8 +1322,6 @@ background-color: #f4aaff;
         margin-top: 3rem;
 
     }
-
-    
 }
 
 /* large screens */
@@ -1259,6 +1334,18 @@ background-color: #f4aaff;
 
     .type-anim {
         font-size: 2.5rem;
+    }
+
+    .learnButton + i {
+        top: 75%;
+    }
+
+    .successButton + i {
+        top: 75%;
+    }
+
+    .joinButton + i {
+        top: 75%;
     }
 
     .about {
@@ -1285,6 +1372,35 @@ background-color: #f4aaff;
         padding-top: 3.5rem;
     }
 
+    .contribute h3 {
+        margin-top: 2.5rem;
+    }
+
+    .forkButtonWrapper {
+        margin-top: 2rem;
+    }
+
+    .signButtonWrapper {
+        margin-left: -1.5rem;
+    }
+
+    .windowOuter {
+        margin-top: 2.5rem;
+    }
+
+    .windowInner .row {
+        padding-bottom: 2.5rem;
+    }
+
+    .signup form {
+        padding-left: 1.5rem;
+        padding-top: 2.5rem;
+    }
+
+    label[for="exampleInputPassword1"] {
+        margin-top: 1.8rem;
+    }
+
 }
 
 /* x-large screens */
@@ -1295,7 +1411,7 @@ background-color: #f4aaff;
     }
 
     #about-d-arrow {
-        top: 125%;
+        top: 120%;
     }
 
     .story-button-1,

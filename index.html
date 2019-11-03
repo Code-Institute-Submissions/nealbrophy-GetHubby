@@ -38,7 +38,9 @@
                 </li>
             </ul>
         </div>
-        <a href="#" class="btn btn-info navButton d-none d-md-block">Member Login <i class="fas fa-user-check"></i></a>
+        <div class="navButtonWrapper">
+            <a href="#" class="btn navButton d-none d-md-block">Member Login <i class="fas fa-user-check"></i></a>
+        </div>
     </nav>
     <div class="container-fluid">
 
@@ -64,10 +66,11 @@
                                 </div>
                                 <p class="lead d-none d-md-block">Join a thriving community of
                                     single-and-ready-to-mingle coders!</p>
-                                <a href="#about-section"><button
-                                        class="btn btn-success btn-lg learnButton d-none d-sm-inline-block">Learn
-                                        More</button>
-                                    <i class="fas fa-question d-none d-md-inline-block"></i></a>
+                                    <a href="#about-section">
+                                        <button
+                                            class="btn btn-success btn-lg learnButton d-none d-sm-inline-block">Learn
+                                            More</button>
+                                        <i class="fas fa-question d-none d-sm-inline-block"></i></a>
                             </div>
                             <a href="#about-section" class="hvr-icon-down d-none d-lg-block"><i
                                     class="fas fa-arrow-down hvr-icon"></i></a>
@@ -86,7 +89,7 @@
                                 <a href="#testimonials-section"><button
                                         class="btn btn-success btn-lg successButton d-none d-sm-inline-block">Success
                                         Stories</button>
-                                    <i class="fas fa-user-friends d-none d-md-inline-block"></i></a>
+                                    <i class="fas fa-user-friends d-none d-sm-inline-block"></i></a>
 
                             </div>
                             <a href="#about-section" class="hvr-icon-down d-none d-lg-block"><i
@@ -106,7 +109,7 @@
                                 <a href="#signup-section"><button
                                         class="btn btn-success btn-lg joinButton d-none d-sm-inline-block">Join
                                         Now</button>
-                                    <i class="fas fa-user-plus d-none d-md-inline-block"></i>
+                                    <i class="fas fa-user-plus d-none d-sm-inline-block"></i>
                                 </a>
 
                             </div>
@@ -149,9 +152,9 @@
                 <div class="accordion d-md-none" id="aboutAccordion">
                     <div class="card">
                         <div class="card-header" id="headingOne">
-                            <h2 class="mb-0">
-                                <button class="btn text-left" type="button" data-toggle="collapse"
-                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h2 class="btn mb-0" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                <button class="btn text-left">
                                     Safety
                                 </button>
                                 <i class="fas fa-user-shield"></i>
@@ -171,12 +174,12 @@
                     </div>
                     <div class="card">
                         <div class="card-header" id="headingTwo">
-                            <h2 class="mb-0">
-                                <button class="btn collapsed" type="button" data-toggle="collapse"
-                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h2 class="btn collapsed mb-0" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <button class="btn text-left">
                                     Privacy
-                                    <i class="fas fa-user-secret post-it-icon"></i>
                                 </button>
+                                <i class="fas fa-user-secret post-it-icon"></i>
                             </h2>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
@@ -192,12 +195,12 @@
                     </div>
                     <div class="card">
                         <div class="card-header" id="headingThree">
-                            <h2 class="mb-0">
-                                <button class="btn collapsed" type="button" data-toggle="collapse"
-                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h2 class="btn collapsed mb-0" type="button" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <button class="btn text-left">
                                     Repos
-                                    <i class="fab fa-github"></i>
                                 </button>
+                                <i class="fab fa-github"></i>
                             </h2>
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
@@ -214,12 +217,12 @@
                     </div>
                     <div class="card">
                         <div class="card-header" id="headingFour">
-                            <h2 class="mb-0">
-                                <button class="btn collapsed text-center" type="button" data-toggle="collapse"
-                                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <h2 class="btn collapsed mb-0" type="button" data-toggle="collapse"
+                                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <button class="btn text-left">
                                     Hackathon Date
-                                    <i class="fas fa-laptop-code"></i>
                                 </button>
+                                <i class="fas fa-laptop-code"></i>
                             </h2>
                         </div>
                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
@@ -311,8 +314,10 @@
                     </div>
                 </div>
                 </ul>
-                <a href="#testimonials-section" id="about-d-arrow" class="hvr-icon-down d-none d-lg-block"><i
-                        class="fas fa-arrow-down hvr-icon"></i></a>
+                <div class="aboutDownArrowWrapper">
+                    <a href="#testimonials-section" id="about-d-arrow" class="hvr-icon-down d-none d-lg-block"><i
+                            class="fas fa-arrow-down hvr-icon"></i></a>
+                </div>
             </div>
 
         </section>
