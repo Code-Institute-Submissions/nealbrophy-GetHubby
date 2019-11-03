@@ -12,7 +12,7 @@ The site is intended to be simple and minimalistic while also colourful and fun.
 
 ### Wireframes
 <img src="https://github.com/nealbrophy/GetHubby/blob/master/wireframes/wireframe-1-bw.png" alt="wireframe-1" width="250px" align="left">
-<img src="https://github.com/nealbrophy/GetHubby/blob/master/wireframes/wireframe-2-colour.png" alt="wireframe-2" width="250px" align="right">
+<img src="https://github.com/nealbrophy/GetHubby/blob/master/wireframes/wireframe-2-colour.png" alt="wireframe-2" width="250px" align="left">
 
 ### User Stories:
 - As a single person, I want a modern and appealing site which is simple to navigate.
