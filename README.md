@@ -10,8 +10,8 @@ This is an imagined dating site for developers and specificially geared towards 
  
 The site is intended to be simple and minimalistic while also colourful and fun. The information should be short and to the point but with a light-hearted tone where appropriate. Text should use industry terminology to present an industry-specific focus.
 
-<img src="https://github.com/nealbrophy/GetHubby/blob/master/wireframes/wireframe-1-bw.png" alt="wireframe-1" width="250px" style="float: left">
-<img src="https://github.com/nealbrophy/GetHubby/blob/master/wireframes/wireframe-2-colour.png" alt="wireframe-2" width="250px" style="float: right">
+<img src="https://github.com/nealbrophy/GetHubby/blob/master/wireframes/wireframe-1-bw.png" alt="wireframe-1" width="250px" style="float: left;">
+<img src="https://github.com/nealbrophy/GetHubby/blob/master/wireframes/wireframe-2-colour.png" alt="wireframe-2" width="250px" style="float: left;">
 
 User Stories:
 - As a single person, I want a modern and appealing site which is simple to navigate.
