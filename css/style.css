@@ -718,7 +718,7 @@ background-color: #f4aaff;
 
 /* sign-up section */
 .signup {
-    min-height: 100vh;
+    
     color: white;
     background-color: slategray;
 }
@@ -850,10 +850,6 @@ background-color: #f4aaff;
 .signup span {
     text-transform: capitalize;
 
-}
-
-.contribute h2 {
-    padding-top: 2rem;
 }
 
 .signup h2 {
@@ -1253,8 +1249,13 @@ background-color: #f4aaff;
         top: 75%;
     }
 
+    .jumbotronDownIcon i {
+        display: inline;
+        
+    }
+
     .jumbotronDownIcon {
-        display: initial;
+        display: inline;
         cursor: pointer;
         font-size: 5rem;
         color: white;
@@ -1286,6 +1287,7 @@ background-color: #f4aaff;
     .jumbotronDownIcon:hover {
         color: white;
         opacity: 1;
+        text-decoration: none;
     }
 
     .about {
@@ -1301,13 +1303,17 @@ background-color: #f4aaff;
         width: 100%;
     }
     
+    .aboutDownIcon i {
+        display: inline;
+    }
+
     .aboutDownIcon {
-        display: initial;
+        display: inline;
         cursor: pointer;
         font-size: 5rem !important;
         color: black;
         position: absolute;
-        margin-top: 6rem;
+        margin-top: 12rem;
         z-index: 500;
         animation: iconBob 0.5s ease-in-out;
         animation-iteration-count: infinite;
@@ -1318,6 +1324,7 @@ background-color: #f4aaff;
     .aboutDownIcon:hover {
         color: black;
         opacity: 1;
+        text-decoration: none;
     }
 
     .media {
@@ -1332,8 +1339,12 @@ background-color: #f4aaff;
         padding-top: 3.5rem;
     }
 
+    .testimonialsDownIcon i {
+        display: inline;
+    }
+
     .testimonialsDownIcon {
-        display: initial;
+        display: inline;
         cursor: pointer;
         -webkit-cursor: pointer;
         -moz-cursor: pointer;
@@ -1352,6 +1363,7 @@ background-color: #f4aaff;
     .testimonialsDownIcon:hover {
         color: black;
         opacity: 1;
+        text-decoration: none;
     }
 
     .contribute h3 {
@@ -1374,6 +1386,10 @@ background-color: #f4aaff;
         padding-bottom: 2.5rem;
     }
 
+    .signup {
+        min-height: 100vh;
+    }
+
     .signup form {
         padding-left: 1.5rem;
         padding-top: 2.5rem;
@@ -1383,6 +1399,17 @@ background-color: #f4aaff;
         margin-top: 1.8rem;
     }
 
+}
+
+@media (min-width: 1200px) {
+
+    .aboutDownIcon {
+        margin-top: 7rem;
+    }
+
+    .testimonialsDownIcon {
+        margin-top: 40%;
+    }
 }
 
 /* x-large screens */
@@ -1400,6 +1427,7 @@ background-color: #f4aaff;
     .couple-3 i {
         margin-top: 4rem;
     }
+    
 
     .windowNumbersLeft {
         display: block;
