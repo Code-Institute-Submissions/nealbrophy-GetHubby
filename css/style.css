@@ -130,38 +130,9 @@ li {
 
 /* jumbotron down arrow */
 
-.jumbotronDownIcon {
-    cursor: pointer;
-    font-size: 5rem;
-    color: white;
-    position: absolute;
-    top: 80%;
-    left: 49%;
-    z-index: 500;
-    animation: iconBob 0.5s ease-in-out;
-    animation-iteration-count: infinite;
-    opacity: .5;
-    transition: opacity .2s ease-in-out;
-}
-
-@keyframes iconBob {
-    0% {
-        transform: translateY(0)
-    }
-
-    50% {
-        transform: translateY(5px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-
-}
-
-.jumbotronDownIcon:hover {
-    color: white;
-    opacity: 1;
+.jumbotronDownIcon,
+.jumbotronDownIcon i {
+    display: none;
 }
 
 /* typing anim */
@@ -239,7 +210,6 @@ li {
 .about {
     background-image: url(../images/code-1839406_1920_transparent.jpg);
     z-index: -1;
-    min-height: 93vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -271,7 +241,8 @@ li {
     text-transform: capitalize;
 }
 
-.about .flip-card .fas {
+.about .flip-card .fas,
+.about .flip-card .fab {
     font-size: 2rem;
     margin-left: 1rem;
 }
@@ -281,7 +252,7 @@ li {
     padding-top: 50px;
 }
 
-/* accordian (small screen) */
+/* accordion (small screen) */
 
 .card {
     margin-left: 0;
@@ -294,51 +265,58 @@ li {
     background-color: transparent;
 }
 
+
+#aboutAccordion .card-header h2 {
+    font-size: 1.5rem;
+}
+
+#aboutAccordion .card-header i {
+    font-size: 2rem;
+}
+
 .card-header [type=button] {
     -webkit-appearance: initial;
 }
 
 .card-header h2 {
     display: grid;
-    grid-template-columns: [accordianHeadLeft] 1fr [accordianHeadCenter] 1fr [accordianHeadRight] 1fr;
+    width: 100%;
+    grid-template-columns: [accordionHeadLeft] 70% [accordionHeadCenter] 1fr [accordionHeadRight] 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "accordianHeadLeft accordianHeadCenter accordianHeadRight";
+    grid-template-areas: "accordionHeadLeft accordionHeadCenter accordionHeadRight";
 }
 
-.card-header h2 button {
-    grid-area: accordianHeadLeft;
+.card-header h2 p {  
+    grid-area: accordionHeadLeft;
+    margin: auto 0;
 }
 
 .card-header h2 i {
-    grid-area: accordianHeadRight;
+    grid-area: accordionHeadRight;
     color: white;
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
 
-#headingFour h2 button {
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-.accordian {
+.accordion {
     border: none;
 }
 
-.accordian .btn-link {
+.accordion .btn-link {
     text-decoration: none;
     color: black;
 }
 
 #headingOne {
-    background-color: #FFF9AA;
+    background-color: rgb(226, 221, 149);
 }
 
 #headingOne i {
     padding-left: 4px;
     padding-top: 6px;
-    background-color: #cac255;
+    background-color: #a8a242;
+    
 }
 
 #headingTwo {
@@ -364,52 +342,21 @@ background-color: #f4aaff;
     background-color: #b5ffaa;
 }
 
+#headinFour h2 p { 
+}
+
 #headingFour i {
-    
     padding-top: 7px;
-    background-color: #5ec54e;
+    background-color: #48993c;
+    
 }
 
 /* about section down arrow */
 
-.aboutDownIconWrapper {
-    position: relative;
-    width: 100%;
+.aboutDownIcon,
+.aboutDownIcon i {
+    display: none;
 }
-
-.aboutDownIcon {
-    cursor: pointer;
-    font-size: 5rem !important;
-    color: black;
-    position: absolute;
-    margin-top: 6rem;
-    z-index: 500;
-    animation: iconBob 0.5s ease-in-out;
-    animation-iteration-count: infinite;
-    opacity: .5;
-    transition: opacity .2s ease-in-out;
-}
-
-@keyframes iconBob {
-    0% {
-        transform: translateY(0)
-    }
-
-    50% {
-        transform: translateY(5px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-
-}
-
-.aboutDownIcon:hover {
-    color: black;
-    opacity: 1;
-}
-
 
 
 /*===========
@@ -419,12 +366,12 @@ background-color: #f4aaff;
 .testimonials {
     background-image: url(../images/octor-love-transparency.png);
     z-index: -1;
-    min-height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     text-align: center;
+    padding-bottom: 2rem;
 }
 
 .testimonials-title {
@@ -454,7 +401,7 @@ background-color: #f4aaff;
 
 .couple-1-name,
 .couple-1-quote {
-    background: rgba(152, 251, 152, 0.5);
+    background: rgba(152, 251, 152, 0.7);
 }
 
 .story-button-1,
@@ -467,7 +414,7 @@ background-color: #f4aaff;
 }
 
 .story-button-1 {
-    background: rgba(152, 251, 152, 0.5);
+    background: rgba(152, 251, 152, 0.7);
     border: none;
     
 }
@@ -491,12 +438,12 @@ background-color: #f4aaff;
 
 .couple-2-name,
 .couple-2-quote {
-    background: rgba(251, 152, 251, 0.5);
+    background: rgba(251, 152, 251, 0.7);
 }
 
 
 .story-button-2 {
-    background: rgba(251, 152, 251, 0.5);
+    background: rgba(251, 152, 251, 0.7);
     border: none;
 }
 
@@ -511,11 +458,11 @@ background-color: #f4aaff;
 
 .couple-3-name,
 .couple-3-quote {
-    background: rgba(251, 201, 152, 0.5);
+    background: rgba(251, 201, 152, 0.7);
 }
 
 .story-button-3 {
-    background: rgba(251, 201, 152, 0.5);
+    background: rgba(251, 201, 152, 0.7);
     border: none;
 }
 
@@ -648,7 +595,8 @@ background-color: #f4aaff;
 
 /* testimonial section down arrow */
 
-#testimonials-d-arrow {
+.testimonialsDownIcon,
+.testimonialsDownIcon i {
     display: none;
 }
 
@@ -1178,13 +1126,13 @@ background-color: #f4aaff;
         height: 60px;
         padding: 15px 0;
         border-radius: 50%;
-        background-color: #DDA448;
+        background-color: #a8a242;
         color: white;
         margin-top: 3rem;
     }
 
     .card-back-1 {
-        background-color: #DDA448;
+        background-color: #a8a242;
     }
 
     .card-front-2 {
@@ -1258,7 +1206,7 @@ background-color: #f4aaff;
     }
 
     .testimonials {
-        min-height: 80vh;
+        padding-bottom: 3rem;
     }
 
     .signup {
@@ -1286,7 +1234,7 @@ background-color: #f4aaff;
 
     .carousel img {
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .type-anim {
@@ -1305,12 +1253,71 @@ background-color: #f4aaff;
         top: 75%;
     }
 
+    .jumbotronDownIcon {
+        display: initial;
+        cursor: pointer;
+        font-size: 5rem;
+        color: white;
+        position: absolute;
+        top: 80%;
+        left: 49%;
+        z-index: 500;
+        animation: iconBob 0.5s ease-in-out;
+        animation-iteration-count: infinite;
+        opacity: .5;
+        transition: opacity .2s ease-in-out;
+    }
+    
+    @keyframes iconBob {
+        0% {
+            transform: translateY(0)
+        }
+    
+        50% {
+            transform: translateY(5px);
+        }
+    
+        100% {
+            transform: translateY(0);
+        }
+    
+    }
+    
+    .jumbotronDownIcon:hover {
+        color: white;
+        opacity: 1;
+    }
+
     .about {
         min-height: 100vh;
     }
 
     .about .row {
         padding-top: 2rem;
+    }
+
+    .aboutDownIconWrapper {
+        position: relative;
+        width: 100%;
+    }
+    
+    .aboutDownIcon {
+        display: initial;
+        cursor: pointer;
+        font-size: 5rem !important;
+        color: black;
+        position: absolute;
+        margin-top: 6rem;
+        z-index: 500;
+        animation: iconBob 0.5s ease-in-out;
+        animation-iteration-count: infinite;
+        opacity: .5;
+        transition: opacity .2s ease-in-out;
+    }
+
+    .aboutDownIcon:hover {
+        color: black;
+        opacity: 1;
     }
 
     .media {
@@ -1325,23 +1332,26 @@ background-color: #f4aaff;
         padding-top: 3.5rem;
     }
 
-    #testimonials-d-arrow {
-        display: block;
-        color: rgba(0, 0, 0, 0.5);
+    .testimonialsDownIcon {
+        display: initial;
+        cursor: pointer;
+        -webkit-cursor: pointer;
+        -moz-cursor: pointer;
+        font-size: 5rem !important;
+        color: black;
         position: absolute;
-        bottom: -206%;
-        left: 48.5%;
-    
-        z-index: 150;
+        margin-top: 50%;
+        margin-left: 50%;
+        z-index: 500;
+        animation: iconBob 0.5s ease-in-out;
+        animation-iteration-count: infinite;
+        opacity: .5;
+        transition: opacity .2s ease-in-out;
     }
-    
-    #testimonials-d-arrow i {
-        font-size: 4rem;
-    }
-    
-    #testimonials-d-arrow:hover .hvr-icon {
-        color: rgb(0, 0, 0);
-        transition: .3s;
+
+    .testimonialsDownIcon:hover {
+        color: black;
+        opacity: 1;
     }
 
     .contribute h3 {
