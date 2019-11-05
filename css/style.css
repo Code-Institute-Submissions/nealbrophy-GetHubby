@@ -88,7 +88,7 @@ li {
 }
 
 /*===========
- CAROUSEL
+ JUMBOTRON / CAROUSEL
  ============ */
 .container-fluid {
     margin: 0;
@@ -98,11 +98,12 @@ li {
 .jumbotron {
     margin: 0;
     padding: 0;
+    
 }
 
 .carousel img {
     width: 100%;
-    min-height: 65%;
+    height: 60vh;
 }
 
 .carousel-caption {
@@ -191,6 +192,78 @@ li {
     50% {
         border-color: white;
     }
+}
+
+.learnButton {
+    transition: all 0.3s ease-in-out;
+    border: 2px solid transparent;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.learnButton:hover {
+    border: 2px solid white;
+}
+
+.learnButton+i {
+    color: white;
+    text-decoration: none;
+    z-index: -1;
+    position: absolute;
+    left: 50%;
+    top: 62%;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.learnButton:hover+i {
+    transform: translateX(564%);
+}
+
+.successButton {
+    transition: all 0.3s ease-in-out;
+    border: 2px solid transparent;
+}
+
+.successButton:hover {
+    border: 2px solid white;
+}
+
+.successButton+i {
+    color: white;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 62%;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.successButton:hover+i {
+    transform: translateX(442%);
+}
+
+.joinButton {
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.joinButton:hover {
+    border: 2px solid white;
+}
+
+.joinButton+i {
+    color: white;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 62%;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.joinButton:hover+i {
+    transform: translateX(292%);
 }
 
 /* jumbotron down icon (hide on xs-med screen) */
@@ -424,14 +497,14 @@ li {
 .story-button-1 {
     background: rgba(152, 251, 152, 0.7);
     border: none;
-    border: 2px solid transparent;
+    border: 2px solid black;
 
 }
 
 .story-button-1:hover {
     background: rgba(152, 251, 152, 1);
     transition: 0.5s;
-    border: 2px solid black;
+    border: 2px solid transparent;
 }
 
 .story-button-1+.fa-chevron-circle-left {
@@ -455,13 +528,13 @@ li {
 .story-button-2 {
     background: rgba(251, 152, 251, 0.7);
     border: none;
-    border: 2px solid transparent;
+    border: 2px solid black;
 }
 
 .story-button-2:hover {
     background: rgba(251, 152, 251, 1);
     transition: 0.5s;
-    border: 2px solid black;
+    border: 2px solid transparent;
 }
 
 .couple-3 img {
@@ -475,13 +548,13 @@ li {
 
 .story-button-3 {
     background: rgba(251, 201, 152, 0.7);
-    border: 2px solid transparent;
+    border: 2px solid black;
 }
 
 .story-button-3:hover {
     background: rgba(251, 201, 152, 1);
     transition: 0.5s;
-    border: 2px solid black;
+    border: 2px solid transparent;
 }
 
 /* throbbing chevron */
@@ -888,77 +961,7 @@ li {
 @media (min-width: 576px) {
 
 
-    .learnButton {
-        transition: all 0.3s ease-in-out;
-        border: 2px solid transparent;
-        z-index: 1;
-        margin: 0 auto;
-    }
-
-    .learnButton:hover {
-        border: 2px solid white;
-    }
-
-    .learnButton+i {
-        color: white;
-        text-decoration: none;
-        z-index: -1;
-        position: absolute;
-        left: 50%;
-        top: 62%;
-        transform: translateX(0);
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .learnButton:hover+i {
-        transform: translateX(564%);
-    }
-
-    .successButton {
-        transition: all 0.3s ease-in-out;
-        border: 2px solid transparent;
-    }
-
-    .successButton:hover {
-        border: 2px solid white;
-    }
-
-    .successButton+i {
-        color: white;
-        position: absolute;
-        z-index: -1;
-        left: 50%;
-        top: 62%;
-        transform: translateX(0);
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .successButton:hover+i {
-        transform: translateX(442%);
-    }
-
-    .joinButton {
-        border: 2px solid transparent;
-        transition: all 0.3s ease-in-out;
-    }
-
-    .joinButton:hover {
-        border: 2px solid white;
-    }
-
-    .joinButton+i {
-        color: white;
-        position: absolute;
-        z-index: -1;
-        left: 50%;
-        top: 62%;
-        transform: translateX(0);
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .joinButton:hover+i {
-        transform: translateX(292%);
-    }
+    
 
     .contribute {
         padding-top: 2.5rem;
@@ -1133,6 +1136,7 @@ li {
 
     .testimonials {
         padding-bottom: 3rem;
+        min-height: 80vh;
     }
 
     .signup {
@@ -1172,7 +1176,7 @@ li {
 
     .carousel img {
         width: 100%;
-        min-height: 100vh;
+        
     }
 
     .type-anim {
@@ -1232,9 +1236,7 @@ li {
         text-decoration: none;
     }
 
-    .about {
-        min-height: 100vh;
-    }
+    
 
     .about-title h2 {
         padding-top: 2rem;
@@ -1281,9 +1283,6 @@ li {
         padding-top: 8rem;
     }
 
-    .testimonials {
-        min-height: 100vh;
-    }
 
     .testimonials-title {
         padding-top: 3.5rem;
@@ -1346,7 +1345,7 @@ li {
     }
 
     .signup {
-        min-height: 100vh;
+        min-height: 60vh;
     }
 
     .signup form {
@@ -1374,13 +1373,43 @@ li {
 
 @media (min-width: 1200px) and (min-height: 760px) {
 
-    .aboutDownIcon {
-        margin-top: 19rem;
+    .carousel img {
+        min-height: 100vh;
     }
-    
-    /*  .testimonialsDownIcon {
-        margin-top: 38%;
-    } */
+
+    .about {
+        min-height: 100vh;
+    }
+
+    .aboutDownIcon {
+        margin-top: 11rem;
+    }
+
+    .testimonials {
+        min-height: 100vh;
+    }
+
+    .media {
+        padding-top: 11rem;
+    }
+
+    .testimonialsDownIcon {
+        top: 370%;
+    }
+
+    .signup {
+        min-height: 100vh;
+    }
+
+    .contribute h3 {
+        margin-top: 5.5rem;
+    }
+
+    .windowOuter {
+        margin-top: 6.5rem;
+    }
+
+
 }
 
 /* x-large screens */
@@ -1406,12 +1435,6 @@ li {
 
 }
 
-@media (min-width: 1276px) and (min-height: 1000px) {
-    .testimonialsDownIcon {
-        top: 415%;
-    }
-}
-
 @media (min-width: 1310px) {
 
     .flip-card {
@@ -1421,10 +1444,11 @@ li {
     .flip-card-1 {
         display: block;
     }
+
 }
 
 @media (min-width: 1594px) and (min-height: 1000px) {
     .testimonialsDownIcon {
-        top: 445%;
+        top: 400%;
     }
 }
