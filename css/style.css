@@ -45,10 +45,10 @@ li {
 }
 
 .navbar-collapse a:hover {
-
     text-decoration: overline;
 }
 
+/* member login button */
 .navButtonWrapper {
     display: grid;
     position: absolute;
@@ -73,7 +73,7 @@ li {
 
 }
 
-.navButton > i {
+.navButton>i {
     position: absolute;
     grid-area: "navButtonGrid";
     z-index: -1;
@@ -83,7 +83,7 @@ li {
     transition: transform .3s ease-in-out;
 }
 
-.navButton:hover > i {
+.navButton:hover>i {
     transform: translateX(-405%);
 }
 
@@ -115,8 +115,6 @@ li {
     top: 5%;
 }
 
-
-
 .overlay {
     background-color: #8a2be2;
     opacity: .6;
@@ -128,14 +126,7 @@ li {
     z-index: 0;
 }
 
-/* jumbotron down arrow */
-
-.jumbotronDownIcon,
-.jumbotronDownIcon i {
-    display: none;
-}
-
-/* typing anim */
+/* typing animation */
 
 .type-anim {
     display: flex;
@@ -202,6 +193,13 @@ li {
     }
 }
 
+/* jumbotron down icon (hide on xs-med screen) */
+
+.jumbotronDownIcon,
+.jumbotronDownIcon i {
+    display: none;
+}
+
 
 /*===========
  ABOUT
@@ -233,18 +231,10 @@ li {
     margin: 0 auto;
     padding-bottom: 3rem;
     display: block;
-
-
 }
 
 .about span {
     text-transform: capitalize;
-}
-
-.about .flip-card .fas,
-.about .flip-card .fab {
-    font-size: 2rem;
-    margin-left: 1rem;
 }
 
 .about h3 {
@@ -286,7 +276,7 @@ li {
     grid-template-areas: "accordionHeadLeft accordionHeadCenter accordionHeadRight";
 }
 
-.card-header h2 p {  
+.card-header h2 p {
     grid-area: accordionHeadLeft;
     margin: auto 0;
 }
@@ -316,11 +306,11 @@ li {
     padding-left: 4px;
     padding-top: 6px;
     background-color: #a8a242;
-    
+
 }
 
 #headingTwo {
-background-color: #f4aaff;
+    background-color: #f4aaff;
 }
 
 #headingTwo i {
@@ -333,7 +323,7 @@ background-color: #f4aaff;
 }
 
 #headingThree i {
-    
+
     padding-top: 8px;
     background-color: #c5505f;
 }
@@ -342,22 +332,27 @@ background-color: #f4aaff;
     background-color: #b5ffaa;
 }
 
-#headinFour h2 p { 
-}
+#headinFour h2 p {}
 
 #headingFour i {
     padding-top: 7px;
     background-color: #48993c;
-    
+
 }
 
 /* flip-cards (large screens) */
+
+.about .flip-card .fas,
+.about .flip-card .fab {
+    font-size: 2rem;
+    margin-left: 1rem;
+}
 
 .flip-card {
     display: none;
 }
 
-/* about section down arrow */
+/* about down icon (hide on xs-med screen) */
 
 .aboutDownIcon,
 .aboutDownIcon i {
@@ -368,6 +363,13 @@ background-color: #f4aaff;
 /*===========
  TESTIMONIALS
  ============ */
+
+.testimonials-body {
+    position: relative;
+    
+    
+    
+}
 
 .testimonials {
     background-image: url(../images/octor-love-transparency.png);
@@ -423,7 +425,7 @@ background-color: #f4aaff;
     background: rgba(152, 251, 152, 0.7);
     border: none;
     border: 2px solid transparent;
-    
+
 }
 
 .story-button-1:hover {
@@ -432,11 +434,11 @@ background-color: #f4aaff;
     border: 2px solid black;
 }
 
-.story-button-1 + .fa-chevron-circle-left {
+.story-button-1+.fa-chevron-circle-left {
     transition: transform .5s ease-in-out;
 }
 
-.story-button-1:hover + .fa-chevron-circle-left {
+.story-button-1:hover+.fa-chevron-circle-left {
     transform: rotate(45deg);
 }
 
@@ -482,7 +484,7 @@ background-color: #f4aaff;
     border: 2px solid black;
 }
 
-/* button icon */
+/* throbbing chevron */
 @-webkit-keyframes hvr-pulse-1 {
     0% {
         -webkit-transform: scale(1.1);
@@ -604,14 +606,6 @@ background-color: #f4aaff;
 }
 
 
-/* testimonial section down arrow */
-
-.testimonialsDownIcon,
-.testimonialsDownIcon i {
-    display: none;
-}
-
-
 /* testimonial collapse (small screen) */
 #johnAndEllen .cardbody {
     border: 10px solid #98fb98;
@@ -670,6 +664,13 @@ background-color: #f4aaff;
     font-style: italic;
 }
 
+/* testimonials down icon (hide on xs-med screen) */
+
+.testimonialsDownIcon,
+.testimonialsDownIcon i {
+    display: none;
+}
+
 /*======================
  CONTRIBUTE and SIGN UP
  ======================= */
@@ -694,7 +695,7 @@ background-color: #f4aaff;
     grid-template-columns: [forkLeft] 1fr [forkCenter] 150px [forkRight] 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "forkLeft forkCenter forkRight";
-    
+
 }
 
 .forkButton {
@@ -710,7 +711,7 @@ background-color: #f4aaff;
     color: black;
 }
 
-.forkButton + i {
+.forkButton+i {
     font-size: 1.6rem;
     position: relative;
     grid-area: forkCenter;
@@ -723,13 +724,13 @@ background-color: #f4aaff;
     -webkit-transition: transform 0.3s ease-in-out;
 }
 
-.forkButton:hover + i {
+.forkButton:hover+i {
     transform: translateX(15%);
 }
 
 /* sign-up section */
 .signup {
-    
+
     color: white;
     background-color: slategray;
 }
@@ -738,96 +739,7 @@ background-color: #f4aaff;
     margin-top: 2rem;
 }
 
-/* sign-up pointer */
-
-@-webkit-keyframes hvr-icon-drop {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 0;
-        -webkit-transform: translateY(-100%);
-        transform: translateY(-100%);
-    }
-
-    51%,
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes hvr-icon-drop {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 0;
-        -webkit-transform: translateY(-100%);
-        transform: translateY(-100%);
-    }
-
-    51%,
-    100% {
-        opacity: 1;
-    }
-}
-
-.hvr-icon-drop {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    opacity: 0;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-animation-name: hvr-icon-drop;
-    animation-name: hvr-icon-drop;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-delay: 0.3s;
-    animation-delay: 0.3s;
-    -webkit-animation-fill-mode: forwards;
-    ;
-    animation-fill-mode: forwards;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-    animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-
-
-}
-
-.hvr-icon-drop .hvr-icon {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    opacity: 0;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-animation-name: hvr-icon-drop;
-    animation-name: hvr-icon-drop;
-    -webkit-animation-duration: 0.5s;
-    animation-duration: 0.5s;
-    -webkit-animation-delay: 0s;
-    animation-delay: 0s;
-    -webkit-animation-fill-mode: forwards;
-    ;
-    animation-fill-mode: forwards;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-    animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite
-}
-
-/* sign-up faux text editor */
+/* sign-up code window */
 
 .windowOuter {
     padding-bottom: 1rem;
@@ -949,7 +861,7 @@ background-color: #f4aaff;
     border: 2px solid white;
 }
 
-.signButton + i {
+.signButton+i {
     font-size: 1.2rem;
     position: relative;
     grid-area: signCenter;
@@ -962,7 +874,7 @@ background-color: #f4aaff;
     -webkit-transition: transform 0.3s ease-in-out;
 }
 
-.signButton:hover + i {
+.signButton:hover+i {
     transform: translateX(54%);
 }
 
@@ -986,8 +898,8 @@ background-color: #f4aaff;
     .learnButton:hover {
         border: 2px solid white;
     }
-    
-    .learnButton + i {
+
+    .learnButton+i {
         color: white;
         text-decoration: none;
         z-index: -1;
@@ -997,8 +909,8 @@ background-color: #f4aaff;
         transform: translateX(0);
         transition: transform 0.3s ease-in-out;
     }
-    
-    .learnButton:hover + i {
+
+    .learnButton:hover+i {
         transform: translateX(564%);
     }
 
@@ -1011,7 +923,7 @@ background-color: #f4aaff;
         border: 2px solid white;
     }
 
-    .successButton + i {
+    .successButton+i {
         color: white;
         position: absolute;
         z-index: -1;
@@ -1020,8 +932,8 @@ background-color: #f4aaff;
         transform: translateX(0);
         transition: transform 0.3s ease-in-out;
     }
-    
-    .successButton:hover + i {
+
+    .successButton:hover+i {
         transform: translateX(442%);
     }
 
@@ -1034,7 +946,7 @@ background-color: #f4aaff;
         border: 2px solid white;
     }
 
-    .joinButton + i {
+    .joinButton+i {
         color: white;
         position: absolute;
         z-index: -1;
@@ -1043,8 +955,8 @@ background-color: #f4aaff;
         transform: translateX(0);
         transition: transform 0.3s ease-in-out;
     }
-    
-    .joinButton:hover + i {
+
+    .joinButton:hover+i {
         transform: translateX(292%);
     }
 
@@ -1055,7 +967,7 @@ background-color: #f4aaff;
     .contribute h3 {
         margin-top: 5rem;
     }
-    
+
 
 
 }
@@ -1063,22 +975,22 @@ background-color: #f4aaff;
 
 /*medium screens  */
 @media (min-width: 768px) {
-    
-    
+
+
     .carousel img {
         width: 100%;
         min-height: 65vh;
     }
 
-    .learnButton + i {
+    .learnButton+i {
         top: 72%;
     }
 
-    .successButton + i {
+    .successButton+i {
         top: 72%;
     }
 
-    .joinButton + i {
+    .joinButton+i {
         top: 72%;
     }
 
@@ -1088,7 +1000,10 @@ background-color: #f4aaff;
 
     .about .row {
         display: flex;
+    }
 
+    .about-body {
+        padding-top: 10%;
     }
 
     .flip-card-3,
@@ -1264,21 +1179,21 @@ background-color: #f4aaff;
         font-size: 2.5rem;
     }
 
-    .learnButton + i {
+    .learnButton+i {
         top: 75%;
     }
 
-    .successButton + i {
+    .successButton+i {
         top: 75%;
     }
 
-    .joinButton + i {
+    .joinButton+i {
         top: 75%;
     }
 
     .jumbotronDownIcon i {
         display: inline;
-        
+
     }
 
     .jumbotronDownIcon {
@@ -1295,22 +1210,22 @@ background-color: #f4aaff;
         opacity: .5;
         transition: opacity .2s ease-in-out;
     }
-    
+
     @keyframes iconBob {
         0% {
             transform: translateY(0)
         }
-    
+
         50% {
             transform: translateY(5px);
         }
-    
+
         100% {
             transform: translateY(0);
         }
-    
+
     }
-    
+
     .jumbotronDownIcon:hover {
         color: white;
         opacity: 1;
@@ -1321,7 +1236,7 @@ background-color: #f4aaff;
         min-height: 100vh;
     }
 
-    .about .row {
+    .about-title h2 {
         padding-top: 2rem;
     }
 
@@ -1329,11 +1244,15 @@ background-color: #f4aaff;
         padding-left: 0;
     }
 
+    .about .row .about-body {
+        padding-top: 20%;
+    }
+
     .aboutDownIconWrapper {
         position: relative;
         width: 100%;
     }
-    
+
     .aboutDownIcon i {
         display: inline;
     }
@@ -1344,7 +1263,7 @@ background-color: #f4aaff;
         font-size: 5rem !important;
         color: black;
         position: absolute;
-        margin-top: 5%;
+        margin-top: 26%;
         z-index: 500;
         animation: iconBob 0.5s ease-in-out;
         animation-iteration-count: infinite;
@@ -1370,6 +1289,13 @@ background-color: #f4aaff;
         padding-top: 3.5rem;
     }
 
+    .testimonialsDownIconWrapper {
+        display: inline;
+        position: relative;
+        width: 100%;
+        height: 100px;        
+    }
+
     .testimonialsDownIcon i {
         display: inline;
     }
@@ -1379,11 +1305,13 @@ background-color: #f4aaff;
         cursor: pointer;
         -webkit-cursor: pointer;
         -moz-cursor: pointer;
-        font-size: 5rem !important;
+        font-size: 5rem;
         color: black;
         position: absolute;
-        margin-top: 38%;
-        margin-left: 50%;
+        top: 320%;
+        left: 50%;
+        
+        
         z-index: 500;
         animation: iconBob 0.5s ease-in-out;
         animation-iteration-count: infinite;
@@ -1432,19 +1360,31 @@ background-color: #f4aaff;
 
 }
 
-@media (min-width: 1200px) and (min-height: 760px) {
-
-    .aboutDownIcon {
-        margin-top: 7rem;
-    }
-
+@media (min-width: 1132px) and (min-height: 1000px) {
     .testimonialsDownIcon {
-        margin-top: 38%;
+        top: 350%;
     }
 }
 
+@media (min-width: 1144px) and (min-height: 1000px) {
+    .testimonialsDownIcon {
+        top: 380%;
+    }
+}
+
+@media (min-width: 1200px) and (min-height: 760px) {
+
+    .aboutDownIcon {
+        margin-top: 19rem;
+    }
+    
+    /*  .testimonialsDownIcon {
+        margin-top: 38%;
+    } */
+}
+
 /* x-large screens */
-@media (min-width: 1260px) and (min-height: 1000px;) {
+@media (min-width: 1260px) and (min-height: 1000px; ) {
 
     .media {
         padding-top: 10rem;
@@ -1458,12 +1398,18 @@ background-color: #f4aaff;
     .couple-3 i {
         margin-top: 4rem;
     }
-    
+
 
     .windowNumbersLeft {
         display: block;
     }
 
+}
+
+@media (min-width: 1276px) and (min-height: 1000px) {
+    .testimonialsDownIcon {
+        top: 415%;
+    }
 }
 
 @media (min-width: 1310px) {
@@ -1474,5 +1420,11 @@ background-color: #f4aaff;
 
     .flip-card-1 {
         display: block;
+    }
+}
+
+@media (min-width: 1594px) and (min-height: 1000px) {
+    .testimonialsDownIcon {
+        top: 445%;
     }
 }

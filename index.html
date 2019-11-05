@@ -15,7 +15,10 @@
 </head>
 
 <body>
-    <!-- NAVBAR -->
+    <!----------------------
+          **NAVBAR**
+    ------------------------>
+
     <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
         <a href="#" class="navbar-brand">GetHubby</a>
         <!-- toggler -->
@@ -44,7 +47,9 @@
     </nav>
     <div class="container-fluid">
 
-        <!-- JUMBOTRON / CTA -->
+        <!----------------------
+          **JUMBOTRON / CTA**
+    ------------------------>
         <section class="cta jumbotron text-center">
             <!-- bootstrap carousel -->
             <div class="carousel-wrapper">
@@ -55,6 +60,7 @@
                         <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
+                        <!-- first slide -->
                         <div class="carousel-item active">
                             <div class="overlay"></div>
                             <img src="images/black-and-white-2590810_1920-crop.jpg" class="d-block" alt="...">
@@ -71,10 +77,12 @@
                                         More</button>
                                     <i class="fas fa-question d-none d-sm-inline-block"></i></a>
                             </div>
+                            <!-- down icon -->
                             <a href="#about-section" class="jumbotronDownIcon">
                                 <i class="far fa-hand-point-down"></i>
                             </a>
                         </div>
+                        <!-- second slide -->
                         <div class="carousel-item">
                             <div class="overlay"></div>
                             <img src="images/couple-1210023_1920-crop.jpg" class="d-block" alt="...">
@@ -92,10 +100,12 @@
                                     <i class="fas fa-user-friends d-none d-sm-inline-block"></i></a>
 
                             </div>
+                            <!-- down icon -->
                             <a href="#about-section" class="jumbotronDownIcon">
                                 <i class="far fa-hand-point-down"></i>
                             </a>
                         </div>
+                        <!-- third slide -->
                         <div class="carousel-item">
                             <div class="overlay"></div>
                             <img src="images/diego-rezende-CFIv79QxPjA-unsplash_greyscale-crop.jpg" class="d-block"
@@ -114,11 +124,13 @@
                                 </a>
 
                             </div>
+                            <!-- down icon -->
                             <a href="#about-section" class="jumbotronDownIcon">
                                 <i class="far fa-hand-point-down"></i>
                             </a>
                         </div>
                     </div>
+                    <!-- carousel controls -->
                     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
@@ -137,7 +149,9 @@
 
 
 
-        <!-- ABOUT -->
+        <!----------------------
+                **ABOUT**
+        ------------------------>
         <section class="container-fluid about">
             <div class="row" id="about-section">
                 <div class="about-overlay"></div>
@@ -150,7 +164,7 @@
                 </div>
             </div>
 
-            <div class="row col-12">
+            <div class="row about-body col-12">
                 <!-- bootstrap collapse (small screen) -->
                 <div class="accordion d-md-none" id="aboutAccordion">
                     <div class="card">
@@ -334,7 +348,9 @@
 
         </section>
 
-        <!-- TESTIMONIALS -->
+        <!----------------------
+            **TESTIMONIALS**
+        ------------------------>
         <section class="container-fluid testimonials" id="testimonials-section">
             <div class="row">
                 <div class="col-12 testimonials-title">
@@ -345,7 +361,8 @@
                             from us though:</span></p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row testimonials-body">
+                <!-- couple one -->
                 <blockquote class="blockquote couple-1 mt-2 col-md-6 col-lg-4">
                     <div class="media">
                         <div class="d-none d-sm-block">
@@ -366,7 +383,7 @@
                                 aria-expanded="false" aria-controls="johnAndEllen">Read full
                                 Q&amp;A</a>
                             <i class="fas fa-chevron-circle-left d-none d-md-inline-block hvr-pulse-1"></i>
-                            <!-- bootstrap collapse John & Ellen -->
+                            <!-- bootstrap collapse (small screen) -->
                             <div class="collapse d-md-none" id="johnAndEllen">
                                 <div class="card cardbody bg-gradient-dark">
                                     <span class="question">What brought you to GetHubby?</span>
@@ -391,7 +408,7 @@
                                         don't think he ever would've noticed me.</p>
                                 </div>
                             </div>
-                            <!-- bootstrap modal John & Ellen -->
+                            <!-- bootstrap modal (med-lg screen) -->
                             <div class="modal fade" id="johnAndEllenModal" tabindex="-1" role="dialog"
                                 aria-labelledby="johnAndEllenModalTitle" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
@@ -441,6 +458,7 @@
                             </div>
                         </div>
                 </blockquote>
+                <!-- couple two -->
                 <blockquote class="blockquote couple-2 mt-2 col-md-6 col-lg-4">
                     <div class="media">
                         <div class="d-none d-sm-block">
@@ -461,7 +479,7 @@
                                 aria-expanded="false" aria-controls="susanAndGordon">Read full
                                 Q&amp;A</a>
                             <i class="fas fa-chevron-circle-left d-none d-md-inline-block hvr-pulse-2"></i>
-                            <!-- bootstrap collapse Susan & Gordon -->
+                            <!-- bootstrap collapse (small screen) -->
                             <div class="collapse d-md-none" id="susanAndGordon">
                                 <div class="card cardbody">
                                     <span class="question">What did you do for your first date?</span>
@@ -498,7 +516,7 @@
                                     <p class="answer"><span class="name">Gordon:</span> I know.</p>
                                 </div>
                             </div>
-                            <!-- bootstrap modal Susan & Gordon -->
+                            <!-- bootstrap modal (med-lg screen) -->
                             <div class="modal fade" id="susanAndGordonModal" tabindex="-1" role="dialog"
                                 aria-labelledby="susanAndGordonModalTitle" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
@@ -551,7 +569,7 @@
                             </div>
                         </div>
                 </blockquote>
-
+                <!-- couple three -->
                 <blockquote class="blockquote couple-3 mt-2 d-md-none d-lg-block col-lg-4">
                     <div class="media">
                         <div class="d-none d-sm-block">
@@ -573,7 +591,7 @@
                                 aria-expanded="false" aria-controls="dougAndMonte">Read full
                                 Q&amp;A</a>
                             <i class="fas fa-chevron-circle-left d-none d-md-inline-block hvr-pulse-3"></i>
-                            <!-- bootstrap collapse Doug & Monte -->
+                            <!-- bootstrap collapse (small screen) -->
                             <div class="collapse d-md-none" id="dougAndMonte">
                                 <div class="card cardbody">
                                     <span class="question">What did you do for your first date?</span>
@@ -594,7 +612,7 @@
                                     <p class="answer"><span class="name">Monte:</span> Kidding!</p>
                                 </div>
                             </div>
-                            <!-- bootstrap modal Doug & Monte -->
+                            <!-- bootstrap modal (med-lg screen) -->
                             <div class="modal fade" id="dougAndMonteModal" tabindex="-1" role="dialog"
                                 aria-labelledby="dougAndMonteModalTitle" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
@@ -637,16 +655,22 @@
                         </div>
                     </div>
                 </blockquote>
-                <a href="#signup-section" class="testimonialsDownIcon">
-                    <i class="far fa-hand-point-down"></i>
+                <!-- down icon -->
+                <div class="testimonialsDownIconWrapper">
+                    <a href="#signup-section" class="testimonialsDownIcon">
+                        <i class="far fa-hand-point-down"></i>
                     </a>
+                </div>
             </div>
         </section>
 
 
-        <!-- CONTRIBUTE / SIGN-UP -->
+        <!----------------------
+              **SIGNUP**
+        ------------------------>
         <section class="container-fluid signup">
             <div class="row">
+                <!-- contribute -->
                 <div class="contribute col-md-6 col-lg-4 mx-auto">
                     <h2 class="text-uppercase text-center">Contribute</h2>
                     <h3>Open Source</h3>
@@ -660,11 +684,9 @@
                 </div>
                 <div class="col-md-6 col-lg-4 mx-auto" id="signup-section">
                     <h2 class="text-uppercase text-center">Sign-Up/Sign-In
-                        <!--<i class="far fa-hand-point-down hvr-icon-drop"></i>-->
                     </h2>
-
+                    <!-- code window OUTER -->
                     <div class="windowOuter">
-
                         <i class="fas fa-times-circle"></i>
                         <div class="windowInner" id="codeWindow">
                             <div class="row">
@@ -692,6 +714,7 @@
                                     <div class="windowNumbers1">145</div>
                                     <div class="windowNumbers1">146</div>
                                 </div>
+                                <!-- code window INNER -->
                                 <div class="windowContentRight col-11">
                                     <form>
                                         <div class="form-group">
