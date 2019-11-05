@@ -1,7 +1,7 @@
 # GetHubby
-Code Institute User Centric Frontend Develtopment Milestone Project One
+Code Institute User Centric Frontend Develtopment: Milestone Project One
 
-This is an imagined dating site for developers and specificially geared towards users of GitHub leveraging the existing social & community aspects of same. The goal is to have a site which appeals to developers by using industry lingo and to allow users to sign-up via existing, commonly used, industry tools (e.g. GitHub).
+This is an imagined dating site for developers and specificially geared towards users of GitHub leveraging the existing social & community aspects of same. The goal is to have a site which appeals to developers by using industry lingo and to allow users to sign-up via existing, commonly used industry tools (i.e. GitHub).
 
 [Go to GetHubby](https://nealbrophy.github.io/GetHubby/)
 
@@ -17,9 +17,9 @@ The site is intended to be simple and minimalistic while also colourful and fun.
 
 ### Wireframes
 
-The initial wireframe was took inspiration from several, at the time, current dating sites such as [EliteSingles](https://dating.elitesingles.com/), [Match.com](https://ie.match.com/), and [OKCupid](https://www.okcupid.com/). My intention with the second wireframe was to take the basic structure of the first, simplify it a little, and add some colour.
+The initial wireframe was intended to outline the basic structure of the site and took inspiration from several popular current dating sites such as [EliteSingles](https://dating.elitesingles.com/), [Match.com](https://ie.match.com/), and [OKCupid](https://www.okcupid.com/). The second wireframe took the structure from the first, simplified it somewhat, and added some style/colour.
 
-<img src="https://github.com/nealbrophy/GetHubby/blob/master/wireframes/wireframe-1-bw.png" alt="wireframe-1" width="300px" align="left">
+<img src="https://github.com/nealbrophy/GetHubby/blob/master/wireframes/wireframe-1-bw.png" alt="wireframe-1" width="318px" align="left">
 
 <img src="https://github.com/nealbrophy/GetHubby/blob/master/wireframes/wireframe-2-colour.png" alt="wireframe-2" width="400px" align="center">
 
@@ -52,9 +52,10 @@ The contribute section links to this GitHub repo. The sign-up section is made to
 ### Features Left to Implement
 
 Once I've progressed in the JavaScript module I would like to add some more advanced features such as:
-- A separate modal for the Member Login
-- Perhaps some randomised elements such as the color pallete for the flip-cards and the couple images/names/quotes
-- GitHub OAuth integration, or at least the appearance of such.
+- A separate, customized modal for the Member Login.
+- Randomised elements such as the color pallete for the flip-cards and the testimonials (couple images/names/quotes).
+- GitHub OAuth integration, or at least the appearance of such. 
+- A database of mock profiles and the ability to actually run through a sign-up process.
 
 ## Technologies Used
 
@@ -69,9 +70,9 @@ Once I've progressed in the JavaScript module I would like to add some more adva
 
 ## Testing
 
-The site has been developed using the mobile first approach with responsive elements where possible and media queries when necessary. All changes to the site were tested in Google Chrome, Firefox, Opera, and Vivaldi browsers (leveraging the developer tools in each) and across Windows, Linux, and Android operating systems.
+The site has been developed using the mobile first approach with responsive elements where possible and media queries when necessary. All changes to the site were tested in Google Chrome, Firefox, Opera, and Vivaldi browsers (leveraging the developer tools in each) and across Windows (desktop), Linux (desktop & laptop), and Android operating systems (mobile).
 
-During testing I found that some absolutely positioned elements had moved up/down further depending on which browser was used. The most consistant explanation I found for this was that absolutely positioned elements needed to have a relatively positioned parent element.
+During testing I found that some absolutely positioned elements had moved up/down further depending on which browser was used. The most consistant explanation I found for this was that absolutely positioned elements need to have a relatively positioned parent element. Making this change mitigated but did not eliminate the browser variance.
 
 ## Deployment
 
@@ -80,7 +81,7 @@ GetHubby is hosted on GitHub pages and is deployed from the master branch. Any c
 To run the site locally you can clone it using the following instructions:
 - Create a folder in the desired location on your computer.
 - Open a terminal ([Mac instructions](https://macpaw.com/how-to/use-terminal-on-mac)|[Windows instructions](https://www.quora.com/How-do-I-open-terminal-in-windows)|[Linux instructions](https://www.howtogeek.com/howto/22283/four-ways-to-get-instant-access-to-a-terminal-in-linux/))
-- Navigate to the folder you created using `cd` command
+- Navigate to the folder you created using `cd` command (e.g. `cd ~/Documents/GetHubby`)
 - Type `git init`
 - Next type `git clone https://github.com/nealbrophy/GetHubby`
 - To break the link between your local copy and the repo at https://github.com/nealbrophy/GetHubby type `git remote rm origin`
@@ -89,7 +90,7 @@ To run the site locally you can clone it using the following instructions:
 ## Credits
 
 ### Content
-
+All text content was created by me. The modified Octocat images in the Testimonial and Contribute section were created by me for the purposes of this educational site only.
 
 ### Media
 - [Pexels](https://www.pexels.com/)
@@ -108,3 +109,5 @@ To run the site locally you can clone it using the following instructions:
 - Typewriter effect inspired by [this CSS-Tricks article](https://css-tricks.com/snippets/css/typewriter-effect/) with simplified implementation taken from [this instructional video by Codingflag](https://www.youtube.com/watch?v=6vOJoAmbza0).
 - Flip cards from [this W3C tutorial](https://www.w3schools.com/howto/howto_css_flip_card.asp)
 - GITHUB®, the GITHUB® logo design, OCTOCAT® and the OCTOCAT® logo design are exclusive trademarks registered in the United States by GitHub, Inc.
+
+## This student project and any original content therein is for educational use only ##
