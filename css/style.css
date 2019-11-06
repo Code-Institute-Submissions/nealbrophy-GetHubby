@@ -1207,7 +1207,7 @@ li {
         color: white;
         position: absolute;
         top: 80%;
-        left: 49%;
+        left: 46.5%;
         z-index: 500;
         animation: iconBob 0.5s ease-in-out;
         animation-iteration-count: infinite;
@@ -1264,8 +1264,8 @@ li {
         cursor: pointer;
         font-size: 5rem !important;
         color: black;
-        position: absolute;
-        margin-top: 26%;
+        position: relative;
+        top: 54%;
         z-index: 500;
         animation: iconBob 0.5s ease-in-out;
         animation-iteration-count: infinite;
@@ -1306,11 +1306,9 @@ li {
         -moz-cursor: pointer;
         font-size: 5rem;
         color: black;
-        position: absolute;
-        top: 320%;
-        left: 50%;
-        
-        
+        position: relative;
+        top: 35%;
+        left: 0;
         z-index: 500;
         animation: iconBob 0.5s ease-in-out;
         animation-iteration-count: infinite;
@@ -1359,18 +1357,6 @@ li {
 
 }
 
-@media (min-width: 1132px) and (min-height: 1000px) {
-    .testimonialsDownIcon {
-        top: 350%;
-    }
-}
-
-@media (min-width: 1144px) and (min-height: 1000px) {
-    .testimonialsDownIcon {
-        top: 380%;
-    }
-}
-
 @media (min-width: 1200px) and (min-height: 760px) {
 
     .carousel img {
@@ -1382,7 +1368,7 @@ li {
     }
 
     .aboutDownIcon {
-        margin-top: 11rem;
+        top: 200%;
     }
 
     .testimonials {
@@ -1393,9 +1379,9 @@ li {
         padding-top: 11rem;
     }
 
-    .testimonialsDownIcon {
+    /* .testimonialsDownIcon {
         top: 370%;
-    }
+    } */
 
     .signup {
         min-height: 100vh;
@@ -1411,6 +1397,14 @@ li {
 
 
 }
+
+@media (min-width: 1200px) and (max-height: 1000px) {
+    .aboutDownIcon {
+        top: 35%; 
+    }
+
+}
+
 
 /* x-large screens */
 @media (min-width: 1260px) and (min-height: 1000px; ) {
@@ -1447,8 +1441,32 @@ li {
 
 }
 
-@media (min-width: 1594px) and (min-height: 1000px) {
+@media (min-width: 1400px){
+
+    .aboutDownIcon {
+        top: 180%;
+    }
+
     .testimonialsDownIcon {
-        top: 400%;
+        top: 145%;
+    }
+
+}
+
+@media (min-width: 1600px) and (min-height: 1000px) {
+    .aboutDownIcon {
+        top: 160%;
+    }
+}
+
+@media (min-width: 1840px) and (min-height: 1000px) {
+    .aboutDownIcon {
+        top: 145%;
+    }
+}
+
+@media (min-width: 2000px) and (min-height: 1000px) {
+    .aboutDownIcon {
+        top: 135%;
     }
 }
