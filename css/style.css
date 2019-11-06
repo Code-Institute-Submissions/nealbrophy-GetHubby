@@ -1006,7 +1006,7 @@ li {
     }
 
     .about-body {
-        padding-top: 10%;
+        padding-top: 7%;
     }
 
     .flip-card-3,
@@ -1172,7 +1172,7 @@ li {
 
 
 /* large screens */
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-height: 800px) {
 
     .carousel img {
         width: 100%;
