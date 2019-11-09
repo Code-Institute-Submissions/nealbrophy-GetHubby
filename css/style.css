@@ -8,6 +8,14 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 .row {
     margin: 0;
 }
@@ -98,12 +106,14 @@ li {
 .jumbotron {
     margin: 0;
     padding: 0;
+    height: 100vh;
     
 }
 
 .carousel img {
     width: 100%;
-    height: 60vh;
+    height: 100vh;
+    
 }
 
 .carousel-caption {
@@ -131,7 +141,7 @@ li {
 
 .type-anim {
     display: flex;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     justify-content: center;
     padding-bottom: 1.5rem;
     flex-wrap: wrap;
@@ -194,83 +204,156 @@ li {
     }
 }
 
+.learnButtonOuter {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 150px 1fr;
+    grid-template-areas: "learnLeft learnCenter learnRight";
+}
+
+.learnButtonInner {
+    grid-area: learnCenter;
+}
+
 .learnButton {
+    grid-area: learnCenter;
     transition: all 0.3s ease-in-out;
     border: 2px solid transparent;
     z-index: 1;
     margin: 0 auto;
 }
 
-.learnButton:hover {
+.learnButtonInner:hover > .learnButton{
     border: 2px solid white;
 }
 
-.learnButton+i {
+.learnButton + i {
+    grid-area: learnCenter;
     color: white;
     text-decoration: none;
     z-index: -1;
-    position: absolute;
-    left: 50%;
-    top: 62%;
+    top: -48%;
+    position: relative;
     transform: translateX(0);
     transition: transform 0.3s ease-in-out;
 }
 
-.learnButton:hover+i {
-    transform: translateX(564%);
+.learnButtonInner:hover > i {
+    transform: translateX(615%);
+}
+
+.successButtonOuter {
+    text-decoration: none;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 200px 1fr;
+    grid-template-areas: "successLeft successCenter successRight";
+}
+
+.successButtonInner {
+    grid-area: successCenter;
 }
 
 .successButton {
+    grid-area: successCenter;
     transition: all 0.3s ease-in-out;
     border: 2px solid transparent;
 }
 
-.successButton:hover {
+.successButtonInner:hover > .successButton {
     border: 2px solid white;
 }
 
-.successButton+i {
+.successButton + i {
     color: white;
-    position: absolute;
+    position: relative;
     z-index: -1;
-    left: 50%;
-    top: 62%;
+    top: -48%;
     transform: translateX(0);
     transition: transform 0.3s ease-in-out;
 }
 
-.successButton:hover+i {
-    transform: translateX(442%);
+.successButtonInner:hover > i {
+    transform: translateX(490%);
+}
+
+
+.joinButtonOuter {
+    text-decoration: none;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 200px 1fr;
+    grid-template-areas: "joinLeft joinCenter joinRight";
+}
+
+.joinButtonInner {
+    grid-area: joinCenter;
 }
 
 .joinButton {
-    border: 2px solid transparent;
+    grid-area: joinCenter;
     transition: all 0.3s ease-in-out;
+    border: 2px solid transparent;
 }
 
-.joinButton:hover {
+.joinButtonInner:hover > .joinButton {
     border: 2px solid white;
 }
 
-.joinButton+i {
+.joinButton + i {
     color: white;
-    position: absolute;
+    position: relative;
     z-index: -1;
-    left: 50%;
-    top: 62%;
+    left: -15%;
     transform: translateX(0);
     transition: transform 0.3s ease-in-out;
 }
 
-.joinButton:hover+i {
-    transform: translateX(292%);
+.joinButtonInner:hover > i {
+    transform: translateX(130%);
 }
 
 /* jumbotron down icon (hide on xs-med screen) */
 
-.jumbotronDownIcon,
 .jumbotronDownIcon i {
-    display: none;
+    display: inline;
+
+}
+
+.jumbotronDownIcon {
+    display: inline;
+    cursor: pointer;
+    font-size: 5rem;
+    color: white;
+    position: absolute;
+    top: 80%;
+    left: 46.5%;
+    z-index: 500;
+    animation: iconBob 0.5s ease-in-out;
+    animation-iteration-count: infinite;
+    opacity: .5;
+    transition: opacity .2s ease-in-out;
+}
+
+@keyframes iconBob {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+.jumbotronDownIcon:hover {
+    color: white;
+    opacity: 1;
+    text-decoration: none;
 }
 
 
@@ -285,11 +368,12 @@ li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 
 .about-title {
-    padding-top: 2rem;
+    padding-top: 3.2rem;
 }
 
 .about-intro {
@@ -302,7 +386,6 @@ li {
 .about .row {
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 3rem;
     display: block;
 }
 
@@ -364,6 +447,7 @@ li {
 
 .accordion {
     border: none;
+    padding-top: 5rem;
 }
 
 .accordion .btn-link {
@@ -405,8 +489,6 @@ li {
     background-color: #b5ffaa;
 }
 
-#headinFour h2 p {}
-
 #headingFour i {
     padding-top: 7px;
     background-color: #48993c;
@@ -427,9 +509,34 @@ li {
 
 /* about down icon (hide on xs-med screen) */
 
-.aboutDownIcon,
+.aboutDownIconWrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    animation: iconBob 0.5s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
 .aboutDownIcon i {
-    display: none;
+    display: inline;
+}
+
+.aboutDownIcon {
+    display: inline;
+    cursor: pointer;
+    font-size: 5rem !important;
+    color: black;
+    position: relative;
+    top: 64%;
+    z-index: 500;
+    opacity: .5;
+    transition: opacity .2s ease-in-out;
+}
+
+.aboutDownIcon:hover {
+    color: black;
+    opacity: 1;
+    text-decoration: none;
 }
 
 
@@ -438,10 +545,7 @@ li {
  ============ */
 
 .testimonials-body {
-    position: relative;
-    
-    
-    
+    position: relative;  
 }
 
 .testimonials {
@@ -453,10 +557,11 @@ li {
     background-size: contain;
     text-align: center;
     padding-bottom: 2rem;
+    height: 100vh;
 }
 
 .testimonials-title {
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 
 .testimonials-intro {
@@ -472,7 +577,7 @@ li {
 }
 
 .media {
-    padding-top: 3rem;
+    padding-top: 2rem;
 
 }
 
@@ -739,10 +844,37 @@ li {
 
 /* testimonials down icon (hide on xs-med screen) */
 
-.testimonialsDownIcon,
-.testimonialsDownIcon i {
-    display: none;
+.testimonialsDownIconWrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    animation: iconBob 0.5s ease-in-out;
+    animation-iteration-count: infinite;
 }
+
+.testimonialsDownIcon i {
+    display: inline;
+}
+
+.testimonialsDownIcon {
+    display: inline;
+    cursor: pointer;
+    font-size: 5rem !important;
+    color: black;
+    position: relative;
+    top: 15%;
+    z-index: 500;
+    opacity: .5;
+    transition: opacity .2s ease-in-out;
+}
+
+.testimonialsDownIcon:hover {
+    color: black;
+    opacity: 1;
+    text-decoration: none;
+}
+
+
 
 /*======================
  CONTRIBUTE and SIGN UP
@@ -754,7 +886,7 @@ li {
 }
 
 .contribute h3 {
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
 }
 
 .gitHeart {
@@ -958,47 +1090,12 @@ li {
  ============ */
 
 
-@media (min-width: 576px) {
-
-
-    
-
-    .contribute {
-        padding-top: 2.5rem;
-    }
-
-    .contribute h3 {
-        margin-top: 5rem;
-    }
-
-
-
-}
-
-
 /*medium screens  */
 @media (min-width: 768px) {
 
 
     .carousel img {
         width: 100%;
-        min-height: 65vh;
-    }
-
-    .learnButton+i {
-        top: 72%;
-    }
-
-    .successButton+i {
-        top: 72%;
-    }
-
-    .joinButton+i {
-        top: 72%;
-    }
-
-    .about {
-        min-height: 80vh;
     }
 
     .about .row {
@@ -1136,7 +1233,26 @@ li {
 
     .testimonials {
         padding-bottom: 3rem;
-        min-height: 80vh;
+    }
+
+    .testimonialsDownIcon {
+        top: 150%;
+    }
+
+    .contribute {
+        padding-top: 2rem;
+    }
+
+    .contribute h3 {
+        padding-top: 4rem;
+    }
+
+    .gitHeart {
+        padding-top: 2rem;
+    }
+
+    .forkButtonWrapper {
+        padding-top: 1rem;
     }
 
     .signup {
@@ -1159,13 +1275,22 @@ li {
     }
 }
 
-@media (min-width: 990px) {
+@media (min-width: 992px) {
     .flip-card-2 {
         display: block;
     }
 
     .flip-card {
         padding-left: 1.2rem;
+    }
+
+    .testimonialsDownIcon {
+        top: 85%;
+    }
+    
+    #signup-section {
+        flex: 0 0 40%;
+        max-width: 40%;
     }
 }
 
@@ -1183,61 +1308,6 @@ li {
         font-size: 2.5rem;
     }
 
-    .learnButton+i {
-        top: 75%;
-    }
-
-    .successButton+i {
-        top: 75%;
-    }
-
-    .joinButton+i {
-        top: 75%;
-    }
-
-    .jumbotronDownIcon i {
-        display: inline;
-
-    }
-
-    .jumbotronDownIcon {
-        display: inline;
-        cursor: pointer;
-        font-size: 5rem;
-        color: white;
-        position: absolute;
-        top: 80%;
-        left: 46.5%;
-        z-index: 500;
-        animation: iconBob 0.5s ease-in-out;
-        animation-iteration-count: infinite;
-        opacity: .5;
-        transition: opacity .2s ease-in-out;
-    }
-
-    @keyframes iconBob {
-        0% {
-            transform: translateY(0)
-        }
-
-        50% {
-            transform: translateY(5px);
-        }
-
-        100% {
-            transform: translateY(0);
-        }
-
-    }
-
-    .jumbotronDownIcon:hover {
-        color: white;
-        opacity: 1;
-        text-decoration: none;
-    }
-
-    
-
     .about-title h2 {
         padding-top: 2rem;
     }
@@ -1250,35 +1320,6 @@ li {
         padding-top: 20%;
     }
 
-    .aboutDownIconWrapper {
-        position: relative;
-        width: 100%;
-    }
-
-    .aboutDownIcon i {
-        display: inline;
-    }
-
-    .aboutDownIcon {
-        display: inline;
-        cursor: pointer;
-        font-size: 5rem !important;
-        color: black;
-        position: relative;
-        top: 54%;
-        z-index: 500;
-        animation: iconBob 0.5s ease-in-out;
-        animation-iteration-count: infinite;
-        opacity: .5;
-        transition: opacity .2s ease-in-out;
-    }
-
-    .aboutDownIcon:hover {
-        color: black;
-        opacity: 1;
-        text-decoration: none;
-    }
-
     .media {
         padding-top: 8rem;
     }
@@ -1288,50 +1329,11 @@ li {
         padding-top: 3.5rem;
     }
 
-    .testimonialsDownIconWrapper {
-        display: inline;
-        position: relative;
-        width: 100%;
-        height: 100px;        
-    }
-
-    .testimonialsDownIcon i {
-        display: inline;
-    }
-
-    .testimonialsDownIcon {
-        display: inline;
-        cursor: pointer;
-        -webkit-cursor: pointer;
-        -moz-cursor: pointer;
-        font-size: 5rem;
-        color: black;
-        position: relative;
-        top: 35%;
-        left: 0;
-        z-index: 500;
-        animation: iconBob 0.5s ease-in-out;
-        animation-iteration-count: infinite;
-        opacity: .6;
-        transition: opacity .2s ease-in-out;
-    }
-
-    .testimonialsDownIcon:hover {
-        color: black;
-        opacity: 1;
-        text-decoration: none;
-    }
-
-    .contribute h3 {
-        margin-top: 2.5rem;
-    }
-
-    .forkButtonWrapper {
-        margin-top: 4rem;
-    }
+    
 
     .signButtonWrapper {
         margin-left: -1.5rem;
+        margin-top: 3rem;
     }
 
     .windowOuter {
@@ -1359,55 +1361,30 @@ li {
 
 @media (min-width: 1200px) and (min-height: 760px) {
 
-    .carousel img {
-        min-height: 100vh;
-    }
-
-    .about {
-        min-height: 100vh;
-    }
-
-    .aboutDownIcon {
-        top: 200%;
-    }
-
-    .testimonials {
-        min-height: 100vh;
-    }
 
     .media {
         padding-top: 11rem;
     }
 
-    /* .testimonialsDownIcon {
-        top: 370%;
-    } */
-
     .signup {
         min-height: 100vh;
     }
 
-    .contribute h3 {
-        margin-top: 5.5rem;
-    }
-
     .windowOuter {
-        margin-top: 6.5rem;
+        margin-top: 3.5rem;
     }
 
 
 }
 
 @media (min-width: 1200px) and (max-height: 1000px) {
-    .aboutDownIcon {
-        top: 35%; 
-    }
+
 
 }
 
 
 /* x-large screens */
-@media (min-width: 1260px) and (min-height: 1000px; ) {
+@media (min-width: 1260px) and (min-height: 1000px) {
 
     .media {
         padding-top: 10rem;
@@ -1439,34 +1416,8 @@ li {
         display: block;
     }
 
-}
-
-@media (min-width: 1400px){
-
-    .aboutDownIcon {
-        top: 180%;
+    .forkButtonWrapper {
+        padding-top: 4rem;
     }
 
-    .testimonialsDownIcon {
-        top: 145%;
-    }
-
-}
-
-@media (min-width: 1600px) and (min-height: 1000px) {
-    .aboutDownIcon {
-        top: 160%;
-    }
-}
-
-@media (min-width: 1840px) and (min-height: 1000px) {
-    .aboutDownIcon {
-        top: 145%;
-    }
-}
-
-@media (min-width: 2000px) and (min-height: 1000px) {
-    .aboutDownIcon {
-        top: 135%;
-    }
 }
