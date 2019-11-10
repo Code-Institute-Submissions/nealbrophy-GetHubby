@@ -127,10 +127,14 @@ li {
     z-index: 500;
 }
 
-.carousel-caption-2,
-.carousel-caption-3 {
-    top: 30%;
+.carousel-caption a {
+    padding-top: 2rem
 }
+
+    .carousel-caption-2,
+    .carousel-caption-3 {
+        top: 30%;
+    }
 
 .carousel-indicators {
     top: 5%;
@@ -234,8 +238,6 @@ li {
     grid-area: learnCenter;
     transition: all 0.3s ease-in-out;
     border: 2px solid transparent;
-    z-index: 1;
-    margin: 0 auto;
     background-color: rgba(46, 139, 87, 1);
 }
 
@@ -245,12 +247,10 @@ li {
 }
 
 .learnButton+i {
-    grid-area: learnCenter;
     color: white;
-    text-decoration: none;
-    z-index: -1;
-    top: -48%;
     position: relative;
+    z-index: -1;
+    top: -44%;
     transform: translateX(0);
     transition: transform 0.3s ease-in-out;
 }
@@ -287,7 +287,7 @@ li {
     color: white;
     position: relative;
     z-index: -1;
-    top: -56%;
+    top: -45%;
     transform: translateX(0);
     transition: transform 0.3s ease-in-out;
 }
@@ -1390,6 +1390,20 @@ li {
 
     .testimonials {
         padding-bottom: 3rem;
+    }
+
+    .story-button-1,
+    .story-button-2,
+    .story-button-3 {
+        color: white;
+        border: none;
+    }
+
+    .story-button-1:hover,
+    .story-button-2:hover,
+    .story-button-3:hover {
+        color: white;
+        border: none;
     }
 
     .testimonialsDownIcon {
