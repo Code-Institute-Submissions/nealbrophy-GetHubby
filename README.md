@@ -5,6 +5,10 @@ This is an imagined dating site for developers and specificially geared towards 
 
 [Go to GetHubby](https://nealbrophy.github.io/GetHubby/)
 
+<img src="https://github.com/nealbrophy/GetHubby/blob/master/images/ipad.gif" alt="site demo on ipad" width="300px" align="left">
+
+<img src="https://github.com/nealbrophy/GetHubby/blob/master/images/iphone.gif" alt="site demo on iphone" width="200px" align="center">
+
 
 --- 
 ## UX
