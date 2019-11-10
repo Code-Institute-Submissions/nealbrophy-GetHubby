@@ -283,7 +283,7 @@ li {
     color: white;
     position: relative;
     z-index: -1;
-    top: -48%;
+    top: -56%;
     transform: translateX(0);
     transition: transform 0.3s ease-in-out;
 }
@@ -322,6 +322,7 @@ li {
     position: relative;
     z-index: -1;
     left: -15%;
+    top: -8%;
     transform: translateX(0);
     transition: transform 0.3s ease-in-out;
 }
@@ -422,9 +423,12 @@ li {
     border: none;
 }
 
-.card .btn {
+.card input {
     color: black;
     background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 
@@ -440,20 +444,29 @@ li {
     -webkit-appearance: initial;
 }
 
-.card-header h2 {
+.card-header button {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.card-header .card-heading {
     display: grid;
     width: 100%;
     grid-template-columns: [accordionHeadLeft] 70% [accordionHeadCenter] 1fr [accordionHeadRight] 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "accordionHeadLeft accordionHeadCenter accordionHeadRight";
+    font-family: 'BioRhyme', serif;
+    font-size: 1.5rem;
 }
 
-.card-header h2 p {
+.card-header .card-heading span {
     grid-area: accordionHeadLeft;
     margin: auto 0;
 }
 
-.card-header h2 i {
+.card-header .card-heading i {
     grid-area: accordionHeadRight;
     color: white;
     width: 50px;
@@ -924,6 +937,7 @@ li {
     grid-template-columns: [forkLeft] 1fr [forkCenter] 150px [forkRight] 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "forkLeft forkCenter forkRight";
+    padding-top: 1rem;
 
 }
 
@@ -1061,7 +1075,7 @@ li {
     text-transform: lowercase;
 }
 
-#emailHelp {
+.emailHelp {
     color: rgb(103, 133, 53);
     font-size: 1.2rem;
 }
@@ -1117,6 +1131,20 @@ li {
 
 .signButton:hover+i {
     transform: translateX(54%);
+}
+
+.social-links {
+    display: flex;
+    padding-top: 5%;
+    margin-left: 26%;
+    z-index: 800;
+    font-size: 2.5rem;
+    letter-spacing: 2rem;
+    color: white;
+}
+
+.social-links a {
+    color: white;
 }
 
 
@@ -1367,6 +1395,12 @@ li {
         margin-top: 3rem;
 
     }
+
+    .social-links {
+        display: flex;
+        padding-top: 25%;
+        margin-left: 35%;
+    }
 }
 
 @media (min-width: 992px) {
@@ -1482,7 +1516,7 @@ li {
     }
 
     .signup {
-        height: 100vh;
+        height: 100%;
     }
 
     .windowOuter {
@@ -1491,6 +1525,12 @@ li {
 
     .windowOuter .fa-times-circle {
         padding-left: 96%;
+    }
+
+    .social-links {
+        display: flex;
+        padding-top: 10%;
+        margin-left: 45%;
     }
 
 

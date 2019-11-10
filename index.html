@@ -7,15 +7,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
-    <link href="css/hover.css" rel="stylesheet" media="all">
     <link href="https://fonts.googleapis.com/css?family=BioRhyme:400,700|Ubuntu+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>GetHubby</title>
 </head>
 <body>
-    <!----------------------
+    <!-- ===============
           **NAVBAR**
-    ------------------------>
+        ================ -->
     <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
         <a href="#" class="navbar-brand">GetHubby</a>
         <!-- toggler -->
@@ -43,9 +42,9 @@
         </div>
     </nav>
     <div class="container-fluid">
-        <!----------------------
+        <!--=================
           **JUMBOTRON / CTA**
-        ------------------------>
+            =================-->
         <section class="cta jumbotron text-center">
             <!-- bootstrap carousel -->
             <div class="carousel-wrapper">
@@ -72,11 +71,10 @@
                                     single-and-ready-to-mingle coders!</p>
                                 <div class="learnButtonOuter">
                                     <a href="#about-section" class="learnButtonInner">
-                                        <button class="btn btn-success btn-lg learnButton">Learn
-                                            More</button>
-                                        <i class="fas fa-question"></i>
+                                        <p class="btn btn-success btn-lg learnButton">Learn
+                                            More</p>
+                                        <i class="fas fa-question"></i></a>
                                 </div>
-                                </a>
                             </div>
                             <!-- down icon -->
                             <a href="#about-section" class="jumbotronDownIcon">
@@ -101,9 +99,9 @@
                                     any other dating service!</p>
                                 <div class="successButtonOuter">    
                                 <a href="#testimonials-section" class="successButtonInner">
-                                    <button
+                                    <p
                                         class="btn btn-success btn-lg successButton">Success
-                                        Stories</button>
+                                        Stories</p>
                                     <i class="fas fa-user-friends"></i></a>
                                 </div>
                             </div>
@@ -128,8 +126,8 @@
                                 <p class="lead d-none d-md-block">Sign-Up using your existing GitHub account!</p>
                                 <div class="joinButtonOuter">
                                 <a href="#signup-section" class="joinButtonInner">
-                                    <button class="btn btn-success btn-lg joinButton">Join
-                                        Now</button>
+                                    <p class="btn btn-success btn-lg joinButton">Join
+                                        Now</p>
                                     <i class="fas fa-user-plus"></i>
                                 </a>
                             </div>
@@ -154,9 +152,9 @@
             </div>
             <!-- /carousel -->
         </section>
-        <!----------------------
+        <!--===================
                 **ABOUT**
-        ------------------------>
+            ==================-->
         <section class="container-fluid about">
             <div class="row" id="about-section">
                 <div class="about-overlay"></div>
@@ -173,15 +171,15 @@
                 <div class="accordion d-md-none" id="aboutAccordion">
                     <div class="card">
                         <div class="card-header" id="headingOne">
-                            <a type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                            <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
                                 aria-controls="collapseOne">
-                                <h2 class="mb-0">
-                                    <p class="text-left">
+                                <span class="mb-0 card-heading">
+                                    <span class="text-left">
                                         Safety
-                                    </p>
+                                    </span>
                                     <i class="fas fa-user-shield"></i>
-                                </h2>
-                            </a>
+                                </span>
+                            </button>
                         </div>
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                             data-parent="#aboutAccordion">
@@ -196,15 +194,15 @@
                     </div>
                     <div class="card">
                         <div class="card-header" id="headingTwo">
-                            <a class="collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
                                 aria-expanded="false" aria-controls="collapseTwo">
-                                <h2 class="mb-0">
-                                    <p class="text-left">
+                                <span class="mb-0 card-heading">
+                                    <span class="text-left">
                                         Privacy
-                                    </p>
+                                    </span>
                                     <i class="fas fa-user-secret post-it-icon"></i>
-                                </h2>
-                            </a>
+                                </span>
+                            </button>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                             data-parent="#aboutAccordion">
@@ -219,15 +217,15 @@
                     </div>
                     <div class="card">
                         <div class="card-header" id="headingThree">
-                            <a class="collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
                                 aria-expanded="false" aria-controls="collapseThree">
-                                <h2 class="mb-0">
-                                    <p class="text-left">
+                                <span class="mb-0 card-heading">
+                                    <span class="text-left">
                                         Repos
-                                    </p>
+                                    </span>
                                     <i class="fab fa-github"></i>
-                                </h2>
-                            </a>
+                                </span>
+                            </button>
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                             data-parent="#aboutAccordion">
@@ -243,15 +241,15 @@
                     </div>
                     <div class="card">
                         <div class="card-header" id="headingFour">
-                            <a class="collapsed" type="button" data-toggle="collapse" data-target="#collapseFour"
+                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#collapseFour"
                                 aria-expanded="false" aria-controls="collapseFour">
-                                <h2 class="mb-0">
-                                    <p class="text-left">
+                                <span class="mb-0 card-heading">
+                                    <span class="text-left">
                                         Hackathon Date
-                                    </p>
+                                    </span>
                                     <i class="fas fa-laptop-code"></i>
-                                </h2>
-                            </a>
+                                </span>
+                            </button>
                         </div>
                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
                             data-parent="#aboutAccordion">
@@ -335,7 +333,6 @@
                         </div>
                     </div>
                 </div>
-                </ul>
                 <div class="aboutDownIconWrapper">
                     <a href="#testimonials-section" class="aboutDownIcon">
                         <i class="far fa-hand-point-down"></i>
@@ -344,9 +341,9 @@
                 <!-- /flip-cards -->
             </div>
         </section>
-        <!----------------------
+        <!--===================
             **TESTIMONIALS**
-        ------------------------>
+            ===================-->
         <section class="container-fluid testimonials" id="testimonials-section">
             <div class="row">
                 <!-- section intro -->
@@ -454,6 +451,7 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </blockquote>
                 <!-- /couple one -->
                 <!-- couple two -->
@@ -561,6 +559,7 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </blockquote>
                 <!-- /couple two -->
                 <!-- couple three -->
@@ -664,9 +663,9 @@
                 <!-- /down icon -->
             </div>
         </section>
-        <!----------------------
+        <!--==============
               **SIGNUP**
-        ------------------------>
+            ==============-->
         <section class="container-fluid signup">
             <div class="row">
                 <!-- contribute section -->
@@ -676,7 +675,7 @@
                     <p>GetHubby is completely open source.</p>
                     <img src="images/bitmap.png" class="gitHeart d-block" alt="github logo with heart shape">
                     <div class="forkButtonWrapper">
-                        <a href="https://github.com/nealbrophy/GetHubby" class="btn btn-warning forkButton">Fork on GitHub</a>
+                        <a href="https://github.com/nealbrophy/GetHubby" target="_blank" class="btn btn-warning forkButton">Fork on GitHub</a>
 
                         <i class="fab fa-git-alt"></i>
                     </div>
@@ -719,15 +718,14 @@
                                 <div class="windowContentRight col-11">
                                     <form>
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1"><span id="emailHelp"
-                                                    class="form-text">&lt;&#33;&#45;&#45;
+                                            <label for="exampleInputEmail1"><span class="emailHelp form-text">&lt;&#33;&#45;&#45;
                                                     Email Address &#45;&#45;&gt;</span>
                                             </label>
                                             <input type="email" class="form-control" id="exampleInputEmail1"
                                                 aria-describedby="emailHelp" placeholder="your email" required>
                                             <div class="form-group">
-                                                <label for="exampleInputPassword1"><span id="emailHelp"
-                                                        class="form-text">&lt;&#33;&#45;&#45;
+                                                <label for="exampleInputPassword1"><span class="emailHelp form-text"
+                                                        >&lt;&#33;&#45;&#45;
                                                         Password &#45;&#45;&gt;</span>
                                                 </label>
                                                 <input type="password" class="form-control" id="exampleInputPassword1"
@@ -747,6 +745,11 @@
                     </div>
                 </div>
                 <!-- /signup section -->
+            </div>
+            <div class="social-links text-center">
+            <a href="https://twitter.com/Linuckz" target="_blank" class="social-twitter"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" class="social-facebook"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://ie.linkedin.com/in/nealbrophy" target="_blank" class="social-linkedin"><i class="fab fa-linkedin"></i></a>
             </div>
         </section>
     </div>
