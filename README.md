@@ -5,6 +5,7 @@ This is an imagined dating site for developers and specificially geared towards 
 
 [Go to GetHubby](https://nealbrophy.github.io/GetHubby/)
 
+
 --- 
 ## UX
  
@@ -72,7 +73,7 @@ Once I've progressed in the JavaScript module I would like to add some more adva
 
 The site has been developed using the mobile first approach with responsive elements where possible and media queries when necessary. All changes to the site were tested in Google Chrome, Firefox, Opera, and Vivaldi browsers (leveraging the developer tools in each) and across Windows (desktop), Linux (desktop & laptop), and Android operating systems (mobile).
 
-During testing I found that some absolutely positioned elements had moved up/down further depending on which browser was used. The most consistant explanation I found for this was that absolutely positioned elements need to have a relatively positioned parent element. Making this change mitigated but did not eliminate the browser variance.
+During testing I found that some absolutely positioned elements had moved up/down further depending on which browser was used. The most consistant explanation I found for this was that absolutely positioned elements need to have a relatively positioned parent element. Making this change mitigated but did not eliminate the browser variance. Small variances in position at different screen sizes was addressed using media queries.
 
 ## Deployment
 
@@ -97,9 +98,12 @@ All text content was created by me. The modified Octocat images in the Testimoni
     - adults-bald-bouquet Photo by Vasyl Potochnyi from Pexels
     - affection-beach-couple Photo by Gustavo Peres from Pexels
     - couple-facial-hair-garden-2440069 Photo by Gustavo Peres from Pexels
+    - photo-of-women-facing-each-other-1167028 Photo by Brett Sayles from Pexels
+    - couple-standing-on-top-of-hill-1995718 Photo by Luis Fernandes from Pexels
+    - man-and-woman-forming-heart-hand-shape-1066801 Photo by juan mendez from Pexels
+    - group-of-people-looking-at-laptop-screen-3183129 Photo by fauxels from Pexels
+    - couple-about-to-kiss-2993031 Photo by Innoh Khumbuza from Pexels
 - [Pixabay](https://pixabay.com/)
-    - black-and-white-2590810_1920 Image by StockSnap from Pixabay
-    - couple-1210023_1920 Image by Free-Photos from Pixabay
     - code-1839406_1920 Image by Pexels from Pixabay
 - [Unsplash](https://unsplash.com/)
     - diego-rezende-CFIv79QxPjA-unsplash Photo by Diego Rezende on Unsplash
