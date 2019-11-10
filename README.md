@@ -75,9 +75,15 @@ Once I've progressed in the JavaScript module I would like to add some more adva
 
 ## Testing
 
-The site has been developed using the mobile first approach with responsive elements where possible and media queries when necessary. All changes to the site were tested in Google Chrome, Firefox, Opera, and Vivaldi browsers (leveraging the developer tools in each) and across Windows (desktop), Linux (desktop & laptop), and Android operating systems (mobile).
+The site has been developed using the mobile first approach with responsive elements where possible and media queries when necessary. All changes to the site were tested in Google Chrome, Firefox, Opera, Vivaldi, and Samsung Internet browsers (leveraging the developer tools in each) and across Windows (desktop), Linux (desktop & laptop), and Android operating systems (mobile).
 
-During testing I found that some absolutely positioned elements had moved up/down further depending on which browser was used. The most consistant explanation I found for this was that absolutely positioned elements need to have a relatively positioned parent element. Making this change mitigated but did not eliminate the browser variance. Small variances in position at different screen sizes was addressed using media queries.
+During testing I found that some absolutely positioned elements had moved up/down further depending on which browser was used. The most consistant explanation I found for this was that absolutely positioned elements need to have a relatively positioned parent element. Making this change mitigated but did not eliminate the browser variance. Small variances in position at different screen sizes was addressed using media queries. Icon position was tested using the "emulated devices" available in Chrome and Firefox dev tools as well by manually resizing using the "responsive" setting.
+
+The button hover effect was initially implimented using "position" only but (similar to the icon issue mentioned above) I found that the positioning wasn't consistent across all browsers. The most reliable method  of resolving the issue that I found was to use a combination of positioning and CSS Grid. This was tested using an the above mentioned browsers & devices to insure that hover effect was consistent.
+
+The Email field in sign-up form correctly prompts for valid email address format. Password field correctly hides typed text.
+
+The faux-code-editor in the sign-up section includes line numbers on the right-hand side on larger screens to clearly illustrate what the window is supposed to be. However, these numbers would cause the overall structure of the window to break on smaller screens so the numbers are hidden in those cases. This was tested using the responsive sizing in Chrome/Firefox dev tools and by looking up the GitHub pages on an Samsung Galaxy S10 device.
 
 ## Deployment
 

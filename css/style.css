@@ -53,7 +53,7 @@ li {
 }
 
 .navbar-collapse a:hover {
-    text-decoration: overline;
+    text-decoration: underline;
 }
 
 /* member login button */
@@ -96,7 +96,7 @@ li {
 }
 
 .nav-link:hover {
-    background: linear-gradient(to top, rgba(88, 94, 100, .2), rgba(88, 94, 100, .1));
+    background: none;
 }
 
 /*===========
@@ -1149,7 +1149,19 @@ li {
 
 }
 
+@media (min-width: 576px) {
+    .nav-link:hover {
+        background: linear-gradient(to top, rgba(88, 94, 100, .2), rgba(88, 94, 100, .1));
+    }
+
+    .navbar-collapse a:hover {
+        text-decoration: overline;
+    }
+}
+
 @media (min-width: 576px) and (min-height: 800px) {
+
+
     .jumbotronDownIcon {
         left: 45%;
         top: 74%;
@@ -1157,6 +1169,10 @@ li {
 
     .aboutDownIcon {
         top: 64%;
+    }
+
+    .windowOuter .fa-times-circle {
+        padding-left: 95%;
     }
 }
 
@@ -1331,7 +1347,7 @@ li {
     }
 
     .forkButtonWrapper {
-        padding-top: 1rem;
+        padding-top: 2.5rem;
     }
 
     .signup {
@@ -1339,7 +1355,7 @@ li {
     }
 
     .windowOuter .fa-times-circle {
-        padding-left: 92%;
+        padding-left: 94%;
     }
 
     .signup form {
@@ -1471,6 +1487,10 @@ li {
 
     .windowOuter {
         margin-top: 3.5rem;
+    }
+
+    .windowOuter .fa-times-circle {
+        padding-left: 96%;
     }
 
 
