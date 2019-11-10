@@ -56,6 +56,10 @@ li {
     text-decoration: underline;
 }
 
+.nav-link:hover {
+    background: none;
+}
+
 /* member login button */
 .navButtonWrapper {
     display: grid;
@@ -64,12 +68,12 @@ li {
     right: 1%;
     grid-template-columns: 180px;
     grid-template-rows: 1fr;
-    grid-template-areas: "navButtonGrid";
+    
 }
 
 .navButton {
     background-color: rgb(255, 99, 71);
-    grid-area: "navButtonGrid";
+    
     color: white;
     border: 2px solid transparent;
     transition: all .5s ease-in-out;
@@ -83,7 +87,7 @@ li {
 
 .navButton>i {
     position: absolute;
-    grid-area: "navButtonGrid";
+    
     z-index: -1;
     top: 30%;
     right: 55%;
@@ -95,13 +99,9 @@ li {
     transform: translateX(-405%);
 }
 
-.nav-link:hover {
-    background: none;
-}
-
-/*===========
+/*==================
  JUMBOTRON / CAROUSEL
- ============ */
+ =================== */
 .container-fluid {
     margin: 0;
     padding: 0;
@@ -140,14 +140,14 @@ li {
     background-color: #7725c4;
     opacity: .7;
     position: absolute;
-    top: 5;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 0;
 }
 
-/* typing animation */
+/* typing animation START */
 
 .type-anim {
     display: flex;
@@ -214,6 +214,10 @@ li {
         border-color: white;
     }
 }
+
+/* typing animation END */
+
+/* jumbotron buttons START */
 
 .learnButtonOuter {
     display: grid;
@@ -330,8 +334,9 @@ li {
 .joinButtonInner:hover>i {
     transform: translateX(125%);
 }
+/* jumbotron buttons END */
 
-/* jumbotron down icon */
+/* jumbotron down icon START */
 
 .jumbotronDownIcon i {
     display: inline;
@@ -374,6 +379,8 @@ li {
     text-decoration: none;
 }
 
+/* jumbotron down icon END */
+
 
 /*===========
  ABOUT
@@ -415,7 +422,7 @@ li {
     padding-top: 50px;
 }
 
-/* accordion (small screen) */
+/* accordion START (small screen) */
 
 .card {
     margin-left: 0;
@@ -442,6 +449,7 @@ li {
 
 .card-header [type=button] {
     -webkit-appearance: initial;
+    -moz-appearance: initial;
 }
 
 .card-header button {
@@ -523,7 +531,9 @@ li {
 
 }
 
-/* flip-cards (large screens) */
+/* accordion END */
+
+/* flip-cards START (large screens) */
 
 .about .flip-card .fas,
 .about .flip-card .fab {
@@ -534,8 +544,9 @@ li {
 .flip-card {
     display: none;
 }
+/* flip-cards END */
 
-/* about down icon */
+/* about down icon START */
 
 .aboutDownIconWrapper {
     position: relative;
@@ -567,6 +578,7 @@ li {
     text-decoration: none;
 }
 
+/* about down icon END */
 
 /*===========
  TESTIMONIALS
@@ -699,7 +711,7 @@ li {
     border: 2px solid transparent;
 }
 
-/* throbbing chevron */
+/* chevron throb animation START */
 @-webkit-keyframes hvr-pulse-1 {
     0% {
         -webkit-transform: scale(1.1);
@@ -820,8 +832,10 @@ li {
     animation-iteration-count: infinite;
 }
 
+/* chevron throb animation END */
 
-/* testimonial collapse (small screen) */
+
+/* testimonial collapse START (small screen) */
 #johnAndEllen .cardbody {
     border: 10px solid rgb(13, 65, 36);
     padding: 5px;
@@ -836,8 +850,9 @@ li {
     border: 10px solid rgb(102, 33, 19);
     padding: 5px;
 }
+/* testimonials collapse END */
 
-/* testimonial modal (medium screen) */
+/* testimonial modal START (medium screen) */
 
 #johnAndEllenModal .question {
     font-weight: normal;
@@ -883,7 +898,9 @@ li {
     font-style: italic;
 }
 
-/* testimonials down icon */
+/* testimonials modal END */
+
+/* testimonials down icon START */
 
 .testimonialsDownIconWrapper {
     position: relative;
@@ -914,14 +931,14 @@ li {
     opacity: 1;
     text-decoration: none;
 }
-
+/* testimonials down icon END */
 
 
 /*======================
  CONTRIBUTE and SIGN UP
  ======================= */
 
-/* contribute section */
+/* contribute section start */
 .contribute {
     text-align: center;
 }
@@ -930,6 +947,8 @@ li {
     margin: 0 auto;
     opacity: .7;
 }
+
+/* fork button START */
 
 .forkButtonWrapper {
     display: grid;
@@ -972,8 +991,10 @@ li {
 .forkButton:hover+i {
     transform: translateX(15%);
 }
+/* fork button END */
+/* contribute section END */
 
-/* sign-up section */
+/* sign-up section START */
 .signup {
 
     color: white;
@@ -984,7 +1005,7 @@ li {
     margin-top: 2rem;
 }
 
-/* sign-up code window */
+/* sign-up code window START */
 
 .windowOuter {
     padding-bottom: 1rem;
@@ -1088,6 +1109,9 @@ li {
     padding-top: 3rem;
 }
 
+/* signup code window END */
+
+/* signup button START */
 .signup button {
     margin-top: 1.5rem;
     margin-bottom: 2rem;
@@ -1133,6 +1157,10 @@ li {
     transform: translateX(54%);
 }
 
+/* signup button END */
+/* signup section END */
+
+/* social links START */
 .social-links {
     display: flex;
     padding-top: 5%;
@@ -1146,6 +1174,7 @@ li {
 .social-links a {
     color: white;
 }
+/* social links END */
 
 
 

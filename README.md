@@ -85,6 +85,8 @@ The Email field in sign-up form correctly prompts for valid email address format
 
 The faux-code-editor in the sign-up section includes line numbers on the right-hand side on larger screens to clearly illustrate what the window is supposed to be. However, these numbers would cause the overall structure of the window to break on smaller screens so the numbers are hidden in those cases. This was tested using the responsive sizing in Chrome/Firefox dev tools and by looking up the GitHub pages on an Samsung Galaxy S10 device.
 
+HTML & CSS were validated using the W3C online tools [here](https://validator.w3.org/nu/) and [here](https://jigsaw.w3.org/css-validator/) respectively.
+
 ## Deployment
 
 GetHubby is hosted on GitHub pages and is deployed from the master branch. Any changes committed to the master branch will automatically update on the GitHub deployment.
