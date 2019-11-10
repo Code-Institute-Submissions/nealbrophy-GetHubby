@@ -107,18 +107,17 @@ All text content was created by me. The modified Octocat images in the Testimoni
 
 ### Media
 - [Pexels](https://www.pexels.com/)
-    - adults-bald-bouquet Photo by Vasyl Potochnyi from Pexels
-    - affection-beach-couple Photo by Gustavo Peres from Pexels
-    - couple-facial-hair-garden-2440069 Photo by Gustavo Peres from Pexels
-    - photo-of-women-facing-each-other-1167028 Photo by Brett Sayles from Pexels
-    - couple-standing-on-top-of-hill-1995718 Photo by Luis Fernandes from Pexels
-    - man-and-woman-forming-heart-hand-shape-1066801 Photo by juan mendez from Pexels
-    - group-of-people-looking-at-laptop-screen-3183129 Photo by fauxels from Pexels
-    - couple-about-to-kiss-2993031 Photo by Innoh Khumbuza from Pexels
+    - testimonials-couple-1 Photo by Vasyl Potochnyi from Pexels
+    - testimonials-couple-2 Photo by Gustavo Peres from Pexels
+    - testimonials-couple-3 Photo by Gustavo Peres from Pexels
+    - carousel-3-lg Photo by Brett Sayles from Pexels
+    - carousel-2-sm Photo by Luis Fernandes from Pexels
+    - carousel-2-lg Photo by juan mendez from Pexels
+    - carousel-1-lg Photo by fauxels from Pexels
+    - carousel-1-sm Photo by Innoh Khumbuza from Pexels
+    - carousel-3-sm Photo by Daria Shevtsova from Pexels
 - [Pixabay](https://pixabay.com/)
-    - code-1839406_1920 Image by Pexels from Pixabay
-- [Unsplash](https://unsplash.com/)
-    - diego-rezende-CFIv79QxPjA-unsplash Photo by Diego Rezende on Unsplash
+    - about-section-bg Image by Pexels from Pixabay
 
 
 ### Acknowledgements

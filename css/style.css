@@ -387,7 +387,7 @@ li {
  ============ */
 
 .about {
-    background-image: url(../images/code-1839406_1920_transparent.jpg);
+    background-image: url(../images/about-section-bg.jpg);
     z-index: -1;
     background-attachment: fixed;
     background-position: center;
@@ -589,7 +589,7 @@ li {
 }
 
 .testimonials {
-    background-image: url(../images/octor-love-transparency.png);
+    background-image: url(../images/octocouple.png);
     z-index: -1;
     background-attachment: fixed;
     background-position: center;
