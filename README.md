@@ -3,7 +3,8 @@ Code Institute User Centric Frontend Develtopment: Milestone Project One
 
 This is an imagined dating site for developers and specificially geared towards users of GitHub leveraging the existing social & community aspects of same. The goal is to have a site which appeals to developers by using industry lingo and to allow users to sign-up via existing, commonly used industry tools (i.e. GitHub).
 
-[Go to GetHubby](https://nealbrophy.github.io/GetHubby/)
+## Demo
+Click [here](https://nealbrophy.github.io/GetHubby/) to go to the live demo.
 
 <img src="https://github.com/nealbrophy/GetHubby/blob/master/images/ipad.gif" alt="site demo on ipad" width="300px" align="left">
 
@@ -19,6 +20,10 @@ The site is intended to be simple and minimalistic while also colourful and fun.
 - As a single person, I want a modern and appealing site which is simple to navigate.
 - As a developer, I want a site that caters to my interests and is clearly aimed at people like me.
 - As a modern user, I want a mobile-friendly site that looks as good on small screens as large.
+
+### Strategy
+
+The goal of the site was to create a dating site which might appeal to developers and also to lay the groundwork for a project-site that could be used again as I tackle more advanced subjects.
 
 ### Wireframes
 
@@ -56,7 +61,7 @@ The contribute section links to this GitHub repo. The sign-up section is made to
 
 ### Features Left to Implement
 
-Once I've progressed in the JavaScript module I would like to add some more advanced features such as:
+Once I've progressed in the JavaScript module and further I would like to add some more advanced features such as:
 - A separate, customized modal for the Member Login.
 - Randomised elements such as the color pallete for the flip-cards and the testimonials (couple images/names/quotes).
 - GitHub OAuth integration, or at least the appearance of such. 
@@ -86,6 +91,10 @@ The Email field in sign-up form correctly prompts for valid email address format
 The faux-code-editor in the sign-up section includes line numbers on the right-hand side on larger screens to clearly illustrate what the window is supposed to be. However, these numbers would cause the overall structure of the window to break on smaller screens so the numbers are hidden in those cases. This was tested using the responsive sizing in Chrome/Firefox dev tools and by looking up the GitHub pages on an Samsung Galaxy S10 device.
 
 HTML & CSS were validated using the W3C online tools [here](https://validator.w3.org/nu/) and [here](https://jigsaw.w3.org/css-validator/) respectively.
+
+### Remaining bugs
+
+There's a small flicker on the left hand side of the bootstrap carousel when changing slides which I have been unable to fix.
 
 ## Deployment
 
