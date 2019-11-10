@@ -969,6 +969,11 @@ li {
     background-color: rgba(65, 105, 225, 1);
 }
 
+.forkButton:active {
+    color: white;
+    background-color: rgba(65, 105, 225, 1);
+}
+
 .forkButton:hover {
     border: 2px solid white;
     color: white;
@@ -980,7 +985,7 @@ li {
     position: relative;
     grid-area: forkCenter;
     z-index: 0;
-    top: 33%;
+    top: 17%;
     left: 40%;
     transform: translateX(0);
     transition: transform 0.3s ease-in-out;
