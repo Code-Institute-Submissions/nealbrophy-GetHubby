@@ -68,7 +68,7 @@ li {
 }
 
 .navButton {
-    background-color: #e66b7c;
+    background-color: rgb(255, 99, 71);
     grid-area: "navButtonGrid";
     color: white;
     border: 2px solid transparent;
@@ -77,7 +77,7 @@ li {
 
 .navButton:hover {
     border: 2px solid white;
-    background-color: #e66b7c;
+    background-color: rgb(102, 33, 19);
 
 }
 
@@ -95,6 +95,10 @@ li {
     transform: translateX(-405%);
 }
 
+.nav-link:hover {
+    background: linear-gradient(to top, rgba(88, 94, 100, .2), rgba(88, 94, 100, .1));
+}
+
 /*===========
  JUMBOTRON / CAROUSEL
  ============ */
@@ -106,14 +110,15 @@ li {
 .jumbotron {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    
+
+    max-height: 100vh;
+
 }
 
 .carousel img {
     width: 100%;
     height: 100vh;
-    
+
 }
 
 .carousel-caption {
@@ -122,13 +127,22 @@ li {
     z-index: 500;
 }
 
+.carousel-caption-2,
+.carousel-caption-3 {
+    top: 30%;
+}
+
+.carousel-caption p {
+    
+}
+
 .carousel-indicators {
     top: 5%;
 }
 
 .overlay {
-    background-color: #8a2be2;
-    opacity: .6;
+    background-color: #7725c4;
+    opacity: .7;
     position: absolute;
     top: 5;
     left: 0;
@@ -141,7 +155,8 @@ li {
 
 .type-anim {
     display: flex;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    font-weight: bold;
     justify-content: center;
     padding-bottom: 1.5rem;
     flex-wrap: wrap;
@@ -221,13 +236,15 @@ li {
     border: 2px solid transparent;
     z-index: 1;
     margin: 0 auto;
+    background-color: rgba(46, 139, 87, 1);
 }
 
-.learnButtonInner:hover > .learnButton{
+.learnButtonInner:hover>.learnButton {
     border: 2px solid white;
+    background-color: rgb(13, 65, 36);
 }
 
-.learnButton + i {
+.learnButton+i {
     grid-area: learnCenter;
     color: white;
     text-decoration: none;
@@ -238,7 +255,7 @@ li {
     transition: transform 0.3s ease-in-out;
 }
 
-.learnButtonInner:hover > i {
+.learnButtonInner:hover>i {
     transform: translateX(615%);
 }
 
@@ -258,13 +275,15 @@ li {
     grid-area: successCenter;
     transition: all 0.3s ease-in-out;
     border: 2px solid transparent;
+    background-color: rgba(46, 139, 87, 1)
 }
 
-.successButtonInner:hover > .successButton {
+.successButtonInner:hover>.successButton {
     border: 2px solid white;
+    background-color: rgb(13, 65, 36);
 }
 
-.successButton + i {
+.successButton+i {
     color: white;
     position: relative;
     z-index: -1;
@@ -273,7 +292,7 @@ li {
     transition: transform 0.3s ease-in-out;
 }
 
-.successButtonInner:hover > i {
+.successButtonInner:hover>i {
     transform: translateX(490%);
 }
 
@@ -294,13 +313,15 @@ li {
     grid-area: joinCenter;
     transition: all 0.3s ease-in-out;
     border: 2px solid transparent;
+    background-color: rgba(46, 139, 87, 1)
 }
 
-.joinButtonInner:hover > .joinButton {
+.joinButtonInner:hover>.joinButton {
     border: 2px solid white;
+    background-color: rgb(13, 65, 36);
 }
 
-.joinButton + i {
+.joinButton+i {
     color: white;
     position: relative;
     z-index: -1;
@@ -309,8 +330,8 @@ li {
     transition: transform 0.3s ease-in-out;
 }
 
-.joinButtonInner:hover > i {
-    transform: translateX(130%);
+.joinButtonInner:hover>i {
+    transform: translateX(125%);
 }
 
 /* jumbotron down icon (hide on xs-med screen) */
@@ -326,8 +347,8 @@ li {
     font-size: 5rem;
     color: white;
     position: absolute;
-    top: 80%;
-    left: 46.5%;
+    top: 74%;
+    left: 40%;
     z-index: 500;
     animation: iconBob 0.5s ease-in-out;
     animation-iteration-count: infinite;
@@ -368,12 +389,11 @@ li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-
-.about-title {
-    padding-top: 3.2rem;
+.about-title h2 {
+    padding-top: 3.7rem;
 }
 
 .about-intro {
@@ -447,7 +467,6 @@ li {
 
 .accordion {
     border: none;
-    padding-top: 5rem;
 }
 
 .accordion .btn-link {
@@ -507,7 +526,7 @@ li {
     display: none;
 }
 
-/* about down icon (hide on xs-med screen) */
+/* about down icon */
 
 .aboutDownIconWrapper {
     position: relative;
@@ -527,7 +546,7 @@ li {
     font-size: 5rem !important;
     color: black;
     position: relative;
-    top: 64%;
+
     z-index: 500;
     opacity: .5;
     transition: opacity .2s ease-in-out;
@@ -545,7 +564,7 @@ li {
  ============ */
 
 .testimonials-body {
-    position: relative;  
+    position: relative;
 }
 
 .testimonials {
@@ -557,7 +576,7 @@ li {
     background-size: contain;
     text-align: center;
     padding-bottom: 2rem;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .testimonials-title {
@@ -577,7 +596,7 @@ li {
 }
 
 .media {
-    padding-top: 2rem;
+    padding-top: 1rem;
 
 }
 
@@ -795,17 +814,17 @@ li {
 
 /* testimonial collapse (small screen) */
 #johnAndEllen .cardbody {
-    border: 10px solid #98fb98;
+    border: 10px solid rgb(13, 65, 36);
     padding: 5px;
 }
 
 #susanAndGordon .cardbody {
-    border: 10px solid #fb98fb;
+    border: 10px solid rgb(19, 37, 92);
     padding: 5px;
 }
 
 #dougAndMonte .cardbody {
-    border: 10px solid #fbc998;
+    border: 10px solid rgb(102, 33, 19);
     padding: 5px;
 }
 
@@ -813,32 +832,36 @@ li {
 
 #johnAndEllenModal .question {
     font-weight: normal;
-    color: black;
-    background-color: #98fb98;
+    color: white;
+    background-color: rgba(46, 139, 87, 1);
 }
 
 .modal-header-1 {
-    background-color: rgba(152, 251, 152, 0.5);
+    background-color: rgb(13, 65, 36);
+    color: white;
+
 }
 
 #susanAndGordonModal .question {
     font-weight: normal;
-    color: black;
-    background-color: #d8bfd8;
+    color: white;
+    background-color: rgba(65, 105, 225, 1);
 }
 
 .modal-header-2 {
-    background-color: rgba(251, 152, 251, 0.5);
+    background-color: rgb(19, 37, 92);
+    color: white;
 }
 
 #dougAndMonteModal .question {
     font-weight: normal;
-    color: black;
-    background-color: #fbc998;
+    color: white;
+    background-color: rgba(255, 99, 71, 1);
 }
 
 .modal-header-3 {
-    background-color: rgba(251, 201, 152, 0.5);
+    background-color: rgb(102, 33, 19);
+    color: white;
 }
 
 .answer .name {
@@ -856,7 +879,7 @@ li {
 .testimonialsDownIconWrapper {
     position: relative;
     width: 100%;
-    height: 200px;
+    min-height: 200px;
     animation: iconBob 0.5s ease-in-out;
     animation-iteration-count: infinite;
 }
@@ -894,9 +917,7 @@ li {
     text-align: center;
 }
 
-.contribute h3 {
-    /* margin-top: 4rem; */
-}
+
 
 .gitHeart {
     margin: 0 auto;
@@ -917,12 +938,14 @@ li {
     border: 2px solid transparent;
     transition: all 0.3s ease-in-out;
     z-index: 1;
-    color: black;
+    color: white;
+    background-color: rgba(65, 105, 225, 1);
 }
 
 .forkButton:hover {
     border: 2px solid white;
-    color: black;
+    color: white;
+    background-color: rgb(19, 37, 92);
 }
 
 .forkButton+i {
@@ -1037,7 +1060,7 @@ li {
 }
 
 .form-group input::placeholder {
-    color: lightblue;
+    color: cornflowerblue;
 }
 
 .form-group span {
@@ -1047,6 +1070,14 @@ li {
 #emailHelp {
     color: rgb(103, 133, 53);
     font-size: 1.2rem;
+}
+
+.signup {
+    min-height: 100vh;
+}
+
+.signup h2 {
+    padding-top: 3rem;
 }
 
 .signup button {
@@ -1069,10 +1100,12 @@ li {
     border: 2px solid transparent;
     transition: all 0.3s ease-in-out;
     z-index: 1;
+    background-color: rgba(46, 139, 87, 1);
 }
 
 .signButton:hover {
     border: 2px solid white;
+    background-color: rgb(13, 65, 36);
 }
 
 .signButton+i {
@@ -1098,6 +1131,40 @@ li {
  MEDIA QUERIES
  ============ */
 
+@media (min-height: 800px) and (max-width: 575px) {
+    .accordion {
+        padding-top: 2rem;
+    }
+
+    .aboutDownIcon {
+        top: 40%;
+    }
+
+    .accordion {
+        padding-top: 4rem;
+    }
+
+}
+
+@media (min-width: 478px) {
+
+    .carousel-caption-2,
+    .carousel-caption-3 {
+        top: 40%;
+    }
+}
+
+@media (min-width: 576px) and (min-height: 800px) {
+    .jumbotronDownIcon {
+        left: 45%;
+        top: 74%;
+    }
+
+    .aboutDownIcon {
+        top: 64%;
+    }
+}
+
 
 /*medium screens  */
 @media (min-width: 768px) {
@@ -1107,8 +1174,16 @@ li {
         width: 100%;
     }
 
+    .type-anim {
+        font-size: 1.8rem;
+    }
+
     .about .row {
         display: flex;
+    }
+
+    .about-title h2 {
+        padding-top: 5rem;
     }
 
     .about-body {
@@ -1245,7 +1320,7 @@ li {
     }
 
     .testimonialsDownIcon {
-        top: 150%;
+        top: 98%;
     }
 
     .contribute {
@@ -1265,7 +1340,7 @@ li {
     }
 
     .signup {
-        padding-top: 2rem;
+        padding-top: 4rem;
     }
 
     .windowOuter .fa-times-circle {
@@ -1275,7 +1350,6 @@ li {
     .signup form {
         padding-left: 1.5rem;
         padding-top: 4.5rem;
-
     }
 
     label[for="exampleInputPassword1"] {
@@ -1296,7 +1370,7 @@ li {
     .testimonialsDownIcon {
         top: 85%;
     }
-    
+
     #signup-section {
         flex: 0 0 40%;
         max-width: 40%;
@@ -1310,7 +1384,11 @@ li {
 
     .carousel img {
         width: 100%;
-        
+    }
+
+    .jumbotronDownIcon {
+        left: 46.5%;
+
     }
 
     .type-anim {
@@ -1338,7 +1416,10 @@ li {
         padding-top: 3.5rem;
     }
 
-    
+    .testimonialsDownIcon {
+        top: 38%;
+    }
+
 
     .signButtonWrapper {
         margin-left: -1.5rem;
@@ -1353,10 +1434,6 @@ li {
         padding-bottom: 2.5rem;
     }
 
-    .signup {
-        min-height: 60vh;
-    }
-
     .signup form {
         padding-left: 1.5rem;
         padding-top: 2.5rem;
@@ -1368,15 +1445,33 @@ li {
 
 }
 
-@media (min-width: 1200px) and (min-height: 760px) {
+@media (min-width: 1024px) and (min-height: 1366px) {
+    .about-title h2 {
+        padding-top: 5rem;
+    }
+
+    .aboutDownIcon {
+        top: 160%;
+    }
+
+    .testimonialsDownIcon {
+        top: 160%;
+    }
+}
+
+@media (min-width: 1200px) and (min-height: 800px) {
 
 
     .media {
         padding-top: 11rem;
     }
 
+    .testimonialsDownIcon {
+        top: 68%;
+    }
+
     .signup {
-        min-height: 100vh;
+        height: 100vh;
     }
 
     .windowOuter {
@@ -1386,14 +1481,13 @@ li {
 
 }
 
-@media (min-width: 1200px) and (max-height: 1000px) {
-
-
-}
-
 
 /* x-large screens */
-@media (min-width: 1260px) and (min-height: 1000px) {
+@media (min-width: 1260px) and (min-height: 900px) {
+    .about-title h2 {
+        padding-top: 3.5rem;
+    }
+
 
     .media {
         padding-top: 10rem;
@@ -1417,6 +1511,11 @@ li {
 
 @media (min-width: 1310px) {
 
+    .jumbotronDownIcon {
+        left: 48%;
+
+    }
+
     .flip-card {
         padding-left: 1.2rem;
     }
@@ -1429,4 +1528,72 @@ li {
         padding-top: 4rem;
     }
 
+}
+
+/* @media (min-width: 1000px) and (min-height: 1000px) {
+    .jumbotronDownIcon {
+        top: 80%;
+    }
+    
+    .about-title h2 {
+        padding-top: 5rem;
+    }
+
+    .about-body {
+        padding-top: 15rem;
+    }
+
+    .aboutDownIcon {
+        top: 80%;
+    }
+
+    .testimonials-title {
+        padding-top: 5rem;
+    }
+
+    .testimonialsDownIcon {
+        top: 180%;
+    }
+
+    .signup {
+        height: 100vh;
+    }
+
+    .contribute h3 {
+        padding-top: 8.5rem;
+    }
+
+    .signup .row {
+        padding-top: 5rem;
+    }
+} */
+
+@media (min-width: 1800px) and (min-height: 1080px) {
+
+
+    .jumbotronDownIcon {
+        top: 60%;
+    }
+
+    .aboutDownIcon {
+        top: 94%;
+    }
+
+    .testimonialsDownIcon {
+        top: 160%;
+    }
+}
+
+@media (min-width: 1200px) and (min-height: 1000px) {
+    .aboutDownIcon {
+        top: 75%;
+    }
+
+    .about-body {
+        padding-top: 10rem;
+    }
+
+    .testimonialsDownIcon {
+        top: 120%;
+    }
 }
