@@ -42,9 +42,9 @@ The navbar is responsive and will switch to a hamburger menu on small screens.
 
 The hero section contains an eye-catching jumbotron slideshow with images of a variety of possible users of site. A mock-typing animation was added to the text overlayed on the slideshow to suggest a relation to coding (and more specifically GitHub commands).
 
-On med & large screens the about section contains simple, colourful flip-cards with a short title (and icons representing the theme of the title) on the front and a short summary of the feature in question on the back. One small screens the flip cards are replaced by a collapsing list.
+On med & large screens the about section contains simple, colourful flip-cards with a short title (and icons representing the theme of the title) on the front and a short summary of the feature in question on the back. On small screens the flip cards are replaced by a collapsing list.
 
-The testimonials section shows a circular image of imagined couples beside a short quote from each couple. The button beneath each quote opens a mock Q&A with the couple (bootstrap-modal on larger screens, bootstrap-collapse on smaller screens).
+The testimonials section shows a circular image of couples beside a short quote from each couple. The button beneath each quote opens a Q&A with the couple (bootstrap-modal on larger screens, bootstrap-collapse on smaller screens).
 
 The contribute section links to this GitHub repo. The sign-up section is made to look like a code-editor window with mock-HTML text.
 
@@ -57,7 +57,7 @@ The contribute section links to this GitHub repo. The sign-up section is made to
 - Flip-cards
 - Modal/Collapse for couple Q&As depending on screen size
 - Buttons display a popout icon relating to the content/target of said button.
-- On large screens there is an arrow icon with hover.css effect to highlight that additional content is below and links to the next section.
+- On large screens there is an down-pointing icon with hover.css effect to highlight that additional content is below and links to the next section.
 
 ### Features Left to Implement
 
@@ -94,7 +94,9 @@ The Email field in sign-up form correctly prompts for valid email address format
 
 The faux-code-editor in the sign-up section includes line numbers on the left-hand side on larger screens to clearly illustrate what the window is supposed to be (a text editor). However, these numbers would cause the overall structure of the window to break on smaller screens so the numbers are hidden in those cases. This was tested using the responsive sizing in Chrome/Firefox dev tools and by looking up the GitHub pages on an Samsung Galaxy S10 device.
 
-HTML & CSS were validated using the W3C online tools [here](https://validator.w3.org/nu/) and [here](https://jigsaw.w3.org/css-validator/) respectively. Font & button colours were checked for accessibility using the online [Contrast Checker](https://webaim.org/resources/contrastchecker/).
+HTML & CSS were validated using the W3C online tools [here](https://validator.w3.org/nu/) and [here](https://jigsaw.w3.org/css-validator/) respectively. 
+
+Font & button colours were checked for accessibility using the online [Contrast Checker](https://webaim.org/resources/contrastchecker/).
 
 ## Deployment
 
