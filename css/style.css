@@ -862,17 +862,17 @@ li {
 
 /* testimonial collapse START (small screen) */
 #johnAndEllen .cardbody {
-    border: 10px solid rgb(31, 114, 68);
+    border: 10px solid rgb(67, 161, 63);
     padding: 5px;
 }
 
 #susanAndGordon .cardbody {
-    border: 10px solid rgb(37, 63, 141);
+    border: 10px solid rgb(77, 85, 196);
     padding: 5px;
 }
 
 #dougAndMonte .cardbody {
-    border: 10px solid rgb(141, 51, 33);
+    border: 10px solid rgb(197, 74, 78);
     padding: 5px;
 }
 
