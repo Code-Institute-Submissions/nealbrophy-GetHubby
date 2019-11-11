@@ -127,9 +127,7 @@ li {
     z-index: 15;
 }
 
-.carousel-caption a {
-    padding-top: 2rem
-}
+
 
 .carousel-caption-2,
 .carousel-caption-3 {
@@ -1232,6 +1230,13 @@ li {
  ============ */
 
 /* small screens  */
+
+@media (min-height: 700px) {
+    .carousel-caption a {
+        padding-top: 2rem
+    }
+}
+
 @media (min-width: 478px) {
 
     .carousel-caption-2,
