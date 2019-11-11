@@ -68,12 +68,12 @@ li {
     right: 1%;
     grid-template-columns: 180px;
     grid-template-rows: 1fr;
-    
+
 }
 
 .navButton {
-    background-color: rgb(255, 99, 71);
-    
+    background-color: #822885;
+
     color: white;
     border: 2px solid transparent;
     transition: all .5s ease-in-out;
@@ -81,13 +81,13 @@ li {
 
 .navButton:hover {
     border: 2px solid white;
-    background-color: rgb(102, 33, 19);
+    background-color: #5d135f;
 
 }
 
 .navButton>i {
     position: absolute;
-    
+
     z-index: -1;
     top: 30%;
     right: 55%;
@@ -124,31 +124,41 @@ li {
 .carousel-caption {
     top: 40%;
     bottom: auto;
-    z-index: 500;
+    z-index: 15;
 }
 
 .carousel-caption a {
     padding-top: 2rem
 }
 
-    .carousel-caption-2,
-    .carousel-caption-3 {
-        top: 30%;
-    }
+.carousel-caption-2,
+.carousel-caption-3 {
+    top: 30%;
+}
 
 .carousel-indicators {
     top: 5%;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 15
+}
+
 .overlay {
-    background-color: #7725c4;
+    background-color: #5f19a1;
     opacity: .7;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0;
+    z-index: 10;
+}
+
+.carousel-inner {
+    background-color: rgba(119, 37, 196, .7);
+    
 }
 
 /* typing animation START */
@@ -224,76 +234,79 @@ li {
 /* jumbotron buttons START */
 
 .learnButtonOuter {
+    text-decoration: none;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 150px 1fr;
-    grid-template-areas: "learnLeft learnCenter learnRight";
+    grid-template-columns: 1fr 200px 1fr;
+    grid-template-areas: "Left Center Right";
 }
 
 .learnButtonInner {
-    grid-area: learnCenter;
+    grid-area: Center;
 }
 
 .learnButton {
-    grid-area: learnCenter;
+    grid-area: Center;
     transition: all 0.3s ease-in-out;
     border: 2px solid transparent;
-    background-color: rgba(46, 139, 87, 1);
+    background-color: #1F631D;
 }
 
 .learnButtonInner:hover>.learnButton {
     border: 2px solid white;
-    background-color: rgb(13, 65, 36);
+    background-color: rgb(16, 61, 14);
 }
 
 .learnButton+i {
     color: white;
     position: relative;
     z-index: -1;
-    top: -44%;
+    left: -15%;
+    top: -8%;
     transform: translateX(0);
     transition: transform 0.3s ease-in-out;
 }
 
 .learnButtonInner:hover>i {
-    transform: translateX(615%);
+    transform: translateX(205%);
 }
 
-.successButtonOuter {
+.userButtonOuter {
     text-decoration: none;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 200px 1fr;
-    grid-template-areas: "successLeft successCenter successRight";
+    grid-template-areas: "tLeft tCenter tRight";
 }
 
-.successButtonInner {
-    grid-area: successCenter;
+.userButtonInner {
+    grid-area: tCenter;
 }
 
-.successButton {
-    grid-area: successCenter;
+.userButton {
+    grid-area: tCenter;
     transition: all 0.3s ease-in-out;
     border: 2px solid transparent;
-    background-color: rgba(46, 139, 87, 1)
+    background-color: #85282b;
 }
 
-.successButtonInner:hover>.successButton {
+.userButtonInner:hover>.userButton {
     border: 2px solid white;
-    background-color: rgb(13, 65, 36);
+    background-color: #4d1113;
 }
 
-.successButton+i {
+.userButton+i {
     color: white;
     position: relative;
     z-index: -1;
-    top: -45%;
+    left: -15%;
+    top: -8%;
     transform: translateX(0);
     transition: transform 0.3s ease-in-out;
 }
 
-.successButtonInner:hover>i {
-    transform: translateX(490%);
+.userButtonInner:hover>i {
+    transform: translateX(125%);
 }
 
 
@@ -313,12 +326,12 @@ li {
     grid-area: joinCenter;
     transition: all 0.3s ease-in-out;
     border: 2px solid transparent;
-    background-color: rgba(46, 139, 87, 1)
+    background-color: #282e85;
 }
 
 .joinButtonInner:hover>.joinButton {
     border: 2px solid white;
-    background-color: rgb(13, 65, 36);
+    background-color: #111650;
 }
 
 .joinButton+i {
@@ -334,6 +347,7 @@ li {
 .joinButtonInner:hover>i {
     transform: translateX(125%);
 }
+
 /* jumbotron buttons END */
 
 /* jumbotron down icon START */
@@ -350,8 +364,8 @@ li {
     color: white;
     position: absolute;
     top: 74%;
-    left: 40%;
-    z-index: 500;
+    left: 37%;
+    z-index: 15;
     animation: iconBob 0.5s ease-in-out;
     animation-iteration-count: infinite;
     opacity: .5;
@@ -492,13 +506,13 @@ li {
 }
 
 #headingOne {
-    background-color: rgb(226, 221, 149);
+    background-color: #95a9e2;
 }
 
 #headingOne i {
     padding-left: 4px;
     padding-top: 6px;
-    background-color: #a8a242;
+    background-color: #282e85;
 
 }
 
@@ -508,7 +522,7 @@ li {
 
 #headingTwo i {
     padding-top: 6px;
-    background-color: #b751c7;
+    background-color: #822885;
 }
 
 #headingThree {
@@ -518,7 +532,7 @@ li {
 #headingThree i {
 
     padding-top: 8px;
-    background-color: #c5505f;
+    background-color: #85282b;
 }
 
 #headingFour {
@@ -527,7 +541,7 @@ li {
 
 #headingFour i {
     padding-top: 7px;
-    background-color: #48993c;
+    background-color: #1F631D;
 
 }
 
@@ -544,6 +558,7 @@ li {
 .flip-card {
     display: none;
 }
+
 /* flip-cards END */
 
 /* about down icon START */
@@ -567,7 +582,7 @@ li {
     color: black;
     position: relative;
 
-    z-index: 500;
+    z-index: 15;
     opacity: .5;
     transition: opacity .2s ease-in-out;
 }
@@ -622,27 +637,17 @@ li {
 }
 
 .couple-1 img {
-    border: 10px solid #2E8B57;
+    border: 10px solid rgba(31, 99, 29,.8);
 }
 
 .couple-1-name,
 .couple-1-quote {
-    background: rgba(46, 139, 87, 1);
-    color: white;
-    padding: 2px;
+    background: rgba(31, 99, 29,.8);
 }
 
-.story-button-1,
-.story-button-1:hover,
-.story-button-2,
-.story-button-2:hover,
-.story-button-3,
-.story-button-3:hover {
-    color: white;
-}
 
 .story-button-1 {
-    background: rgba(46, 139, 87, 1);
+    background: rgba(31, 99, 29,1);
     border: none;
     border: 2px solid black;
     color: white;
@@ -650,7 +655,7 @@ li {
 }
 
 .story-button-1:hover {
-    background: rgb(13, 65, 36);
+    background: rgb(67, 161, 63);
     transition: 0.5s;
     border: 2px solid transparent;
 }
@@ -664,51 +669,71 @@ li {
 }
 
 .couple-2 img {
-    border: 10px solid rgb(65, 105, 225);
+    border: 10px solid rgba(40, 46, 133,.9);
 }
 
 .couple-2-name,
 .couple-2-quote {
-    background: rgba(65, 105, 225, 1);
-    color: white;
-    padding: 2px;
+    background: rgba(40, 46, 133,.9);
 }
 
 
 .story-button-2 {
-    background: rgba(65, 105, 225, 1);
+    background: rgba(40, 46, 133,1);
     border: none;
     border: 2px solid black;
     color: white;
 }
 
 .story-button-2:hover {
-    background: rgb(19, 37, 92);
+    background: rgb(77, 85, 196);
     transition: 0.5s;
     border: 2px solid transparent;
     color: white;
 }
 
 .couple-3 img {
-    border: 10px solid rgb(255, 99, 71);
+    border: 10px solid rgba(133, 40, 43,.9);
 }
 
 .couple-3-name,
 .couple-3-quote {
-    background: rgba(255, 99, 71, 1);
-    color: white;
-    padding: 2px;
+    background: rgba(133, 40, 43,.9);
 }
 
 .story-button-3 {
-    background: rgba(255, 99, 71, 1);
+    background: rgba(133, 40, 43,1);
     border: 2px solid black;
 }
 
 .story-button-3:hover {
-    background: rgb(102, 33, 19);
+    background: rgb(197, 74, 78);
     transition: 0.5s;
     border: 2px solid transparent;
+}
+
+.couple-1-quote,
+.couple-2-quote,
+.couple-3-quote {
+    color: white;
+    padding: 2px 4px;
+}
+
+.couple-1-name,
+.couple-2-name,
+.couple-3-name {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.story-button-1,
+.story-button-1:hover,
+.story-button-2,
+.story-button-2:hover,
+.story-button-3,
+.story-button-3:hover {
+    color: white;
 }
 
 /* chevron throb animation START */
@@ -837,31 +862,45 @@ li {
 
 /* testimonial collapse START (small screen) */
 #johnAndEllen .cardbody {
-    border: 10px solid rgb(13, 65, 36);
+    border: 10px solid rgb(31, 114, 68);
     padding: 5px;
 }
 
 #susanAndGordon .cardbody {
-    border: 10px solid rgb(19, 37, 92);
+    border: 10px solid rgb(37, 63, 141);
     padding: 5px;
 }
 
 #dougAndMonte .cardbody {
-    border: 10px solid rgb(102, 33, 19);
+    border: 10px solid rgb(141, 51, 33);
     padding: 5px;
 }
+
 /* testimonials collapse END */
 
 /* testimonial modal START (medium screen) */
 
+.modal-header {
+    border-radius: 0;
+    font-family: 'BioRhyme', serif;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.modal-title {
+    width: 100%;
+    text-align: center;
+}
+
 #johnAndEllenModal .question {
     font-weight: normal;
     color: white;
-    background-color: rgba(46, 139, 87, 1);
+    padding: 2px 4px;
+    background-color: rgba(31, 99, 29,.9);
 }
 
 .modal-header-1 {
-    background-color: rgb(13, 65, 36);
+    background-color: rgba(31, 99, 29,1);
     color: white;
 
 }
@@ -869,22 +908,24 @@ li {
 #susanAndGordonModal .question {
     font-weight: normal;
     color: white;
-    background-color: rgba(65, 105, 225, 1);
+    padding: 2px 4px;
+    background-color: rgba(40, 46, 133,.9);
 }
 
 .modal-header-2 {
-    background-color: rgb(19, 37, 92);
+    background-color: rgba(40, 46, 133,1);
     color: white;
 }
 
 #dougAndMonteModal .question {
     font-weight: normal;
     color: white;
-    background-color: rgba(255, 99, 71, 1);
+    padding: 2px 4px;
+    background-color: rgba(133, 40, 43,.9);
 }
 
 .modal-header-3 {
-    background-color: rgb(102, 33, 19);
+    background-color: rgba(133, 40, 43,1);
     color: white;
 }
 
@@ -921,7 +962,7 @@ li {
     color: black;
     position: relative;
     top: 15%;
-    z-index: 500;
+    z-index: 15;
     opacity: .5;
     transition: opacity .2s ease-in-out;
 }
@@ -931,6 +972,7 @@ li {
     opacity: 1;
     text-decoration: none;
 }
+
 /* testimonials down icon END */
 
 
@@ -966,18 +1008,18 @@ li {
     transition: all 0.3s ease-in-out;
     z-index: 1;
     color: white;
-    background-color: rgba(65, 105, 225, 1);
+    background-color: rgba(40, 46, 133,1);
 }
 
 .forkButton:active {
     color: white;
-    background-color: rgba(65, 105, 225, 1);
+    background-color: rgba(40, 46, 133,1);
 }
 
 .forkButton:hover {
     border: 2px solid white;
     color: white;
-    background-color: rgb(19, 37, 92);
+    background-color: rgb(20, 25, 87);
 }
 
 .forkButton+i {
@@ -996,6 +1038,7 @@ li {
 .forkButton:hover+i {
     transform: translateX(15%);
 }
+
 /* fork button END */
 /* contribute section END */
 
@@ -1137,12 +1180,12 @@ li {
     border: 2px solid transparent;
     transition: all 0.3s ease-in-out;
     z-index: 1;
-    background-color: rgba(46, 139, 87, 1);
+    background-color: rgba(31, 99, 29,1);
 }
 
 .signButton:hover {
     border: 2px solid white;
-    background-color: rgb(13, 65, 36);
+    background-color: rgb(20, 75, 18);
 }
 
 .signButton+i {
@@ -1170,7 +1213,7 @@ li {
     display: flex;
     padding-top: 5%;
     margin-left: 26%;
-    z-index: 800;
+    z-index: 18;
     font-size: 2.5rem;
     letter-spacing: 2rem;
     color: white;
@@ -1179,6 +1222,7 @@ li {
 .social-links a {
     color: white;
 }
+
 /* social links END */
 
 
@@ -1187,7 +1231,7 @@ li {
  MEDIA QUERIES
  ============ */
 
- /* small screens  */
+/* small screens  */
 @media (min-width: 478px) {
 
     .carousel-caption-2,
@@ -1212,9 +1256,9 @@ li {
 }
 
 @media (min-width: 576px) {
-    .nav-link:hover {
+    /* .nav-link:hover {
         background: linear-gradient(to top, rgba(88, 94, 100, .2), rgba(88, 94, 100, .1));
-    }
+    } */
 
     .navbar-collapse a:hover {
         text-decoration: overline;
@@ -1225,7 +1269,7 @@ li {
 
 
     .jumbotronDownIcon {
-        left: 45%;
+        left: 41%;
         top: 74%;
     }
 
@@ -1249,6 +1293,10 @@ li {
 
     .type-anim {
         font-size: 1.8rem;
+    }
+
+    .jumbotronDownIcon {
+        left: 43%;
     }
 
     .about .row {
@@ -1300,7 +1348,7 @@ li {
     }
 
     .card-front-1 {
-        background-color: #FFF9AA;
+        background-color: #95a9e2;
         color: black;
     }
 
@@ -1309,13 +1357,14 @@ li {
         height: 60px;
         padding: 15px 0;
         border-radius: 50%;
-        background-color: #a8a242;
+        background-color: #282e85;
         color: white;
         margin-top: 3rem;
     }
 
     .card-back-1 {
-        background-color: #a8a242;
+        background-color: #282e85;
+        color: white;
     }
 
     .card-front-2 {
@@ -1327,13 +1376,13 @@ li {
         height: 60px;
         padding: 15px 0;
         border-radius: 50%;
-        background-color: #b751c7;
+        background-color: #822885;
         color: white;
         margin-top: 3rem;
     }
 
     .card-back-2 {
-        background-color: #b751c7;
+        background-color: #822885;
     }
 
     .card-front-3 {
@@ -1345,13 +1394,13 @@ li {
         height: 60px;
         padding: 15px 0;
         border-radius: 50%;
-        background-color: #c5505f;
+        background-color: #85282b;
         color: white;
         margin-top: 3rem;
     }
 
     .card-back-3 {
-        background-color: #c5505f;
+        background-color: #85282b;
     }
 
     .card-front-4 {
@@ -1363,13 +1412,13 @@ li {
         height: 60px;
         padding: 15px 0;
         border-radius: 50%;
-        background-color: #5ec54e;
+        background-color: #1F631D;
         color: white;
         margin-top: 3rem;
     }
 
     .card-back-4 {
-        background-color: #5ec54e;
+        background-color: #1F631D;
     }
 
 
@@ -1383,8 +1432,10 @@ li {
         font-size: 1.2rem;
     }
 
+    .card-back-1 .card-text,
     .card-back-2 .card-text,
-    .card-back-3 .card-text {
+    .card-back-3 .card-text, 
+    .card-back-4 .card-text {
         color: white;
     }
 
@@ -1396,14 +1447,14 @@ li {
     .story-button-2,
     .story-button-3 {
         color: white;
-        border: none;
+        border: 2px solid transparent
     }
 
     .story-button-1:hover,
     .story-button-2:hover,
     .story-button-3:hover {
         color: white;
-        border: none;
+        border: 2px solid black;
     }
 
     .testimonialsDownIcon {
@@ -1480,7 +1531,7 @@ li {
     }
 
     .jumbotronDownIcon {
-        left: 46.5%;
+        left: 45%;
 
     }
 
@@ -1615,7 +1666,7 @@ li {
 @media (min-width: 1310px) {
 
     .jumbotronDownIcon {
-        left: 48%;
+        left: 47%;
 
     }
 
